@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 12.375" name="TeachinVietnam">
+  <DataContextMoniker Name="/TeachinVietnamDataContext" />
+  <nestedChildShapes>
+    <classShape Id="cb1ecc48-7414-4799-806c-79ff40289ede" absoluteBounds="4.25, 1.625, 2, 1.3862939453125">
+      <DataClassMoniker Name="/TeachinVietnamDataContext/tbl_TrainingLevel" />
+      <nestedChildShapes>
+        <elementListCompartment Id="23ba3d9e-c9b1-455b-9ce2-317f20c7ea93" absoluteBounds="4.2650000000000006, 2.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ce406b72-b348-4638-b382-5ab7addd7eb0" absoluteBounds="0.75, 0.5, 2, 4.0785139973958326">
+      <DataClassMoniker Name="/TeachinVietnamDataContext/tbl_TrainingCourse" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f21ef879-605f-4dce-9bbe-16d705c02012" absoluteBounds="0.76500000000000012, 0.96, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.25 : 2.31814697265625); (2.75 : 2.31814697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TeachinVietnamDataContext/tbl_TrainingLevel/tbl_TrainingLevel_tbl_TrainingCourse" />
+      <nodes>
+        <classShapeMoniker Id="cb1ecc48-7414-4799-806c-79ff40289ede" />
+        <classShapeMoniker Id="ce406b72-b348-4638-b382-5ab7addd7eb0" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="c86451f2-604e-4000-937b-0193045e99f0" absoluteBounds="0.875, 6, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/TeachinVietnamDataContext/tbl_Job_Sector" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f4a2c765-268f-44c4-bc49-60dd4013d401" absoluteBounds="0.88999999999999968, 6.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.8125 : 6); (1.8125 : 4.57851399739583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TeachinVietnamDataContext/tbl_Job_Sector/tbl_Job_Sector_tbl_TrainingCourse" />
+      <nodes>
+        <classShapeMoniker Id="c86451f2-604e-4000-937b-0193045e99f0" />
+        <classShapeMoniker Id="ce406b72-b348-4638-b382-5ab7addd7eb0" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="7a6f6c1d-4a2b-4d36-922a-7774e0fd3718" absoluteBounds="4.25, 4, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/TeachinVietnamDataContext/tbl_Job_Location" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f4542d7f-4b04-4245-82b7-5cf46c05b732" absoluteBounds="4.2650000000000006, 4.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.25 : 4.28925699869792); (2.75 : 4.28925699869792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TeachinVietnamDataContext/tbl_Job_Location/tbl_Job_Location_tbl_TrainingCourse" />
+      <nodes>
+        <classShapeMoniker Id="7a6f6c1d-4a2b-4d36-922a-7774e0fd3718" />
+        <classShapeMoniker Id="ce406b72-b348-4638-b382-5ab7addd7eb0" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="c71bd116-764e-4b86-b81b-0a513674ed41" absoluteBounds="4.5, 6, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/TeachinVietnamDataContext/tbl_intership_article" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9786be14-e388-4a8c-9c97-385f94dee96f" absoluteBounds="4.515, 6.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="00bc2ea4-2f30-46dd-94bd-251fb2682f89" absoluteBounds="7.5, 1.625, 2, 1.9631982421875">
+      <DataClassMoniker Name="/TeachinVietnamDataContext/tbl_Intership" />
+      <nestedChildShapes>
+        <elementListCompartment Id="36630eaf-7a6d-4fe5-b37c-465bb689b5f9" absoluteBounds="7.515, 2.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d36c8cf2-1364-46b0-b0ba-93cfee083a9c" absoluteBounds="7.75, 4.875, 2, 2.5401025390625">
+      <DataClassMoniker Name="/TeachinVietnamDataContext/tbl_Internship_UserSubmit" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b5bc1402-f49d-4454-810b-45c5f7007a1c" absoluteBounds="7.765, 5.335, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="540b70a1-7227-41ec-a770-406bf91ba358" absoluteBounds="3.125, 9.75, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/TeachinVietnamDataContext/tbl_service_article" />
+      <nestedChildShapes>
+        <elementListCompartment Id="10b29df6-b01a-4e9d-91c7-75612757191e" absoluteBounds="3.14, 10.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d5fe058b-8539-4160-8c40-6f5b61f83123" absoluteBounds="4.875, 0.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/TeachinVietnamDataContext/tbl_feature_logo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2bb58533-66c4-48b6-96b7-cb4ecadacd2f" absoluteBounds="4.89, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

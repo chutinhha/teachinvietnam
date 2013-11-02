@@ -1,0 +1,1721 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AdsACv" xml:space="preserve">
+    <value>Post a CV</value>
+  </data>
+  <data name="AdsAJob" xml:space="preserve">
+    <value>Post a Job</value>
+  </data>
+  <data name="Canceltxt" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Candidatetxt" xml:space="preserve">
+    <value>Teachers</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact us</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+    <comment>HomePage</comment>
+  </data>
+  <data name="jobAvai" xml:space="preserve">
+    <value>jobs currently available</value>
+  </data>
+  <data name="language" xml:space="preserve">
+    <value>Tiếng Việt</value>
+  </data>
+  <data name="loginLabel" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Logouttxt" xml:space="preserve">
+    <value>Log Out</value>
+  </data>
+  <data name="or" xml:space="preserve">
+    <value>or</value>
+  </data>
+  <data name="Preparationtxt" xml:space="preserve">
+    <value>Preparation</value>
+  </data>
+  <data name="Recruitertxt" xml:space="preserve">
+    <value>Employer</value>
+  </data>
+  <data name="RegisterAs" xml:space="preserve">
+    <value>Register as:</value>
+  </data>
+  <data name="registerLabel" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="Welcometxt" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="AnyCategory" xml:space="preserve">
+    <value>Any Category</value>
+  </data>
+  <data name="AnyCitizenship" xml:space="preserve">
+    <value>Any Nationality</value>
+  </data>
+  <data name="AnyLocation" xml:space="preserve">
+    <value>Any Location</value>
+  </data>
+  <data name="candidatesite" xml:space="preserve">
+    <value>Job seekers &amp;raquo;</value>
+  </data>
+  <data name="CVSearch" xml:space="preserve">
+    <value>CV Search</value>
+  </data>
+  <data name="ExecutiveJobs" xml:space="preserve">
+    <value>Executive Jobs</value>
+  </data>
+  <data name="freejobposting" xml:space="preserve">
+    <value>Free job postings &amp;raquo;</value>
+  </data>
+  <data name="JobSearch" xml:space="preserve">
+    <value>Jobs Search</value>
+  </data>
+  <data name="MyAccount" xml:space="preserve">
+    <value>My Account</value>
+  </data>
+  <data name="RecruitmentCenter" xml:space="preserve">
+    <value>Hiring Advice</value>
+  </data>
+  <data name="SchoolJobs" xml:space="preserve">
+    <value>School Jobs</value>
+  </data>
+  <data name="Preparation" xml:space="preserve">
+    <value>Teacher Advice</value>
+  </data>
+  <data name="addtxt" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="Administrativejobstxt" xml:space="preserve">
+    <value>Administrative jobs</value>
+  </data>
+  <data name="AdvancedSearchtxt" xml:space="preserve">
+    <value>Advanced Search</value>
+  </data>
+  <data name="backtohomepagetxt" xml:space="preserve">
+    <value>Back to Homepage</value>
+  </data>
+  <data name="cateadmin3" xml:space="preserve">
+    <value>Higher Education</value>
+  </data>
+  <data name="Citizenshiptxt" xml:space="preserve">
+    <value>Citizenship</value>
+  </data>
+  <data name="Clicktotxt" xml:space="preserve">
+    <value>Click to</value>
+  </data>
+  <data name="ClosingDatetxt" xml:space="preserve">
+    <value>Closing Date</value>
+  </data>
+  <data name="CompanyNametxt" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="CVtitlenametxt" xml:space="preserve">
+    <value>CV title / name</value>
+  </data>
+  <data name="Enteryourkeywordtxt" xml:space="preserve">
+    <value>Enter your keyword</value>
+  </data>
+  <data name="FeaturedCandidatestxt" xml:space="preserve">
+    <value>Featured Candidates</value>
+  </data>
+  <data name="FeaturedEmployerstxt" xml:space="preserve">
+    <value>Featured Employers</value>
+  </data>
+  <data name="Homepagetxt" xml:space="preserve">
+    <value>Teaching Jobs – International alliance of teachers and employers</value>
+  </data>
+  <data name="Itsfreetxt" xml:space="preserve">
+    <value>. It's free.</value>
+  </data>
+  <data name="Jobseekerlogintxt" xml:space="preserve">
+    <value>Job seeker login</value>
+  </data>
+  <data name="jobtitletxt" xml:space="preserve">
+    <value>Job Title</value>
+  </data>
+  <data name="Keepmeloggedintxt" xml:space="preserve">
+    <value>Keep me logged in</value>
+  </data>
+  <data name="Locationtxt" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="Logintxt" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Newjobstxt" xml:space="preserve">
+    <value>New jobs</value>
+  </data>
+  <data name="Newresumestxt" xml:space="preserve">
+    <value>New resumes</value>
+  </data>
+  <data name="PwdRecovery" xml:space="preserve">
+    <value>Forgot your password? Please click here</value>
+  </data>
+  <data name="ReadmyCVtxt" xml:space="preserve">
+    <value>Read my CV</value>
+  </data>
+  <data name="registerasajobseekertxt" xml:space="preserve">
+    <value>register as a job seeker</value>
+  </data>
+  <data name="registerasanemployertxt" xml:space="preserve">
+    <value>register as an employer</value>
+  </data>
+  <data name="Registeredteachersbenefits" xml:space="preserve">
+    <value>Registered teachers get the following benefits</value>
+  </data>
+  <data name="Registeredteachersbenefits1" xml:space="preserve">
+    <value>Build your online CV with best tools for your private settings</value>
+  </data>
+  <data name="Registeredteachersbenefits10" xml:space="preserve">
+    <value>Manage your own area.</value>
+  </data>
+  <data name="Registeredteachersbenefits2" xml:space="preserve">
+    <value>Enjoy service of CV match</value>
+  </data>
+  <data name="Registeredteachersbenefits3" xml:space="preserve">
+    <value>Manage your applied jobs and your own area</value>
+  </data>
+  <data name="Registeredteachersbenefits4" xml:space="preserve">
+    <value>And more</value>
+  </data>
+  <data name="Registeredteachersbenefits5" xml:space="preserve">
+    <value>Register today and get the following benefits</value>
+  </data>
+  <data name="Registeredteachersbenefits6" xml:space="preserve">
+    <value>Company logo on adverts</value>
+  </data>
+  <data name="Registeredteachersbenefits7" xml:space="preserve">
+    <value>Job postings and manage your jobs</value>
+  </data>
+  <data name="Registeredteachersbenefits8" xml:space="preserve">
+    <value>View applications and responses to your jobs.</value>
+  </data>
+  <data name="Registeredteachersbenefits9" xml:space="preserve">
+    <value>Receive applications instantly.</value>
+  </data>
+  <data name="Searchtxt" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="selectactegorytxt" xml:space="preserve">
+    <value>Select one or more categories</value>
+  </data>
+  <data name="TeachersfromK12txt" xml:space="preserve">
+    <value>Teachers from K - 12</value>
+  </data>
+  <data name="titletxt" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="viewalltxt" xml:space="preserve">
+    <value>View all &amp;raquo;</value>
+  </data>
+  <data name="WrongEmailpasswordPleasetryagaintxt" xml:space="preserve">
+    <value>Wrong Email / password. Please try again.</value>
+  </data>
+  <data name="ApplicationManagement" xml:space="preserve">
+    <value>Application Management</value>
+  </data>
+  <data name="AppliedDate" xml:space="preserve">
+    <value>Applied Date</value>
+  </data>
+  <data name="Areyousuretodelete" xml:space="preserve">
+    <value>Are you sure to delete this resume?</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="ClosingDate" xml:space="preserve">
+    <value>Closing Date</value>
+  </data>
+  <data name="CreateaJob" xml:space="preserve">
+    <value>Post a Job</value>
+  </data>
+  <data name="DatePosted" xml:space="preserve">
+    <value>Date Posted</value>
+  </data>
+  <data name="EditProfile" xml:space="preserve">
+    <value>Edit Profile</value>
+  </data>
+  <data name="EmployerLogintxt" xml:space="preserve">
+    <value>Employer Login</value>
+  </data>
+  <data name="Employermanagement" xml:space="preserve">
+    <value>Employer management</value>
+  </data>
+  <data name="EmployerSiteManagement" xml:space="preserve">
+    <value>Employer Site Management</value>
+  </data>
+  <data name="hi" xml:space="preserve">
+    <value>Hi</value>
+  </data>
+  <data name="JobsManagement" xml:space="preserve">
+    <value>Jobs Management</value>
+  </data>
+  <data name="Manageyourapplicants" xml:space="preserve">
+    <value>Manage your applicants. Select job title to see the newest applications.</value>
+  </data>
+  <data name="Manageyourpostedjobs" xml:space="preserve">
+    <value>Manage your posted jobs.</value>
+  </data>
+  <data name="MyApplicants" xml:space="preserve">
+    <value>My Applicants</value>
+  </data>
+  <data name="MyCVSaved" xml:space="preserve">
+    <value>My CV Saved</value>
+  </data>
+  <data name="MyJobs" xml:space="preserve">
+    <value>My Jobs</value>
+  </data>
+  <data name="MyPostedJobs" xml:space="preserve">
+    <value>My Posted Jobs</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="newapply" xml:space="preserve">
+    <value>new apply</value>
+  </data>
+  <data name="Nonewapply" xml:space="preserve">
+    <value>No new apply</value>
+  </data>
+  <data name="Noresumefound" xml:space="preserve">
+    <value>No resume found. Please try again!</value>
+  </data>
+  <data name="Option" xml:space="preserve">
+    <value>Option</value>
+  </data>
+  <data name="PostedJobs" xml:space="preserve">
+    <value>Posted Jobs</value>
+  </data>
+  <data name="Resultperpage" xml:space="preserve">
+    <value>Result per page</value>
+  </data>
+  <data name="Resumes" xml:space="preserve">
+    <value>Resumes</value>
+  </data>
+  <data name="resumesavailable" xml:space="preserve">
+    <value>resumes available</value>
+  </data>
+  <data name="ResumesSearch" xml:space="preserve">
+    <value>Resumes Search</value>
+  </data>
+  <data name="Viewno" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="WeatTeachinVietnamarededicated" xml:space="preserve">
+    <value>We at TeachinVietnam are dedicated to helping you manage your jobs, add new jobs as well as view applications and responses to your jobs with the best tools.</value>
+  </data>
+  <data name="welcometoyourpagesite" xml:space="preserve">
+    <value>welcome to your page site</value>
+  </data>
+  <data name="Connectwithanytime" xml:space="preserve">
+    <value>Connect with anytime, anyplace, anywhere...</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="Fillarticle" xml:space="preserve">
+    <value>Fill article's details in this form</value>
+  </data>
+  <data name="Logo" xml:space="preserve">
+    <value>Logo</value>
+  </data>
+  <data name="Post" xml:space="preserve">
+    <value>Post</value>
+  </data>
+  <data name="PostnewArticle" xml:space="preserve">
+    <value>Post new Article</value>
+  </data>
+  <data name="Setasslider" xml:space="preserve">
+    <value>Set as slider</value>
+  </data>
+  <data name="Citizenship" xml:space="preserve">
+    <value>Nationality</value>
+  </data>
+  <data name="NameTestimonial" xml:space="preserve">
+    <value>Your name</value>
+  </data>
+  <data name="ConfirmEmail" xml:space="preserve">
+    <value>Confirm  e-mail:&lt;span class='literalNotification'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="ConfirmEmailrequired" xml:space="preserve">
+    <value>Confirm E-mail is required</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Confirm Password:&lt;span class='literalNotification'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="ConfirmPasswordisrequired" xml:space="preserve">
+    <value>Confirm Password is required.</value>
+  </data>
+  <data name="confirmterm" xml:space="preserve">
+    <value>Please confirm that you have read the terms of service.</value>
+  </data>
+  <data name="CountryofCitizenship" xml:space="preserve">
+    <value>Country of Citizenship:&lt;span class='literalNotification'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Createanewaccountasjobseeker" xml:space="preserve">
+    <value>Create a new account</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="Dob" xml:space="preserve">
+    <value>Date of birth:&lt;span class='literalNotification'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Emailisrequired" xml:space="preserve">
+    <value>E-mail is required</value>
+  </data>
+  <data name="Emailvalidformat" xml:space="preserve">
+    <value>E-mail address must be in a valid format</value>
+  </data>
+  <data name="EnterDob" xml:space="preserve">
+    <value>Please input your date of birth.</value>
+  </data>
+  <data name="EnterFirstName" xml:space="preserve">
+    <value>Please enter your first name.</value>
+  </data>
+  <data name="EnterLastName" xml:space="preserve">
+    <value>Please enter your last name.</value>
+  </data>
+  <data name="enterphonenumber" xml:space="preserve">
+    <value>Please enter your phone number.</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>First name:&lt;span class='literalNotification'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Last name:&lt;span class='literalNotification'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Logininformation" xml:space="preserve">
+    <value>Login information</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="Newsletter" xml:space="preserve">
+    <value> If you wish to receive our Newsletter please tick here.</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password:&lt;span class='literalNotification'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="PasswordConfirmationmustmatch" xml:space="preserve">
+    <value>The Password and Confirmation Password must match.</value>
+  </data>
+  <data name="PasswordCustomError" xml:space="preserve">
+    <value>Password only contains characters or numbers, and between 6 and 20 in length.</value>
+  </data>
+  <data name="Passwordisrequired" xml:space="preserve">
+    <value>Password is required.</value>
+  </data>
+  <data name="Personalinformation" xml:space="preserve">
+    <value>Personal information</value>
+  </data>
+  <data name="Pleaseselect" xml:space="preserve">
+    <value>Please select..</value>
+  </data>
+  <data name="Profileimage" xml:space="preserve">
+    <value>Profile image:</value>
+  </data>
+  <data name="selectcitizenship" xml:space="preserve">
+    <value>Please select your citizenship.</value>
+  </data>
+  <data name="Telephone" xml:space="preserve">
+    <value>Telephone:</value>
+  </data>
+  <data name="term" xml:space="preserve">
+    <value> I've read &amp; agree to the &lt;a href='#' target='_blank'&gt;terms of service&lt;/a&gt;</value>
+  </data>
+  <data name="TheEmailConfirmationmustmatch" xml:space="preserve">
+    <value>The E-mail and Confirmation E-mail must match.</value>
+  </data>
+  <data name="workpermit" xml:space="preserve">
+    <value> Do you need a work permit?</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="Yourmobilephoneispreferred" xml:space="preserve">
+    <value>Your mobile phone is preferred</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ChangePasswordBtn" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="ChangeyourDisplay" xml:space="preserve">
+    <value>Change your Display!</value>
+  </data>
+  <data name="charactersinlength" xml:space="preserve">
+    <value>characters in length.</value>
+  </data>
+  <data name="Closing" xml:space="preserve">
+    <value>Closing</value>
+  </data>
+  <data name="ConfirmNewPassword" xml:space="preserve">
+    <value>Confirm New Password:</value>
+  </data>
+  <data name="ConfirmNewPasswordisrequired" xml:space="preserve">
+    <value>Confirm New Password is required.</value>
+  </data>
+  <data name="CreateaCV" xml:space="preserve">
+    <value>Create a CV</value>
+  </data>
+  <data name="DateSaved" xml:space="preserve">
+    <value>Date Saved</value>
+  </data>
+  <data name="Deletethisappliedjob" xml:space="preserve">
+    <value>Delete this applied job from list</value>
+  </data>
+  <data name="Deletethissavedjob" xml:space="preserve">
+    <value>Delete this saved job</value>
+  </data>
+  <data name="DisplayyourAddress" xml:space="preserve">
+    <value>Display your Address:</value>
+  </data>
+  <data name="DisplayyourPhoneInfo" xml:space="preserve">
+    <value>Display your Phone Info:</value>
+  </data>
+  <data name="DisplayyourResume" xml:space="preserve">
+    <value>Display your Resume:</value>
+  </data>
+  <data name="Jobsfound" xml:space="preserve">
+    <value> jobs found</value>
+  </data>
+  <data name="Managesavedjobs" xml:space="preserve">
+    <value>Manage saved jobs</value>
+  </data>
+  <data name="Manageyourapplications" xml:space="preserve">
+    <value>Manage your applications</value>
+  </data>
+  <data name="Manageyoursavedjobs" xml:space="preserve">
+    <value>Manage your saved jobs</value>
+  </data>
+  <data name="MyCVs" xml:space="preserve">
+    <value>My CV</value>
+  </data>
+  <data name="Myjobapplications" xml:space="preserve">
+    <value>My job applications</value>
+  </data>
+  <data name="Myjobsmanagement" xml:space="preserve">
+    <value>My jobs management</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>New Password:</value>
+  </data>
+  <data name="NewPasswordisrequired" xml:space="preserve">
+    <value>New Password is required.</value>
+  </data>
+  <data name="Newpasswordsarerequired" xml:space="preserve">
+    <value>New passwords are required to be a minimum of</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="Noresume" xml:space="preserve">
+    <value>No resume found</value>
+  </data>
+  <data name="of" xml:space="preserve">
+    <value>of</value>
+  </data>
+  <data name="OldPassword" xml:space="preserve">
+    <value>Old Password:</value>
+  </data>
+  <data name="OldPasswordisrequired" xml:space="preserve">
+    <value>Old Password is required.</value>
+  </data>
+  <data name="Organization" xml:space="preserve">
+    <value>Organization</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>Page</value>
+  </data>
+  <data name="Prev" xml:space="preserve">
+    <value>Prev</value>
+  </data>
+  <data name="PrivacySettings" xml:space="preserve">
+    <value>Privacy Settings</value>
+  </data>
+  <data name="resumesfound" xml:space="preserve">
+    <value> resumes found</value>
+  </data>
+  <data name="Return" xml:space="preserve">
+    <value>Return</value>
+  </data>
+  <data name="Reviewresume" xml:space="preserve">
+    <value>Review resume</value>
+  </data>
+  <data name="SortBy" xml:space="preserve">
+    <value>Sort By</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="TheConfirmNewPasswordmustmatch" xml:space="preserve">
+    <value>The Confirm New Password must match the New Password entry.</value>
+  </data>
+  <data name="Thedateyousaved" xml:space="preserve">
+    <value>The date you saved or applied for this job</value>
+  </data>
+  <data name="toMyJobs" xml:space="preserve">
+    <value>to My Jobs!</value>
+  </data>
+  <data name="toMyJobsWelcome" xml:space="preserve">
+    <value>We at TeachinVietnam are dedicated to helping you find your next job! Here we provide
+            you with the best tools to embark on a successful job hunt!</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="Updateyourresume" xml:space="preserve">
+    <value>Update your resume</value>
+  </data>
+  <data name="Usetheform" xml:space="preserve">
+    <value>Use the form below to change your password.</value>
+  </data>
+  <data name="Viewthisjob" xml:space="preserve">
+    <value>View this job</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="Birth" xml:space="preserve">
+    <value>Birth</value>
+  </data>
+  <data name="ContactMe" xml:space="preserve">
+    <value>Contact Me</value>
+  </data>
+  <data name="ContacttothisCV" xml:space="preserve">
+    <value>Contact to this CV</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit...</value>
+  </data>
+  <data name="Fullname" xml:space="preserve">
+    <value>Full name</value>
+  </data>
+  <data name="Major" xml:space="preserve">
+    <value>Major</value>
+  </data>
+  <data name="Nativeof" xml:space="preserve">
+    <value>Native of</value>
+  </data>
+  <data name="PersonalDetails" xml:space="preserve">
+    <value>Personal Details</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="Pleaseinputcontactemail" xml:space="preserve">
+    <value>Please input contact email.</value>
+  </data>
+  <data name="Pleaseinputmailcontent" xml:space="preserve">
+    <value>Please input mail content.</value>
+  </data>
+  <data name="Pleaseinputmailsubject" xml:space="preserve">
+    <value>Please input mail subject.</value>
+  </data>
+  <data name="Pleaseinputorganizationname" xml:space="preserve">
+    <value>Please input organization name.</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="SavethisResume" xml:space="preserve">
+    <value>Save this Resume</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="validformat" xml:space="preserve">
+    <value>E-mail address must be in a valid format</value>
+  </data>
+  <data name="ByPost" xml:space="preserve">
+    <value>By Post:</value>
+  </data>
+  <data name="Callusat" xml:space="preserve">
+    <value>Call us at:</value>
+  </data>
+  <data name="CallusatNo" xml:space="preserve">
+    <value>(84) 046 6847964</value>
+  </data>
+  <data name="contactaddress" xml:space="preserve">
+    <value>17th floor, DMC building, 535 Kim Ma st., Ba Dinh dist., Hanoi, Vietnam.</value>
+  </data>
+  <data name="EmailAddress" xml:space="preserve">
+    <value>Email Address:</value>
+  </data>
+  <data name="Fillarticlesdetailsinthisform" xml:space="preserve">
+    <value>Fill article's details in this form</value>
+  </data>
+  <data name="Ifyouhave" xml:space="preserve">
+    <value>If you have a query, we'd like to assist...</value>
+  </data>
+  <data name="Ihavegoodideasforthewebsite" xml:space="preserve">
+    <value>I have good ideas for the website</value>
+  </data>
+  <data name="infoteachinvietnam" xml:space="preserve">
+    <value>info@teachinvietnam.com.vn</value>
+  </data>
+  <data name="Iwouldlikesomehelpusingthewebsite" xml:space="preserve">
+    <value>I would like some help using the website</value>
+  </data>
+  <data name="Iwouldliketoadvertiseajob" xml:space="preserve">
+    <value>I would like to advertise a job</value>
+  </data>
+  <data name="Iwouldliketoreportanerrorwithajob" xml:space="preserve">
+    <value>I would like to report an error with a job</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Message:</value>
+  </data>
+  <data name="Ormailusat" xml:space="preserve">
+    <value>Or mail us at:</value>
+  </data>
+  <data name="Pleasecheckyourregisteredemail" xml:space="preserve">
+    <value>Please check your registered email to activate your account.</value>
+  </data>
+  <data name="Pleasecontactus" xml:space="preserve">
+    <value>Please contact us at anytime by any of the following ways:</value>
+  </data>
+  <data name="Pleaseenterarticlebody" xml:space="preserve">
+    <value>Please enter article body</value>
+  </data>
+  <data name="Pleaseenterarticletitle" xml:space="preserve">
+    <value>Please enter article title</value>
+  </data>
+  <data name="Pleaseenteryourmail" xml:space="preserve">
+    <value>Please enter your mail</value>
+  </data>
+  <data name="Pleaseenteryourmessage" xml:space="preserve">
+    <value>Please enter your message</value>
+  </data>
+  <data name="Pleaseenteryourname" xml:space="preserve">
+    <value>Please enter your name</value>
+  </data>
+  <data name="Pleaseselectyourreason" xml:space="preserve">
+    <value>Please select your reason</value>
+  </data>
+  <data name="Reasonforcontact" xml:space="preserve">
+    <value>Reason for contact:</value>
+  </data>
+  <data name="returntoHomepage" xml:space="preserve">
+    <value>Click here to return to the Homepage!</value>
+  </data>
+  <data name="Submityourfeedback" xml:space="preserve">
+    <value>Submit your feedback</value>
+  </data>
+  <data name="Telephoneno" xml:space="preserve">
+    <value>Telephone no:</value>
+  </data>
+  <data name="Thankyouforregistering" xml:space="preserve">
+    <value>Thank you for registering!</value>
+  </data>
+  <data name="validmailformat" xml:space="preserve">
+    <value>E-mail must be in a valid format</value>
+  </data>
+  <data name="Youremailaddress" xml:space="preserve">
+    <value>Your email address will not be added to any mailing list.</value>
+  </data>
+  <data name="YourName" xml:space="preserve">
+    <value>Your Name:</value>
+  </data>
+  <data name="yourstory" xml:space="preserve">
+    <value>Your story</value>
+  </data>
+  <data name="AcademicTeacher" xml:space="preserve">
+    <value>Academic Teacher</value>
+  </data>
+  <data name="accounthomepage" xml:space="preserve">
+    <value>&gt;&gt; Click here to return your account homepage.</value>
+  </data>
+  <data name="Added" xml:space="preserve">
+    <value>Added</value>
+  </data>
+  <data name="Addmore" xml:space="preserve">
+    <value>Add more..</value>
+  </data>
+  <data name="Address2" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="Administration" xml:space="preserve">
+    <value>Administration</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="Applyforthisjob" xml:space="preserve">
+    <value>Apply for this job</value>
+  </data>
+  <data name="ApplyTo" xml:space="preserve">
+    <value>Apply To:</value>
+  </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>Attachment:</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="Clickheretologin" xml:space="preserve">
+    <value>Please &lt;a href='Login.aspx'&gt;login&lt;/a&gt; using your new password.</value>
+  </data>
+  <data name="Clickheretoreview" xml:space="preserve">
+    <value>&gt;&gt; Click here to review your CV.</value>
+  </data>
+  <data name="Clickheretoyouraccounthomepage" xml:space="preserve">
+    <value>&gt;&gt; Click here to return your account homepage.</value>
+  </data>
+  <data name="ContactEmployer" xml:space="preserve">
+    <value>Contact Employer</value>
+  </data>
+  <data name="Createyouronlineresume" xml:space="preserve">
+    <value>Create your online resume will help you :</value>
+  </data>
+  <data name="Currentlyyoudonothavepersonalresume" xml:space="preserve">
+    <value>Currently you do not have personal resume on TeachinVietnam or it is not accompanying this response. It is optional but very important to include one. Please upload resume and required documents from your computer.</value>
+  </data>
+  <data name="CVInformation" xml:space="preserve">
+    <value>CV Information</value>
+  </data>
+  <data name="Dear" xml:space="preserve">
+    <value>Dear</value>
+  </data>
+  <data name="Employer" xml:space="preserve">
+    <value>Employer</value>
+  </data>
+  <data name="EmploymentType" xml:space="preserve">
+    <value>Employment Type</value>
+  </data>
+  <data name="Enteryouremail" xml:space="preserve">
+    <value>Enter your email to receive your password.</value>
+  </data>
+  <data name="Finallyletusknow" xml:space="preserve">
+    <value>Finally, let us know more about you…</value>
+  </data>
+  <data name="ForgotYourPassword" xml:space="preserve">
+    <value>Forgot Your Password?</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="FromK12" xml:space="preserve">
+    <value>From K-12</value>
+  </data>
+  <data name="Gender2" xml:space="preserve">
+    <value>Gender:</value>
+  </data>
+  <data name="hour" xml:space="preserve">
+    <value>hour</value>
+  </data>
+  <data name="JobDetails" xml:space="preserve">
+    <value>Job Details:</value>
+  </data>
+  <data name="JobLevel" xml:space="preserve">
+    <value>Job Level</value>
+  </data>
+  <data name="JobLocation" xml:space="preserve">
+    <value>Job Location</value>
+  </data>
+  <data name="JobSummary" xml:space="preserve">
+    <value>Job Summary</value>
+  </data>
+  <data name="JobTitle" xml:space="preserve">
+    <value>Job Title:</value>
+  </data>
+  <data name="Keepediting" xml:space="preserve">
+    <value>Keep editing</value>
+  </data>
+  <data name="Mailtocontact" xml:space="preserve">
+    <value>Mail to contact</value>
+  </data>
+  <data name="Message2" xml:space="preserve">
+    <value>Message:</value>
+  </data>
+  <data name="month2" xml:space="preserve">
+    <value>month</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="Nativeof2" xml:space="preserve">
+    <value>Native of:</value>
+  </data>
+  <data name="Negotiable" xml:space="preserve">
+    <value>Negotiable</value>
+  </data>
+  <data name="NewestExecutiveJobs" xml:space="preserve">
+    <value>Newest Executive Jobs</value>
+  </data>
+  <data name="NewJobs" xml:space="preserve">
+    <value>New Jobs</value>
+  </data>
+  <data name="Nowyoucanlogin" xml:space="preserve">
+    <value>Now you can login with the new password.</value>
+  </data>
+  <data name="Pleaseclickheretomanageyourjob" xml:space="preserve">
+    <value>&gt;&gt; Please click here to manage your job.</value>
+  </data>
+  <data name="PleaseenterApplication" xml:space="preserve">
+    <value>Please enter Application Subject.</value>
+  </data>
+  <data name="Pleaseentercoverletter" xml:space="preserve">
+    <value>Please enter cover letter</value>
+  </data>
+  <data name="Pleaseentertheinformation" xml:space="preserve">
+    <value>Please enter the information below to complete your CV.</value>
+  </data>
+  <data name="Pleaseselectatleastonefile" xml:space="preserve">
+    <value>Please select at least one file with correct format.</value>
+  </data>
+  <data name="RecoveryPassword" xml:space="preserve">
+    <value>Recovery Password</value>
+  </data>
+  <data name="RequiredCitizenship" xml:space="preserve">
+    <value>Required Citizenship</value>
+  </data>
+  <data name="RequiredEducation" xml:space="preserve">
+    <value>Required Education</value>
+  </data>
+  <data name="Salary" xml:space="preserve">
+    <value>Salary</value>
+  </data>
+  <data name="Savethisjob" xml:space="preserve">
+    <value>Save this job!</value>
+  </data>
+  <data name="ShowcaseyourResume" xml:space="preserve">
+    <value>- Showcase your Resume to employers in your selected locations</value>
+  </data>
+  <data name="SomeEmployersseek" xml:space="preserve">
+    <value>Some Employers seek some information given below. Please fill in the details.</value>
+  </data>
+  <data name="Specified" xml:space="preserve">
+    <value>Specified</value>
+  </data>
+  <data name="Subject2" xml:space="preserve">
+    <value>Subject:</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="Submit2" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="SubmityourResume" xml:space="preserve">
+    <value>- Submit your Resume and apply for the best job quickly and easily</value>
+  </data>
+  <data name="SuccessText" xml:space="preserve">
+    <value>An email has been sent to your registered email to help you reset your password. Please check!</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="Uploadoneormorefiles" xml:space="preserve">
+    <value>Upload one or more files.</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>User Name:</value>
+  </data>
+  <data name="UserNameisrequired" xml:space="preserve">
+    <value>User Name is required.</value>
+  </data>
+  <data name="Viewallnewjobs" xml:space="preserve">
+    <value>View all new jobs...</value>
+  </data>
+  <data name="Viewed" xml:space="preserve">
+    <value>Viewed</value>
+  </data>
+  <data name="VisitEmployerWebsite" xml:space="preserve">
+    <value>Visit Employer Website</value>
+  </data>
+  <data name="week" xml:space="preserve">
+    <value>week</value>
+  </data>
+  <data name="Wehaverestored" xml:space="preserve">
+    <value>We have restored your password.</value>
+  </data>
+  <data name="Wishyousuccess" xml:space="preserve">
+    <value>Wish you a great career a head!</value>
+  </data>
+  <data name="Youhavesuccessfullysubmitted" xml:space="preserve">
+    <value>You have successfully submitted your CV. It will be posted in 12 hours.</value>
+  </data>
+  <data name="YourMail" xml:space="preserve">
+    <value>Your Mail:</value>
+  </data>
+  <data name="Yourmessageorcoverletter" xml:space="preserve">
+    <value>Your message or cover letter has 5000 characters limitted</value>
+  </data>
+  <data name="YourName2" xml:space="preserve">
+    <value>Your Name:</value>
+  </data>
+  <data name="Yourpasswordbeenrestored" xml:space="preserve">
+    <value>Your password has been changed successfully.</value>
+  </data>
+  <data name="Yourpasswordhasbeenchanged" xml:space="preserve">
+    <value>Your password has been changed successfully. </value>
+  </data>
+  <data name="Yourresumehasbeensentto" xml:space="preserve">
+    <value>Your resume has been sent to</value>
+  </data>
+  <data name="Accountactivated" xml:space="preserve">
+    <value>Account activated</value>
+  </data>
+  <data name="AdvanceJobSearch" xml:space="preserve">
+    <value>Advance Job Search</value>
+  </data>
+  <data name="Chooseoneormoreemploymenttypes" xml:space="preserve">
+    <value>Choose one or more employment types:</value>
+  </data>
+  <data name="Chooseoneormorejoblocations" xml:space="preserve">
+    <value>Choose one or more job locations:</value>
+  </data>
+  <data name="Commentlist" xml:space="preserve">
+    <value>Comment list</value>
+  </data>
+  <data name="Enteryourkeyword" xml:space="preserve">
+    <value>Enter your keyword</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="Pleaseclickheretocomplete" xml:space="preserve">
+    <value>&gt;&gt; Please click here to complete your CV.</value>
+  </data>
+  <data name="Pleaseclickheretopostajob" xml:space="preserve">
+    <value>&gt;&gt; Please click here to post a job.</value>
+  </data>
+  <data name="Pleaseclickheretoyourmanagement" xml:space="preserve">
+    <value>&gt;&gt; Please click here to the Employers home page.</value>
+  </data>
+  <data name="Pleaseentercommentcontent" xml:space="preserve">
+    <value>Please enter comment content</value>
+  </data>
+  <data name="Pleaseentertherightemail" xml:space="preserve">
+    <value>Please enter the right email format. Please try again.</value>
+  </data>
+  <data name="Pleaseenteryouremail" xml:space="preserve">
+    <value>Please enter your email</value>
+  </data>
+  <data name="Pleaseinputyourjobtitle" xml:space="preserve">
+    <value>Please input your job title: </value>
+  </data>
+  <data name="Regiteredsuccessfully" xml:space="preserve">
+    <value>Regitered successfully</value>
+  </data>
+  <data name="Returntotestimoniallist" xml:space="preserve">
+    <value>Return to testimonial list</value>
+  </data>
+  <data name="SchoolType" xml:space="preserve">
+    <value>School Type</value>
+  </data>
+  <data name="Searchresult" xml:space="preserve">
+    <value>Search result</value>
+  </data>
+  <data name="Selectacitizenship" xml:space="preserve">
+    <value>Select a citizenship:</value>
+  </data>
+  <data name="SelectaSchooltype" xml:space="preserve">
+    <value>Select a School type:</value>
+  </data>
+  <data name="Selectoneormorecategories" xml:space="preserve">
+    <value>Select one or more job categories that match your wish:</value>
+  </data>
+  <data name="Selectoneormorejoblevel" xml:space="preserve">
+    <value>Select one or more job level:</value>
+  </data>
+  <data name="TeachinVietnam" xml:space="preserve">
+    <value>Teach in Vietnam</value>
+  </data>
+  <data name="Testimonials" xml:space="preserve">
+    <value>Testimonials</value>
+  </data>
+  <data name="Thanksforyourcomment" xml:space="preserve">
+    <value>Thanks for your comment</value>
+  </data>
+  <data name="Writeyourcomment" xml:space="preserve">
+    <value>Write your comment</value>
+  </data>
+  <data name="Youraccountisactivatedsuccessfully" xml:space="preserve">
+    <value>Your account is activated successfully.</value>
+  </data>
+  <data name="CreateanewResume" xml:space="preserve">
+    <value>Create a new Resume</value>
+  </data>
+  <data name="PostnewQuestion" xml:space="preserve">
+    <value>Add new question</value>
+  </data>
+  <data name="Achievements" xml:space="preserve">
+    <value>Achievements:</value>
+  </data>
+  <data name="Achievements2" xml:space="preserve">
+    <value>Achievements:</value>
+  </data>
+  <data name="Addedon" xml:space="preserve">
+    <value>Added on</value>
+  </data>
+  <data name="AdvanceCVsearch" xml:space="preserve">
+    <value>Advance CV search</value>
+  </data>
+  <data name="Answer" xml:space="preserve">
+    <value>Answer</value>
+  </data>
+  <data name="Answerlist" xml:space="preserve">
+    <value>Answer list</value>
+  </data>
+  <data name="Answerthisquestion" xml:space="preserve">
+    <value>Answer this question</value>
+  </data>
+  <data name="CurrentJobLevel" xml:space="preserve">
+    <value>Current Job Level</value>
+  </data>
+  <data name="CurrentJobLevel2" xml:space="preserve">
+    <value>Current Job Level:</value>
+  </data>
+  <data name="CurrentJobLevelspan" xml:space="preserve">
+    <value>Current Job Level:&lt;span class='literalNotification'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="CurrentResidence" xml:space="preserve">
+    <value>Current Residence:</value>
+  </data>
+  <data name="CurrentResidencespan" xml:space="preserve">
+    <value>Current Residence:&lt;span class='literalNotification'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="CVname" xml:space="preserve">
+    <value>CV name</value>
+  </data>
+  <data name="DesiredEmployment" xml:space="preserve">
+    <value>Desired Employment:</value>
+  </data>
+  <data name="Desiredemploymentspan" xml:space="preserve">
+    <value>Desired employment:&lt;span class='literalNotification'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="DesiredEmploymenttype" xml:space="preserve">
+    <value>Desired Employment type:</value>
+  </data>
+  <data name="Desiredemploymenttypespan" xml:space="preserve">
+    <value>Desired employment type:&lt;span class='literalNotification'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Desiredjoblevelspan" xml:space="preserve">
+    <value>Desired job level:&lt;span class='literalNotification'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Desiredlocationspan" xml:space="preserve">
+    <value>Desired location:&lt;span class='literalNotification'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Desiredtravel" xml:space="preserve">
+    <value>Desired travel:</value>
+  </data>
+  <data name="Desiredtravelspan" xml:space="preserve">
+    <value>Desired travel:&lt;span class='literalNotification'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Editphoto" xml:space="preserve">
+    <value>Edit photo:</value>
+  </data>
+  <data name="EducationalLevel" xml:space="preserve">
+    <value>Educational Level:</value>
+  </data>
+  <data name="EduLevel" xml:space="preserve">
+    <value>Edu/Level:</value>
+  </data>
+  <data name="EduLevelspan" xml:space="preserve">
+    <value>Edu/Level:&lt;span class='literalNotification'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Formatmmddyyy" xml:space="preserve">
+    <value>Format: mm/dd/yyyy</value>
+  </data>
+  <data name="HiringAdvices" xml:space="preserve">
+    <value>Hiring Advices</value>
+  </data>
+  <data name="Howsoonarespan" xml:space="preserve">
+    <value>How soon are you available to work:&lt;span class='literalNotification'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Howsoonareyouavailabletowork" xml:space="preserve">
+    <value>How soon are you available to work:</value>
+  </data>
+  <data name="Iminterested" xml:space="preserve">
+    <value>I’m interested to teach in and travel to:</value>
+  </data>
+  <data name="LanguageSpoken" xml:space="preserve">
+    <value>Language Spoken:</value>
+  </data>
+  <data name="Languagesproficiency" xml:space="preserve">
+    <value>Languages proficiency:&lt;span class='literalNotification'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Majorspan" xml:space="preserve">
+    <value>Major:&lt;span class='literalNotification'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Memberships" xml:space="preserve">
+    <value>Memberships:</value>
+  </data>
+  <data name="Memberships2" xml:space="preserve">
+    <value>Memberships:</value>
+  </data>
+  <data name="MostRecentPosition" xml:space="preserve">
+    <value>Most Recent Position:</value>
+  </data>
+  <data name="MostRecentPositionspan" xml:space="preserve">
+    <value>Most Recent Position:&lt;span class='literalNotification'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Mothertongueispreferred" xml:space="preserve">
+    <value>Mother tongue is preferred</value>
+  </data>
+  <data name="MyProfileissearchable" xml:space="preserve">
+    <value> My Profile is searchable</value>
+  </data>
+  <data name="NewJobsList" xml:space="preserve">
+    <value>New Jobs List</value>
+  </data>
+  <data name="PersonalStatement2" xml:space="preserve">
+    <value>Personal Statement:</value>
+  </data>
+  <data name="Photoisupdatedsuccessfully" xml:space="preserve">
+    <value>Photo is updated successfully!</value>
+  </data>
+  <data name="Pleaseenteranswercontent" xml:space="preserve">
+    <value>Please enter answer content</value>
+  </data>
+  <data name="PleaseenterCVname" xml:space="preserve">
+    <value>Please enter CV name:</value>
+  </data>
+  <data name="Pleaseenteryourcurrentlivinglocation" xml:space="preserve">
+    <value>Please enter your current living location</value>
+  </data>
+  <data name="Pleaseenteryourdesired" xml:space="preserve">
+    <value>Please enter your desired time to work.</value>
+  </data>
+  <data name="Pleaseenteryourdesiredlocation" xml:space="preserve">
+    <value>Please enter your desired location</value>
+  </data>
+  <data name="Pleaseenteryourlanguageprofiency" xml:space="preserve">
+    <value>Please enter your language profiency</value>
+  </data>
+  <data name="Pleaseenteryourmajor" xml:space="preserve">
+    <value>Please enter your major</value>
+  </data>
+  <data name="Pleaseenteryourquestion" xml:space="preserve">
+    <value>Please enter your question</value>
+  </data>
+  <data name="Pleaseenteryourrecentposition" xml:space="preserve">
+    <value>Please enter your recent position.</value>
+  </data>
+  <data name="Pleaseenteryourwillingtorelocate" xml:space="preserve">
+    <value>Please enter your willing to relocate.</value>
+  </data>
+  <data name="Pleaseinputyourdesiredtravel" xml:space="preserve">
+    <value>Please input your desired travel</value>
+  </data>
+  <data name="Pleaseinputyourexpectedsalary" xml:space="preserve">
+    <value>Please input your expected salary</value>
+  </data>
+  <data name="Pleaseselectyourcurrentjoblevel" xml:space="preserve">
+    <value>Please select your current job level.</value>
+  </data>
+  <data name="Pleaseselectyourdesiredcategory" xml:space="preserve">
+    <value>Please select your desired category.</value>
+  </data>
+  <data name="Pleaseselectyourdesiredemploymenttype" xml:space="preserve">
+    <value>Please select your desired employment type</value>
+  </data>
+  <data name="Pleaseselectyourdesiredjoblevel" xml:space="preserve">
+    <value>Please select your desired job level</value>
+  </data>
+  <data name="Pleaseselectyouredulevel" xml:space="preserve">
+    <value>Please select your edu level.</value>
+  </data>
+  <data name="Pleaseselectyouryearofexperience" xml:space="preserve">
+    <value>Please select your year of experience.</value>
+  </data>
+  <data name="ProfileInfomation" xml:space="preserve">
+    <value>Profile Infomation</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>Question:</value>
+  </data>
+  <data name="RelatedExperience" xml:space="preserve">
+    <value>Related Experience:</value>
+  </data>
+  <data name="RelatedExperience2" xml:space="preserve">
+    <value>Related Experience:</value>
+  </data>
+  <data name="Returntolist" xml:space="preserve">
+    <value>Return to list</value>
+  </data>
+  <data name="Salaryexpectation" xml:space="preserve">
+    <value>Salary expectation:</value>
+  </data>
+  <data name="Salaryexpectation2" xml:space="preserve">
+    <value>Salary expectation:</value>
+  </data>
+  <data name="Salarymustbeinnumber" xml:space="preserve">
+    <value>Salary must be in number</value>
+  </data>
+  <data name="Selectaeducationallevel" xml:space="preserve">
+    <value>Select a educational level:</value>
+  </data>
+  <data name="Selectyourexperience" xml:space="preserve">
+    <value>Select your experience:</value>
+  </data>
+  <data name="SkillsInterests" xml:space="preserve">
+    <value>Skills &amp; Interests:</value>
+  </data>
+  <data name="SkillsInterests2" xml:space="preserve">
+    <value>Skills &amp; Interests:</value>
+  </data>
+  <data name="SpecializationMajor" xml:space="preserve">
+    <value>Specialization/Major:</value>
+  </data>
+  <data name="Willingtorelocate" xml:space="preserve">
+    <value>Willing to relocate:&lt;span class='literalNotification'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Willingtorelocate2" xml:space="preserve">
+    <value>Willing to relocate:</value>
+  </data>
+  <data name="YearofExperience" xml:space="preserve">
+    <value>Year of Experience</value>
+  </data>
+  <data name="Yearsofexperience" xml:space="preserve">
+    <value>Years of experience:</value>
+  </data>
+  <data name="YearsofExperiencespan" xml:space="preserve">
+    <value>Years of Experience:&lt;span class='literalNotification'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Youranswer" xml:space="preserve">
+    <value>Your answer:</value>
+  </data>
+  <data name="YourDoBisnotvalid" xml:space="preserve">
+    <value>Your DoB is not valid. Please try another.</value>
+  </data>
+  <data name="Yourpersonalstatement" xml:space="preserve">
+    <value>Your personal statement:</value>
+  </data>
+  <data name="Yourprofileisupdated" xml:space="preserve">
+    <value>Your profile is updated successfully!</value>
+  </data>
+  <data name="Addressspan" xml:space="preserve">
+    <value>Address:&lt;span class='literalNotification'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Briefinformation" xml:space="preserve">
+    <value>Brief information:&lt;span class='literalNotification'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Canbeselected" xml:space="preserve">
+    <value>Can be selected when oranization type is Pre K-12</value>
+  </data>
+  <data name="Contactinformation" xml:space="preserve">
+    <value>Contact information</value>
+  </data>
+  <data name="Countryspan" xml:space="preserve">
+    <value>Country:&lt;span class='literalNotification'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="CreateanEmployerAccount" xml:space="preserve">
+    <value>Create an Employer Account</value>
+  </data>
+  <data name="Faxnumber" xml:space="preserve">
+    <value>Fax number:</value>
+  </data>
+  <data name="Ivereadagreeto" xml:space="preserve">
+    <value> I've read &amp; agree to the &lt;a href='../publicArea/terms-conditions.aspx' target='_blank'&gt;terms of use&lt;/a&gt; and &lt;a href='../publicArea/terms-conditions.aspx#privacy-policy' target='_blank'&gt;privacy plolicy &lt;/a&gt;&lt;span class='literalNotification'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Logo2" xml:space="preserve">
+    <value>Logo:</value>
+  </data>
+  <data name="MiddleInitial" xml:space="preserve">
+    <value>Middle Initial:</value>
+  </data>
+  <data name="Organizationinfomation" xml:space="preserve">
+    <value>Organization infomation</value>
+  </data>
+  <data name="Organizationnamespan" xml:space="preserve">
+    <value>Organization name:&lt;span class='literalNotification'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Organizationtype" xml:space="preserve">
+    <value>School type:&lt;span class='literalNotification'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Phonemustbenumberfromdigits" xml:space="preserve">
+    <value>Phone must be number from 7 - 12 digits.</value>
+  </data>
+  <data name="Phonespan" xml:space="preserve">
+    <value>Phone:&lt;span class='literalNotification'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Pleaseconfirmthat" xml:space="preserve">
+    <value>Please confirm that you have read the terms of service.</value>
+  </data>
+  <data name="Pleaseinputtheaddress" xml:space="preserve">
+    <value>Please input the address.</value>
+  </data>
+  <data name="Pleaseinputthecountry" xml:space="preserve">
+    <value>Please input the country.</value>
+  </data>
+  <data name="Pleaseinputtheorganizationlocation" xml:space="preserve">
+    <value>Please input the organization's location.</value>
+  </data>
+  <data name="Pleaseinputtheorganizationname" xml:space="preserve">
+    <value>Please input the organization name.</value>
+  </data>
+  <data name="Pleaseinputtheorganizationphone" xml:space="preserve">
+    <value>Please input the organization phone.</value>
+  </data>
+  <data name="Pleaseinputtheorganizationtype" xml:space="preserve">
+    <value>Please select your organization type.</value>
+  </data>
+  <data name="Pleaseinputtheorganizationtype2" xml:space="preserve">
+    <value>Please select your organization type.</value>
+  </data>
+  <data name="Pleaseinputthephonenumber" xml:space="preserve">
+    <value>Please input the phone number.</value>
+  </data>
+  <data name="Pleaseselectalocation" xml:space="preserve">
+    <value>Please select a location</value>
+  </data>
+  <data name="Pleasesellectaschooltype" xml:space="preserve">
+    <value>Please select a school type</value>
+  </data>
+  <data name="Salutation" xml:space="preserve">
+    <value>Salutation:</value>
+  </data>
+  <data name="Theemailaddresshasalreadybeenused" xml:space="preserve">
+    <value>The email address has already been used. Please enter another one. Thank you!</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Website:</value>
+  </data>
+  <data name="Yourlandlineispreferred" xml:space="preserve">
+    <value>Your landline is preferred.</value>
+  </data>
+  <data name="ZipCode" xml:space="preserve">
+    <value>Zip/Postal Code:</value>
+  </data>
+  <data name="Advertiseajob" xml:space="preserve">
+    <value>Advertise a job</value>
+  </data>
+  <data name="ClosingDate2" xml:space="preserve">
+    <value>Closing Date</value>
+  </data>
+  <data name="ContactName" xml:space="preserve">
+    <value>Contact Name</value>
+  </data>
+  <data name="ContactPerson" xml:space="preserve">
+    <value>Contact Person</value>
+  </data>
+  <data name="EducationRequirement" xml:space="preserve">
+    <value>Education Requirement</value>
+  </data>
+  <data name="EmailForApplications" xml:space="preserve">
+    <value>Email For Applications</value>
+  </data>
+  <data name="EmploymentType2" xml:space="preserve">
+    <value>Employment Type</value>
+  </data>
+  <data name="JobDescription" xml:space="preserve">
+    <value>Job Description</value>
+  </data>
+  <data name="JobInformation" xml:space="preserve">
+    <value>Job Information</value>
+  </data>
+  <data name="Pleaseinputthecategory" xml:space="preserve">
+    <value>Please input the category</value>
+  </data>
+  <data name="Pleaseinputtheemploymenttype" xml:space="preserve">
+    <value>Please input the employment type</value>
+  </data>
+  <data name="Pleaseinputthejoblevel" xml:space="preserve">
+    <value>Please input the job level</value>
+  </data>
+  <data name="Pleaseinputthejoblocation" xml:space="preserve">
+    <value>Please input the job location</value>
+  </data>
+  <data name="Pleaseinputthejobsclosingdate" xml:space="preserve">
+    <value>Please input the job's closing date</value>
+  </data>
+  <data name="Pleaseinputthejobtitle" xml:space="preserve">
+    <value>Please input the job title</value>
+  </data>
+  <data name="Pleaseinputyourcontactname" xml:space="preserve">
+    <value>Please input your contact name</value>
+  </data>
+  <data name="PostaTeachingJob" xml:space="preserve">
+    <value>Post a Teaching Job</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="Stickhere" xml:space="preserve">
+    <value> Stick here if you want this job appear as executive job</value>
+  </data>
+  <data name="WorkPlace" xml:space="preserve">
+    <value>Work Place</value>
+  </data>
+  <data name="hiddentojobseekers" xml:space="preserve">
+    <value>(hidden to job seekers)</value>
+  </data>
+  <data name="at" xml:space="preserve">
+    <value>at</value>
+  </data>
+  <data name="Change" xml:space="preserve">
+    <value>Change:</value>
+  </data>
+  <data name="comment" xml:space="preserve">
+    <value>comment.</value>
+  </data>
+  <data name="comments" xml:space="preserve">
+    <value>comments.</value>
+  </data>
+  <data name="LastestCommentby" xml:space="preserve">
+    <value>Lastest Comment by</value>
+  </data>
+  <data name="Nocomment" xml:space="preserve">
+    <value>No comment.</value>
+  </data>
+  <data name="PersonalImage" xml:space="preserve">
+    <value>Personal Image:</value>
+  </data>
+  <data name="Profileyoumight" xml:space="preserve">
+    <value>Profile you might want to share in your post.</value>
+  </data>
+  <data name="Thanksforyouranswer" xml:space="preserve">
+    <value>Thanks for your answer!</value>
+  </data>
+  <data name="Updatefails" xml:space="preserve">
+    <value>Update fails, please select another photo.</value>
+  </data>
+  <data name="Wishyousuccesstorecruittalents" xml:space="preserve">
+    <value>Wish you success with your recruitment.</value>
+  </data>
+  <data name="Yourcontacthasbeensentsuccessfully" xml:space="preserve">
+    <value>Your contact has been sent successfully.</value>
+  </data>
+  <data name="Yourjobwillbeactivated" xml:space="preserve">
+    <value>Your job will be activated around 12 hours from now on.</value>
+  </data>
+  <data name="Yourquestionispostedsuccessfully" xml:space="preserve">
+    <value>Your question is posted successfully!</value>
+  </data>
+  <data name="Pleaseentercorrectcaptcha" xml:space="preserve">
+    <value>Please enter correct captcha</value>
+  </data>
+  <data name="JobSearch2" xml:space="preserve">
+    <value>Job Search</value>
+  </data>
+  <data name="Photosharing" xml:space="preserve">
+    <value>Photo sharing</value>
+  </data>
+  <data name="categoriesselected" xml:space="preserve">
+    <value>categories selected</value>
+  </data>
+  <data name="citizenshipsselected" xml:space="preserve">
+    <value>citizenships selected</value>
+  </data>
+  <data name="Detail" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="JobseekerscannotsavethisCV" xml:space="preserve">
+    <value>Sorry! Job seekers can not save this CV</value>
+  </data>
+  <data name="locationsselected" xml:space="preserve">
+    <value>locations selected</value>
+  </data>
+  <data name="OtherReason" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="Pleaseenteryourdetail" xml:space="preserve">
+    <value>Please enter your detail</value>
+  </data>
+  <data name="Thisresumesavedinto" xml:space="preserve">
+    <value>This resume has been saved into your management site.</value>
+  </data>
+  <data name="contactswithyouvia" xml:space="preserve">
+    <value>contacts with you via TeachinVietnam</value>
+  </data>
+  <data name="desiredjoblevel" xml:space="preserve">
+    <value>Desired Job Level:</value>
+  </data>
+  <data name="InvalidDateTime" xml:space="preserve">
+    <value>Invalid datetime format.</value>
+  </data>
+  <data name="invalidDoB" xml:space="preserve">
+    <value>Your date of birth is invalid. Please enter again.</value>
+  </data>
+  <data name="Lastupdateat" xml:space="preserve">
+    <value>Last update at:</value>
+  </data>
+  <data name="Otherjobsfrom" xml:space="preserve">
+    <value>Other jobs from</value>
+  </data>
+  <data name="Otherjobswethink" xml:space="preserve">
+    <value>Other jobs we think you'd be interested in:</value>
+  </data>
+  <data name="requiredCitizenship2" xml:space="preserve">
+    <value>Citizenship</value>
+  </data>
+  <data name="notsupportfile" xml:space="preserve">
+    <value>Your selected file format is not supported.\n Please select another one.</value>
+  </data>
+  <data name="JobAlert" xml:space="preserve">
+    <value>Job alert</value>
+  </data>
+  <data name="Helpyoufindyourdesiredjob" xml:space="preserve">
+    <value>Help you find your desired job.</value>
+  </data>
+  <data name="nojobinlist" xml:space="preserve">
+    <value>There is currently no job matched. Please come back another time.</value>
+  </data>
+  <data name="pleasecreateacv" xml:space="preserve">
+    <value>Please create a CV to use job alert. It's free.</value>
+  </data>
+  <data name="EnableJobAlert" xml:space="preserve">
+    <value>Enable Job Alert</value>
+  </data>
+  <data name="ClickheretologinEmp" xml:space="preserve">
+    <value>Please &lt;a href='Login.aspx?r=e'&gt;login&lt;/a&gt; using your new password.</value>
+  </data>
+  <data name="Pleaseclickheretoreturnyourmanagementsite" xml:space="preserve">
+    <value>&gt;&gt; Please click here to return your management site!</value>
+  </data>
+  <data name="DisplayyourEmail" xml:space="preserve">
+    <value>Display your email:</value>
+  </data>
+  <data name="QuickApply" xml:space="preserve">
+    <value>Quick Apply</value>
+  </data>
+  <data name="Registeredteachersbenefits3.5" xml:space="preserve">
+    <value>Receive job vacancies via email</value>
+  </data>
+  <data name="Intership" xml:space="preserve">
+    <value>Intership</value>
+  </data>
+  <data name="FeaturedJobtxt" xml:space="preserve">
+    <value>Featured Jobs</value>
+  </data>
+</root>

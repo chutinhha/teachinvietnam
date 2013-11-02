@@ -1,0 +1,555 @@
+﻿body
+{
+    margin:0 auto;
+    font-size:x-small;
+    font-family:Calibri;
+}
+
+.standard-button1:hover
+{
+    background-image: none;
+    background-color: #bbb;
+    cursor: pointer;
+}
+.input
+{
+    font-family: Calibri;
+    font-size: 1em;
+    color:Black;
+}
+.maxheight
+{
+    max-height: 200px;
+    max-width: 200px;
+}
+.standard-button
+{
+    text-align: center;
+    border: 0;
+    font-size: 1.6em;
+    font-family: Calibri; /*line-height: 1.6em;*/
+    line-height: 20px;
+    padding: 5px 13px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #222222 !important;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #aaa;
+    border: 0px solid #ccc;
+}
+.standard-button::-moz-focus-inner
+{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+.standard-button:hover
+{
+    background-image: none;
+    background-color: #bbb;
+    cursor: pointer;
+}
+
+.clearbtn
+{
+    background-image: none;
+    background-color: #bbb;
+    cursor: pointer;
+}
+
+.standard-button.dark, .standard-button.contrast, .standard-button.green, .standard-button.orange
+{
+    color: #fff !important;
+    text-decoration: none;
+    -webkit-text-shadow: none;
+    -moz-text-shadow: none;
+    text-shadow: none;
+}
+
+.standard-button.dark
+{
+    background: url(../images/sitefiles/gradient-dark.png) repeat-x bottom center #b2b2b2;
+    background: -moz-linear-gradient(top, #b2b2b2 0%, #a0a0a0 50%, #949494 51%, #8c8c8c 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b2b2b2), color-stop(50%,#a0a0a0), color-stop(51%,#949494), color-stop(100%,#8c8c8c)); /* Chrome,Safari4+ */
+    background: linear-gradient(top, #b2b2b2 0%,#a0a0a0 50%,#949494 51%,#8c8c8c 100%); /* W3C */
+    border: 1px solid #949494;
+    -moz-box-shadow: 0 1px 0 0 #949494 inset;
+    -webkit-box-shadow: 0 1px 0 0 #949494 inset;
+    box-shadow: 0 1px 0 0 #949494 inset;
+}
+.standard-button.dark:hover
+{
+    background-image: none;
+    background-color: #b2b2b2;
+    cursor: pointer;
+}
+
+.standard-button.orange
+{
+    background: #ff820b;
+}
+
+.orangeButton
+{
+    background: #ff810a;
+}
+.standard-button.orange:hover
+{
+    background-image: none;
+    background-color: #3eb365;
+    cursor: pointer;
+}
+
+.standard-button.contrast
+{
+    background: url(../images/sitefiles/gradient-contrast.png) repeat-x bottom center #f26b4e;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f58b70), color-stop(50%,#f26b4e), color-stop(51%,#ee573c), color-stop(100%,#eb4b32)); /* Chrome,Safari4+ */
+    background: -moz-linear-gradient(top, #f58b70 0%, #f26b4e 50%, #ee573c 51%, #eb4b32 100%); /* FF3.6+ */
+    background: linear-gradient(top, #f58b70 0%,#f26b4e 50%,#ee573c 51%,#eb4b32 100%); /* W3C */
+    border: 1px solid #e63c27;
+    -moz-box-shadow: 0 1px 0 0 #fac1b3 inset;
+    -webkit-box-shadow: 0 1px 0 0 #fac1b3 inset;
+    box-shadow: 0 1px 0 0 #fac1b3 inset;
+}
+
+.standard-button.contrast:hover
+{
+    background-image: none;
+    background-color: #e63c27;
+    cursor: pointer;
+}
+
+.standard-button.green
+{
+    background: url(../images/sitefiles/gradients/gradient-green.png) repeat-x bottom center #008484;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00aeae), color-stop(50%,#009a9a), color-stop(51%,#008585), color-stop(100%,#007a7a)); /* Chrome,Safari4+ */
+    background: -moz-linear-gradient(top, #00aeae 0%, #009a9a 50%, #008585 51%, #007a7a 100%); /* FF3.6+ */
+    background: linear-gradient(top, #00aeae 0%,#009a9a 50%,#008585 51%,#007a7a 100%); /* W3C */
+    border: 1px solid #007f7f;
+    -moz-box-shadow: 0 1px 0 0 #cefcfc inset;
+    -webkit-box-shadow: 0 1px 0 0 #cefcfc inset;
+    box-shadow: 0 1px 0 0 #cefcfc inset;
+}
+
+.standard-button.green:hover
+{
+    background-image: none;
+    background-color: #027878;
+    cursor: pointer;
+}
+
+.standard-button.large
+{
+    font-size: 1.8em;
+    padding: 10px 30px;
+}
+.standard-button.small
+{
+    font-size: 14px;
+    padding: 4px 15px;
+}
+
+.standard-button.tiny
+{
+    font-size: 11px;
+    padding: 3px 10px;
+}
+
+.standard-button span.icon
+{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #e7e7e7;
+    position: absolute;
+    margin-right: 10px;
+    padding: 0;
+    left: 7px;
+    top: 7px;
+    z-index: 100;
+}
+
+
+.standard-form .info, .standard-form .info-more
+{
+    padding: 10px 15px;
+    margin-bottom: 10px;
+}
+
+.standard-form .error, .standard-form .error-placeholder
+{
+    color: #D23722;
+    font-size: 1.2em;
+    font-style: normal;
+}
+
+.standard-form .error, .standard-form .error-placeholder.failed, .standard-form.floated .error-placeholder.failed
+{
+    display: block;
+    padding: 7px 0 0 15px;
+    background: url(../images/icons/small-icon-sprite.png) no-repeat 0 -682px;
+    margin: 5px 0 10px 0;
+}
+
+.standard-form.floated .error-placeholder.failed
+{
+    margin: 2px 0 0 32%;
+    display: block !important;
+    font-size: 1.2em;
+}
+
+p.success
+{
+    background: url(../images/icons/tick_circle.png) no-repeat 12px center #e9fed9;
+    border: 1px solid #b5eb8c;
+    padding: 10px 15px 10px 35px;
+    font-size: 1.4em;
+    color: #3d7d0e;
+}
+
+.standard-form
+{
+    margin-bottom: 1.5em;
+    background-color: #F9FAFA;
+    padding: 10px;
+    border: 1px solid #DBE2E6;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.standard-form .standard-form
+{
+    border: 0;
+    padding: 0;
+    -webkit-border-radius: 0;
+    -webkit-border-radius: 0;
+    -webkit-border-radius: 0;
+}
+.standard-form dl dt
+{
+    font-weight: bold;
+    margin: 0 0 5px 0;
+    padding: 0;
+}
+.standard-form dl dd
+{
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+.standard-form .group-title
+{
+    font-family: sans-serif;
+    font-size: 1.4em;
+    padding: 0px 0px 5px 1px;
+    color: #666;
+    border-bottom: 1px dashed #ccc;
+    color: #009999;
+    margin: 0 70px 15px 15px;
+}
+.font
+{
+    font-family: Calibri;
+    font-size: 1em;
+}
+.bold
+{
+    font-weight: bold;
+}
+.fontvariant
+{
+    font-variant: small-caps;
+}
+.failureNotification
+{
+    color: Red;
+    padding: 3px 3px 3px 3px;
+    font-family: Sans-Serif;
+    font-size: x-small;
+}
+.literalNotification
+{
+    color: Red;
+    padding: 3px 3px 3px 3px;
+    font-family: Sans-Serif;
+    font-size: small;
+}
+.standard-form table
+{
+    color: Gray;
+    font-size: 14px;
+    padding: 3px 3px 3px 3px;
+    width: 375px;
+}
+
+.standard-form1
+{
+    margin-bottom: 1.5em;
+    background-color: #F9FAFA;
+    padding: 10px;
+    border: 1px solid #DBE2E6;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.standard-form2
+{
+    margin-bottom: 1.5em;
+    background-color: #F9FAFA;
+    padding: 10px;
+    border: 1px solid #DBE2E6;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.standard-form2 table
+{
+    color: Gray;
+    font-size: 14px;
+    padding: 3px 3px 3px 3px;
+    width: 100%;
+}
+.standard-form2 .group-title
+{
+    font-family: sans-serif;
+    font-size: 1.4em;
+    padding: 0px 0px 5px 1px;
+    color: #666;
+    border-bottom: 1px dashed #ccc;
+    color: #009999;
+    margin: 0 70px 15px 15px;
+}
+.standard-form2 table tr td
+{
+    font-family: Calibri;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.standard-form1 table
+{
+    color: Gray;
+    font-size: 14px;
+    padding: 3px 3px 3px 3px;
+    width: 200px;
+}
+.standard-form1 .group-title
+{
+    font-family: sans-serif;
+    font-size: 1.4em;
+    padding: 0px 0px 5px 1px;
+    border-bottom: 1px dashed #ccc;
+    color: #009999;
+    margin: 0 10px 15px 15px;
+}
+.grouptitleWidth
+{
+    padding-right:60px;
+}
+.usernameColor
+{
+    color: #009999;  
+}
+.standard-form1 .group-title a
+{
+    color: #009999;    
+}
+.standard-form table tr td
+{
+    font-family: Calibri;
+    font-size: 1em;
+    font-weight: bold;
+}
+.standard-form1 table tr td
+{
+    font-family: Calibri;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.padding
+{
+    padding: 0px 8px 18px 0px;
+}
+.input
+{
+    font-family: Calibri;
+    font-size: 1em;
+}
+
+.textColor
+{
+    color: Silver;
+}
+
+.standard-form .input-group
+{
+    clear: both;
+    margin: 0 0 15px 15px;
+}
+.standard-form .input-group label
+{
+    display: block;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 5px 0 7px 0;
+}
+.standard-form .input-group label span.secondary
+{
+    font-weight: normal;
+}
+.standard-form .input-group input
+{
+    font-size: 1.2em;
+    padding: 4px;
+}
+.standard-form .input-group .standard-button
+{
+    padding: 4px 15px;
+    font-size: 1.4em;
+}
+.standard-form .input-group textarea
+{
+    font-size: 1.2em;
+    padding: 4px;
+}
+.standard-form .input-group.checkbox-list label
+{
+    font-size: 1.1em;
+}
+
+.standard-form.big-inputs .input-group input[type="text"], .standard-form.big-inputs .input-group input[type="password"]
+{
+    font-size: 1.6em;
+    padding: 4px 6px;
+}
+
+.standard-form.big-inputs .input-group label
+{
+    font-size: 1.6em;
+    line-height: 2em;
+}
+
+.standard-form.floated .input-group
+{
+    margin: 0 0 10px 0;
+    clear: both;
+    overflow: hidden;
+}
+.standard-form .input-group.no-marg
+{
+    margin: 0;
+}
+.standard-form.floated .input-group label
+{
+    width: 32%;
+    float: left;
+}
+.standard-form.floated .input-group span.input
+{
+    float: left;
+    width: 68%;
+}
+.standard-form.floated .input-group .error-placeholder
+{
+    display: inline;
+}
+.standard-form.floated .input-group.buttons
+{
+    margin-left: 32%;
+    overflow: visible;
+}
+.standard-form .input-group.buttons input
+{
+    margin-right: 15px;
+}
+.standard-form .input-group.buttons p
+{
+    display: inline;
+}
+.standard-form.floated .input-group.buttons .cancel
+{
+    font-size: 1.2em;
+}
+
+.standard-form.floated.right
+{
+    padding: 10px 0;
+}
+.standard-form.floated.right .input-group
+{
+    margin-bottom: 0;
+    padding: 5px 0;
+}
+.standard-form.floated.right .input-group .small-text
+{
+    font-weight: normal;
+    font-size: 0.9em;
+}
+.standard-form.floated.right .input-group p
+{
+    padding-top: 3px;
+    margin: 0;
+}
+.standard-form.floated.right .input-group:first-child
+{
+    padding-top: 10px;
+}
+.standard-form.floated.right .input-group label
+{
+    text-align: right;
+    width: 28%;
+    margin-right: 2%;
+    padding-left: 2%;
+}
+.standard-form.floated.right .input-group.buttons
+{
+    background: none;
+}
+.standard-form.floated.right .info, .standard-form.with-bg .info
+{
+    border-bottom: 1px solid #ddd;
+    padding: 0 15px 10px 15px;
+    font-size: 1.1em;
+    color: #666;
+}
+.standard-form.floated.right .info.more, .standard-form.with-bg .info.more
+{
+    border: 0;
+    border-top: 1px solid #ececec;
+    margin: 0;
+    padding: 10px;
+    background-position: 10px -1020px;
+}
+.standard-form.floated.right .info.alert, .standard-form.with-bg .info.alert
+{
+    border: 0;
+    padding: 10px 10px 10px 40px;
+    margin: 0;
+    background-color: #009999;
+    color: #fff;
+    background-image: none;
+}
+.standard-form.floated.right .info.alert a, .standard-form.with-bg .info.alert a
+{
+    color: #fff;
+    font-weight: bold;
+}
+
+.standard-form.floated.right .error
+{
+    margin-left: 32%;
+}
+.standard-form.floated.right span.input .error
+{
+    margin-left: 0;
+}
+
+select
+{
+    font-size: 1.2em;
+    padding: 1px;
+}

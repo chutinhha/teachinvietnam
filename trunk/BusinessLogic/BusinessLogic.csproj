@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{472B1CD6-C3FD-47A8-B835-3ED07022D0CA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BusinessLogic</RootNamespace>
+    <AssemblyName>BusinessLogic</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotNetNuke">
+      <HintPath>..\TeachingJob\bin\DotNetNuke.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLAccess">
+      <HintPath>..\TeachingJob\bin\SQLAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Article\Comment.cs" />
+    <Compile Include="Article\HiringAdvice.cs" />
+    <Compile Include="Article\HiringAdviceCategory.cs" />
+    <Compile Include="Article\IComment.cs" />
+    <Compile Include="Article\Preparation.cs" />
+    <Compile Include="BusinessFacade.cs" />
+    <Compile Include="Citizenship.cs" />
+    <Compile Include="Common\Common.cs" />
+    <Compile Include="Controler\tbl_LogSendMailController.cs" />
+    <Compile Include="Controler\tbl_CategorysController.cs" />
+    <Compile Include="Facade\FeaturedLogo.cs" />
+    <Compile Include="Facade\Intership\InternshipGuide.cs" />
+    <Compile Include="Facade\Intership\InternshipUserSubmit.cs" />
+    <Compile Include="Facade\Services\ServiceArticle.cs" />
+    <Compile Include="Facade\Services\Services.cs" />
+    <Compile Include="Info\tbl_CategorysInfo.cs" />
+    <Compile Include="Info\tbl_LogSenMailInfo.cs" />
+    <Compile Include="Services.cs" />
+    <Compile Include="CV\CvDetail.cs" />
+    <Compile Include="CV\DesiredTravel.cs" />
+    <Compile Include="CV\EduLevelcs.cs" />
+    <Compile Include="CV\SalaryExpectation.cs" />
+    <Compile Include="CV\SavedCv.cs" />
+    <Compile Include="CV\SaveJobs.cs" />
+    <Compile Include="CV\WillToRelocated.cs" />
+    <Compile Include="CV\YearOfExp.cs" />
+    <Compile Include="DetailJob.cs" />
+    <Compile Include="Employer.cs" />
+    <Compile Include="EmploymentType.cs" />
+    <Compile Include="Facade\Component\CategoryLogic.cs" />
+    <Compile Include="Facade\CourseBusinessFacade.cs" />
+    <Compile Include="Facade\Employer\EmployerLogic.cs" />
+    <Compile Include="Facade\Employer\TrainingCourseLogic.cs" />
+    <Compile Include="Facade\General\AdvanceSearchLogic.cs" />
+    <Compile Include="Facade\Intership\Intership.cs" />
+    <Compile Include="Facade\Object\TrainingCourse.cs" />
+    <Compile Include="Facade\Object\TrainingLevel.cs" />
+    <Compile Include="FeaturedJob.cs" />
+    <Compile Include="Facade\Candidate\JobAlertLogic.cs" />
+    <Compile Include="JobRole.cs" />
+    <Compile Include="Language\Lang.cs" />
+    <Compile Include="Language\LangLvl.cs" />
+    <Compile Include="Location.cs" />
+    <Compile Include="OrganizationType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolType.cs" />
+    <Compile Include="Sector.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="TeachinVietnam.cs">
+      <DependentUpon>TeachinVietnam.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="TeachinVietnam.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TeachinVietnam.dbml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{9F63AE7C-0981-49EE-A5F2-78D36F6A3584}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="TeachinVietnam.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>TeachinVietnam.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TeachinVietnam.dbml.layout">
+      <DependentUpon>TeachinVietnam.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

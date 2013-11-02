@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TeachingJob" Class="TeachinVietnamDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ThanhLuan\SQLEXPRESS2008R2;Initial Catalog=TeachingJob;Persist Security Info=True;User ID=sa" SettingsObjectName="BusinessLogic.Properties.Settings" SettingsPropertyName="TeachingJobConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tbl_TrainingLevel" Member="tbl_TrainingLevels">
+    <Type Name="tbl_TrainingLevel">
+      <Column Name="tlId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="tlName_en" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="tlName_vi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="tbl_TrainingLevel_tbl_TrainingCourse" Member="tbl_TrainingCourses" ThisKey="tlId" OtherKey="tc_certificate" Type="tbl_TrainingCourse" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_TrainingCourse" Member="tbl_TrainingCourses">
+    <Type Name="tbl_TrainingCourse">
+      <Column Name="tc_id" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="tc_empId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="tc_name" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="tc_certificate" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tc_category" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tc_location" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tc_length" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="tc_timetable" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="tc_cost" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="tc_entryRequirement" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="tc_contact" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="tc_courseContent" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="tc_teacherBenefit" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="tc_viewCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tc_createdDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="tc_premium" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="tc_active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="tbl_TrainingLevel_tbl_TrainingCourse" Member="tbl_TrainingLevel" ThisKey="tc_certificate" OtherKey="tlId" Type="tbl_TrainingLevel" IsForeignKey="true" />
+      <Association Name="tbl_Job_Sector_tbl_TrainingCourse" Member="tbl_Job_Sector" ThisKey="tc_category" OtherKey="seId" Type="tbl_Job_Sector" IsForeignKey="true" />
+      <Association Name="tbl_Job_Location_tbl_TrainingCourse" Member="tbl_Job_Location" ThisKey="tc_location" OtherKey="lId" Type="tbl_Job_Location" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Job_Sector" Member="tbl_Job_Sectors">
+    <Type Name="tbl_Job_Sector">
+      <Column Name="seId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="seName_en" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="seName_vi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="seParentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tbl_Job_Sector_tbl_TrainingCourse" Member="tbl_TrainingCourses" ThisKey="seId" OtherKey="tc_category" Type="tbl_TrainingCourse" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Job_Location" Member="tbl_Job_Locations">
+    <Type Name="tbl_Job_Location">
+      <Column Name="lId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="lName_en" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="lName_vi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="lParentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tbl_Job_Location_tbl_TrainingCourse" Member="tbl_TrainingCourses" ThisKey="lId" OtherKey="tc_location" Type="tbl_TrainingCourse" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_intership_article" Member="tbl_intership_articles">
+    <Type Name="tbl_intership_article">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="body" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="sort_order" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Intership" Member="tbl_Interships">
+    <Type Name="tbl_Intership">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="articleName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="articleIntroduction" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="articleContent" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="createdDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Internship_UserSubmit" Member="tbl_Internship_UserSubmits">
+    <Type Name="tbl_Internship_UserSubmit">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="firstname" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="lastname" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="country" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="phone" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="whenshouldwecall" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="created" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_service_article" Member="tbl_service_articles">
+    <Type Name="tbl_service_article">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="parentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="maincontent" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="createdDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="displayOnMenu" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="displayOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_feature_logo" Member="tbl_feature_logos">
+    <Type Name="tbl_feature_logo">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="OrganizationName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="logo" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="username" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SortOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.proc_GetCoursesByLocation" Method="proc_GetCoursesByLocation">
+    <Parameter Name="city" Type="System.String" DbType="NVarChar(100)" />
+    <ElementType Name="proc_GetCoursesByLocationResult">
+      <Column Name="tc_empId" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="tc_certificate" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="tc_length" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="tc_timetable" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="tc_cost" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="tc_entryRequirement" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="tc_contact" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="tc_courseContent" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="tc_teacherBenefit" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="tc_viewCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tc_premium" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_GetCoursesByLocation" Method="proc_GetCoursesByLocation1">
+    <Parameter Name="city" Type="System.String" DbType="NVarChar(100)" />
+    <ElementType Name="proc_GetCoursesByLocationResult1">
+      <Column Name="tc_empId" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="tc_certificate" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="tc_length" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="tc_timetable" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="tc_cost" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="tc_entryRequirement" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="tc_contact" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="tc_courseContent" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="tc_teacherBenefit" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="tc_viewCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tc_premium" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="tc_active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_InsertTrainingCourse" Method="proc_InsertTrainingCourse">
+    <Parameter Name="tc_empId" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="tc_name" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="tc_certificate" Type="System.Int32" DbType="Int" />
+    <Parameter Name="tc_category" Type="System.Int32" DbType="Int" />
+    <Parameter Name="tc_location" Type="System.Int32" DbType="Int" />
+    <Parameter Name="tc_length" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="tc_timetable" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="tc_cost" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="tc_entryRequirement" Type="System.String" DbType="Text" />
+    <Parameter Name="tc_contact" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="tc_courseContent" Type="System.String" DbType="Text" />
+    <Parameter Name="tc_teacherBenefit" Type="System.String" DbType="Text" />
+    <Parameter Name="tc_active" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.proc_getIntershipById" Method="proc_getIntershipById">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="proc_getIntershipByIdResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="articleName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="articleIntroduction" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="articleContent" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="createdDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_deleteAIntershipArticle" Method="proc_deleteAIntershipArticle">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.proc_getAllIntership" Method="proc_getAllIntership">
+    <ElementType Name="proc_getAllIntershipResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="articleName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="articleIntroduction" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="articleContent" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="createdDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_UpdateInternship" Method="proc_UpdateInternship">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="articleName" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="articleIntroduction" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="articleContent" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="active" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.proc_Internship_Guide_Insert" Method="proc_Internship_Guide_Insert">
+    <Parameter Name="title" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="firstname" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="lastname" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="email" Type="System.String" DbType="VarChar(255)" />
+    <Parameter Name="country" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="phone" Type="System.String" DbType="VarChar(255)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.proc_Internship_UserSubmit_Insert" Method="proc_Internship_UserSubmit_Insert">
+    <Parameter Name="title" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="firstname" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="lastname" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="email" Type="System.String" DbType="VarChar(255)" />
+    <Parameter Name="country" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="phone" Type="System.String" DbType="VarChar(255)" />
+    <Parameter Name="whenshouldwecall" Type="System.String" DbType="NVarChar(255)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.proc_service_acticle_insert" Method="proc_service_acticle_insert">
+    <Parameter Name="parentId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="title" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="maincontent" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="displayOnMenu" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="displayOrder" Type="System.Int32" DbType="Int" />
+    <Parameter Name="active" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.proc_service_article_delete" Method="proc_service_article_delete">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.proc_service_article_getArticleById" Method="proc_service_article_getArticleById">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="proc_service_article_getArticleByIdResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="parentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="maincontent" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="createdDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="displayOnMenu" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="displayOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_service_article_updateArticleById" Method="proc_service_article_updateArticleById">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="parentId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="title" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="maincontent" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="displayOnMenu" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="displayOrder" Type="System.Int32" DbType="Int" />
+    <Parameter Name="active" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.proc_service_article_hasParentNotRoot" Method="proc_service_article_hasParentNotRoot">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="proc_service_article_hasParentNotRootResult">
+      <Column Name="parentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_service_article_GetSubArtiles" Method="proc_service_article_GetSubArtiles">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="proc_service_article_GetSubArtilesResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="parentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="maincontent" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="createdDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="displayOnMenu" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="displayOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_feature_logo_insert" Method="proc_feature_logo_insert">
+    <Parameter Name="username" Type="System.String" DbType="VarChar(255)" />
+    <Parameter Name="order" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.proc_feature_logo_delete" Method="proc_feature_logo_delete">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.proc_feature_logo_GetById" Method="proc_feature_logo_GetById">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="proc_feature_logo_GetByIdResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OrganizationName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="logo" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="username" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SortOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_feature_logo_update" Method="proc_feature_logo_update">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="active" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="sortOrder" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

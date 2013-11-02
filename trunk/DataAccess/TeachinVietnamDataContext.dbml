@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TeachingJob" Class="TeachinVietnamDataContextDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=teachinvietnam.org;Initial Catalog=tmtuan_TeachinVietnam;Persist Security Info=True;User ID=tmtuan_TeachinVietnam;Password=vuthanhluan" SettingsObjectName="DataAccess.Properties.Settings" SettingsPropertyName="TeachingJobConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tbl_TrainingCourse" Member="tbl_TrainingCourses">
+    <Type Name="tbl_TrainingCourse">
+      <Column Name="tc_id" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="tc_empId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="tc_certificate" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="tc_length" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="tc_timetable" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="tc_cost" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="tc_entryRequirement" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="tc_contact" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="tc_courseContent" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="tc_teacherBenefit" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Function Name="dbo.proc_InsertTrainingCourse" Method="proc_InsertTrainingCourse">
+    <Parameter Name="tc_empId" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="tc_certificate" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="tc_length" Type="System.String" DbType="VarChar(255)" />
+    <Parameter Name="tc_timetable" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="tc_cost" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="tc_entryRequirement" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="tc_contact" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="tc_courseContent" Type="System.String" DbType="Text" />
+    <Parameter Name="tc_teacherBenefit" Type="System.String" DbType="Text" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

@@ -1,0 +1,2403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1134F0DA-8357-490A-9B73-4351DCC3FBE2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TeachingJob</RootNamespace>
+    <AssemblyName>TeachingJob</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.51116.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.4.1.51116\lib\40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AntiXSSLibrary">
+      <HintPath>..\packages\AjaxControlToolkit.4.1.51116\lib\40\SanitizerProviders\AntiXSSLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="CKEditor.NET">
+      <HintPath>C:\Users\ThanhLuan\Desktop\ckeditor_aspnet_3.6.4\CKEditor.NET\bin\Debug\CKEditor.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="CollectionPager">
+      <HintPath>..\..\Users\ThanhLuan\Desktop\CollectionPagerDLL\CollectionPager.dll</HintPath>
+    </Reference>
+    <Reference Include="com.flajaxian.FileUploader">
+      <HintPath>..\..\..\..\..\document\asp net technique\com.flajaxian.FileUploader.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke, Version=4.9.2.66, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DotNetNuke.dll</HintPath>
+    </Reference>
+    <Reference Include="FredCK.FCKeditorV2, Version=2.6.3.22451, Culture=neutral, PublicKeyToken=4f86767c9b519a06, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\FredCK.FCKeditorV2.dll</HintPath>
+    </Reference>
+    <Reference Include="FUA">
+      <HintPath>C:\Users\ThanhLuan\Desktop\fileuploadajax-v1-2\FileUploadAJAX.Subgurim.NET\FUA.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlSanitizationLibrary">
+      <HintPath>..\packages\AjaxControlToolkit.4.1.51116\lib\40\SanitizerProviders\HtmlSanitizationLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Recaptcha">
+      <HintPath>C:\Users\ThanhLuan\Desktop\Recaptcha.dll</HintPath>
+    </Reference>
+    <Reference Include="SanitizerProviders">
+      <HintPath>..\packages\AjaxControlToolkit.4.1.51116\lib\40\SanitizerProviders\SanitizerProviders.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Telerik.Web.UI, Version=2012.2.724.35, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins, Version=2012.2.724.35, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\AccManagement.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\EmailTemplate\PasswordRecovery.txt" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\my-jobs.aspx" />
+    <Content Include="Account\myAccount.aspx" />
+    <Content Include="Account\Reactivation.aspx" />
+    <Content Include="Account\RecoveryPassword.aspx" />
+    <Content Include="Account\RecoveryPasswordSuccess.aspx" />
+    <Content Include="Account\RecoveryPwd.aspx" />
+    <Content Include="Account\RecruiterInfo.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\RegisterAsEmployer.aspx" />
+    <Content Include="admintj\Categorys\CategorysEdit.aspx" />
+    <Content Include="admintj\Common\BrowseFiles.aspx" />
+    <Content Include="admintj\FeatureLogo.aspx" />
+    <Content Include="admintj\ImageUpload.aspx" />
+    <Content Include="admintj\InternshipGuideManagement.aspx" />
+    <Content Include="admintj\InternshipUserSubmitManagement.aspx" />
+    <Content Include="admintj\IntershipManagement.aspx" />
+    <Content Include="admintj\SendingEmailTeach.aspx" />
+    <Content Include="admintj\SendingEmailEmp.aspx" />
+    <Content Include="admintj\css\chosen.css" />
+    <Content Include="admintj\css\colorpicker.css" />
+    <Content Include="admintj\css\fancybox.css" />
+    <Content Include="admintj\css\fancybox\fancy_close.html" />
+    <Content Include="admintj\css\fancybox\fancy_loading.html" />
+    <Content Include="admintj\css\fancybox\fancy_nav_left.html" />
+    <Content Include="admintj\css\fancybox\fancy_nav_right.html" />
+    <Content Include="admintj\css\fancybox\fancy_shadow_e.html" />
+    <Content Include="admintj\css\fancybox\fancy_shadow_n.html" />
+    <Content Include="admintj\css\fancybox\fancy_shadow_ne.html" />
+    <Content Include="admintj\css\fancybox\fancy_shadow_nw.html" />
+    <Content Include="admintj\css\fancybox\fancy_shadow_s.html" />
+    <Content Include="admintj\css\fancybox\fancy_shadow_se.html" />
+    <Content Include="admintj\css\fancybox\fancy_shadow_sw.html" />
+    <Content Include="admintj\css\fancybox\fancy_shadow_w.html" />
+    <Content Include="admintj\css\fancybox\fancy_title_left.png" />
+    <Content Include="admintj\css\fancybox\fancy_title_main.html" />
+    <Content Include="admintj\css\fancybox\fancy_title_over.html" />
+    <Content Include="admintj\css\fancybox\fancy_title_right.html" />
+    <Content Include="admintj\css\fullcalendar.css" />
+    <Content Include="admintj\css\images\ui-bg_inset-soft_95_fef1ec_1x100.html" />
+    <Content Include="admintj\css\jquery-ui-1.8.16.custom.css" />
+    <Content Include="admintj\css\jquery.jgrowl.css" />
+    <Content Include="admintj\css\login.css" />
+    <Content Include="admintj\css\style.css" />
+    <Content Include="admintj\css\tables.css" />
+    <Content Include="admintj\css\tipTip.css" />
+    <Content Include="admintj\css\validationEngine.jquery.css" />
+    <Content Include="admintj\CVManagement\CV.aspx" />
+    <Content Include="admintj\Dashboard.aspx" />
+    <Content Include="admintj\EditUser.aspx" />
+    <Content Include="admintj\images\add.gif" />
+    <Content Include="admintj\images\alert-bg.png" />
+    <Content Include="admintj\images\alert-icon.png" />
+    <Content Include="admintj\images\arrow.png" />
+    <Content Include="admintj\images\article-action.png" />
+    <Content Include="admintj\images\avatar_message_1.png" />
+    <Content Include="admintj\images\avatar_message_2.png" />
+    <Content Include="admintj\images\back_disabled.html" />
+    <Content Include="admintj\images\back_enabled.html" />
+    <Content Include="admintj\images\blockquote.png" />
+    <Content Include="admintj\images\button-icon-white.png" />
+    <Content Include="admintj\images\button-icon.png" />
+    <Content Include="admintj\images\button.png" />
+    <Content Include="admintj\images\check-list.png" />
+    <Content Include="admintj\images\check.png" />
+    <Content Include="admintj\images\checkbox.png" />
+    <Content Include="admintj\images\chosen-sprite.png" />
+    <Content Include="admintj\images\color\colorpicker_background.png" />
+    <Content Include="admintj\images\color\colorpicker_hex.png" />
+    <Content Include="admintj\images\color\colorpicker_hsb_b.png" />
+    <Content Include="admintj\images\color\colorpicker_hsb_h.png" />
+    <Content Include="admintj\images\color\colorpicker_hsb_s.png" />
+    <Content Include="admintj\images\color\colorpicker_indic.gif" />
+    <Content Include="admintj\images\color\colorpicker_overlay.png" />
+    <Content Include="admintj\images\color\colorpicker_rgb_b.png" />
+    <Content Include="admintj\images\color\colorpicker_rgb_g.png" />
+    <Content Include="admintj\images\color\colorpicker_rgb_r.png" />
+    <Content Include="admintj\images\color\colorpicker_submit.png" />
+    <Content Include="admintj\images\contact-nav.png" />
+    <Content Include="admintj\images\del.png" />
+    <Content Include="admintj\images\delete.png" />
+    <Content Include="admintj\images\fancybox\ancybox.html" />
+    <Content Include="admintj\images\fancybox\blank.gif" />
+    <Content Include="admintj\images\fancybox\fancybox-x.png" />
+    <Content Include="admintj\images\fancybox\fancybox-y.png" />
+    <Content Include="admintj\images\fancybox\fancybox.png" />
+    <Content Include="admintj\images\fancybox\fancy_title_over.png" />
+    <Content Include="admintj\images\favicon.html" />
+    <Content Include="admintj\images\forward_disabled.html" />
+    <Content Include="admintj\images\forward_enabled.html" />
+    <Content Include="admintj\images\fullscreen\1.jpg" />
+    <Content Include="admintj\images\fullscreen\10.jpg" />
+    <Content Include="admintj\images\fullscreen\11.jpg" />
+    <Content Include="admintj\images\fullscreen\12.jpg" />
+    <Content Include="admintj\images\fullscreen\2.jpg" />
+    <Content Include="admintj\images\fullscreen\3.jpg" />
+    <Content Include="admintj\images\fullscreen\4.jpg" />
+    <Content Include="admintj\images\fullscreen\5.jpg" />
+    <Content Include="admintj\images\fullscreen\6.jpg" />
+    <Content Include="admintj\images\fullscreen\7.jpg" />
+    <Content Include="admintj\images\fullscreen\8.jpg" />
+    <Content Include="admintj\images\fullscreen\9.jpg" />
+    <Content Include="admintj\images\grid-bg.jpg" />
+    <Content Include="admintj\images\header-bg.png" />
+    <Content Include="admintj\images\help.png" />
+    <Content Include="admintj\images\input-login.png" />
+    <Content Include="admintj\images\input.png" />
+    <Content Include="admintj\images\logo.png" />
+    <Content Include="admintj\images\logout.png" />
+    <Content Include="admintj\images\menu-head-icon.png" />
+    <Content Include="admintj\images\menu-left-bg.png" />
+    <Content Include="admintj\images\menu-left-icon-hover.png" />
+    <Content Include="admintj\images\menu-left-icon.png" />
+    <Content Include="admintj\images\message-bg.png" />
+    <Content Include="admintj\images\more.png" />
+    <Content Include="admintj\images\my_jobs.png" />
+    <Content Include="admintj\images\num.png" />
+    <Content Include="admintj\images\pic-border-2.png" />
+    <Content Include="admintj\images\pic-border-3.png" />
+    <Content Include="admintj\images\pic-border.png" />
+    <Content Include="admintj\images\plus.png" />
+    <Content Include="admintj\images\px.gif" />
+    <Content Include="admintj\images\radio.png" />
+    <Content Include="admintj\images\search.png" />
+    <Content Include="admintj\images\setting.png" />
+    <Content Include="admintj\images\thumbnails\13.png" />
+    <Content Include="admintj\images\thumbnails\14.png" />
+    <Content Include="admintj\images\thumbnails\t_1.jpg" />
+    <Content Include="admintj\images\thumbnails\t_10.jpg" />
+    <Content Include="admintj\images\thumbnails\t_11.jpg" />
+    <Content Include="admintj\images\thumbnails\t_12.jpg" />
+    <Content Include="admintj\images\thumbnails\t_16.jpg" />
+    <Content Include="admintj\images\thumbnails\t_17.jpg" />
+    <Content Include="admintj\images\thumbnails\t_2.jpg" />
+    <Content Include="admintj\images\thumbnails\t_3.jpg" />
+    <Content Include="admintj\images\thumbnails\t_4.jpg" />
+    <Content Include="admintj\images\thumbnails\t_5.jpg" />
+    <Content Include="admintj\images\thumbnails\t_6.jpg" />
+    <Content Include="admintj\images\thumbnails\t_7.jpg" />
+    <Content Include="admintj\images\thumbnails\t_8.jpg" />
+    <Content Include="admintj\images\thumbnails\t_9.jpg" />
+    <Content Include="admintj\images\triangle.png" />
+    <Content Include="admintj\images\trigger.png" />
+    <Content Include="admintj\images\ui\calendar-act.gif" />
+    <Content Include="admintj\images\ui\calendar.gif" />
+    <Content Include="admintj\images\ui\slider.gif" />
+    <Content Include="admintj\images\ui\slider_bg.gif" />
+    <Content Include="admintj\images\ui\slider_bg_horiz.gif" />
+    <Content Include="admintj\images\ui\triangle-e.png" />
+    <Content Include="admintj\images\ui\triangle-w.png" />
+    <Content Include="admintj\images\ui\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="admintj\images\ui\ui-icons_222222_256x240.png" />
+    <Content Include="admintj\images\user-panel.png" />
+    <Content Include="admintj\images\zoom-2.png" />
+    <Content Include="admintj\images\zoom.png" />
+    <Content Include="admintj\JobManagement\Jobs.aspx" />
+    <Content Include="admintj\lib\autoresize.jquery.min.js" />
+    <Content Include="admintj\lib\chosen.jquery.min.js" />
+    <Content Include="admintj\lib\colorpicker.js" />
+    <Content Include="admintj\lib\ddaccordion.js" />
+    <Content Include="admintj\lib\editor\buttons.png" />
+    <Content Include="admintj\lib\editor\default.css" />
+    <Content Include="admintj\lib\editor\default.js" />
+    <Content Include="admintj\lib\editor\jquery.wysiwyg.css" />
+    <Content Include="admintj\lib\editor\jquery.wysiwyg.js" />
+    <Content Include="admintj\lib\editor\wysiwyg.image.js" />
+    <Content Include="admintj\lib\editor\wysiwyg.link.js" />
+    <Content Include="admintj\lib\editor\wysiwyg.table.js" />
+    <Content Include="admintj\lib\elfinder\css\elfinder.css" />
+    <Content Include="admintj\lib\elfinder\images\icons-big.png" />
+    <Content Include="admintj\lib\elfinder\images\icons-small.png" />
+    <Content Include="admintj\lib\elfinder\images\ql.png" />
+    <Content Include="admintj\lib\elfinder\images\spinner.gif" />
+    <Content Include="admintj\lib\elfinder\images\toolbar.png" />
+    <Content Include="admintj\lib\elfinder\js\elfinder.min.js" />
+    <Content Include="admintj\lib\fancybox\fancybox.js" />
+    <Content Include="admintj\lib\forms.js" />
+    <Content Include="admintj\lib\formToWizard.js" />
+    <Content Include="admintj\lib\fullcalendar.min.js" />
+    <Content Include="admintj\lib\functions.js" />
+    <Content Include="admintj\lib\jquery-ui-1.8.16.custom.min.js" />
+    <Content Include="admintj\lib\jquery.dataTables.min.js" />
+    <Content Include="admintj\lib\jquery.flot.min.js" />
+    <Content Include="admintj\lib\jquery.flot.orderBars.js" />
+    <Content Include="admintj\lib\jquery.flot.pie.js" />
+    <Content Include="admintj\lib\jquery.jgrowl_minimized.js" />
+    <Content Include="admintj\lib\jquery.min.js" />
+    <Content Include="admintj\lib\jquery.tipTip.minified.js" />
+    <Content Include="admintj\lib\jquery.validationEngine-en.js" />
+    <Content Include="admintj\lib\jquery.validationEngine.js" />
+    <Content Include="admintj\lib\player\css\style.css" />
+    <Content Include="admintj\lib\player\images\button-separator.jpg" />
+    <Content Include="admintj\lib\player\images\fullscreen-button.png" />
+    <Content Include="admintj\lib\player\images\hd-button.png" />
+    <Content Include="admintj\lib\player\images\heart-button.png" />
+    <Content Include="admintj\lib\player\images\heart-count.png" />
+    <Content Include="admintj\lib\player\images\pause-button.png" />
+    <Content Include="admintj\lib\player\images\play-button.png" />
+    <Content Include="admintj\lib\player\images\player-bg.jpg" />
+    <Content Include="admintj\lib\player\images\playlist-bg.png" />
+    <Content Include="admintj\lib\player\images\playlist-button.png" />
+    <Content Include="admintj\lib\player\images\playlist-play-icon.png" />
+    <Content Include="admintj\lib\player\images\progress-bg.jpg" />
+    <Content Include="admintj\lib\player\images\progress-elapsed-bg.jpg" />
+    <Content Include="admintj\lib\player\images\scroll-thumb.png" />
+    <Content Include="admintj\lib\player\images\settings-button.png" />
+    <Content Include="admintj\lib\player\images\volume-icon.png" />
+    <Content Include="admintj\lib\player\jquery-jplayer\jquery.jplayer.js" />
+    <Content Include="admintj\lib\player\ttw-video-player-min.js" />
+    <Content Include="admintj\lib\slidernav-min.js" />
+    <Content Include="admintj\lib\validation.js" />
+    <Content Include="admintj\SendingEmail.aspx" />
+    <Content Include="admintj\Role.aspx" />
+    <Content Include="admintj\ServiceManagement.aspx" />
+    <Content Include="admintj\SystemTools\SetupMailAuto.aspx" />
+    <Content Include="admintj\SystemTools\SQL.aspx" />
+    <Content Include="admintj\User.aspx" />
+    <Content Include="admintj\UserRole.aspx" />
+    <Content Include="admintj\web.config" />
+    <Content Include="bin\Intelligencia.UrlRewriter.dll" />
+    <Content Include="bin\Intelligencia.UrlRewriter.xml" />
+    <Content Include="bin\TeachingJob.dll" />
+    <Content Include="bin\TeachingJob.pdb" />
+    <Content Include="ContactUs.aspx" />
+    <Content Include="Course\Courses.aspx" />
+    <Content Include="css\base83a8.css" />
+    <Content Include="css\brochure3805.css" />
+    <Content Include="css\comment.css" />
+    <Content Include="css\content.css" />
+    <Content Include="css\emailTemplate\1.html" />
+    <Content Include="css\emailTemplate\images\2x300pxWindow_Bottom.png" />
+    <Content Include="css\emailTemplate\images\2x300pxWindow_Top.png" />
+    <Content Include="css\emailTemplate\images\area_chart1.png" />
+    <Content Include="css\emailTemplate\images\arrow.png" />
+    <Content Include="css\emailTemplate\images\arrow2.png" />
+    <Content Include="css\emailTemplate\images\BottomBackground_Blue_1.png" />
+    <Content Include="css\emailTemplate\images\BottomBackground_Blue_2.png" />
+    <Content Include="css\emailTemplate\images\Chart_2.png" />
+    <Content Include="css\emailTemplate\images\facebook.png" />
+    <Content Include="css\emailTemplate\images\linkedin.png" />
+    <Content Include="css\emailTemplate\images\Logo-green.png" />
+    <Content Include="css\emailTemplate\images\Logo.png" />
+    <Content Include="css\emailTemplate\images\MainPicture.jpg" />
+    <Content Include="css\emailTemplate\images\Newsletter_border_Bottom.png" />
+    <Content Include="css\emailTemplate\images\Newsletter_border_top.png" />
+    <Content Include="css\emailTemplate\images\Pencil.png" />
+    <Content Include="css\emailTemplate\images\rss.png" />
+    <Content Include="css\emailTemplate\images\star.png" />
+    <Content Include="css\emailTemplate\images\twitter.png" />
+    <Content Include="css\emailTemplate\images\twitter_icon.png" />
+    <Content Include="css\emailTemplate\images\youtube.png" />
+    <Content Include="css\footer.css" />
+    <Content Include="css\htmlTextArea\scripts\jHtmlArea-0.7.5.js" />
+    <Content Include="css\htmlTextArea\scripts\jquery-1.3.2.js" />
+    <Content Include="css\htmlTextArea\style\jHtmlArea.ColorPickerMenu.css" />
+    <Content Include="css\htmlTextArea\style\jHtmlArea.css" />
+    <Content Include="css\htmlTextArea\style\jHtmlArea.Editor.css" />
+    <Content Include="css\htmlTextArea\style\jHtmlArea.png" />
+    <Content Include="css\htmlTextArea\style\jHtmlArea_Toolbar_Group_BG.png" />
+    <Content Include="css\htmlTextArea\style\jHtmlArea_Toolbar_Group__Btn_Select_BG.png" />
+    <Content Include="css\htmlTextArea\style\jqueryui\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="css\htmlTextArea\style\jqueryui\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="css\htmlTextArea\style\jqueryui\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="css\htmlTextArea\style\jqueryui\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="css\htmlTextArea\style\jqueryui\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="css\htmlTextArea\style\jqueryui\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="css\htmlTextArea\style\jqueryui\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="css\htmlTextArea\style\jqueryui\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="css\htmlTextArea\style\jqueryui\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="css\htmlTextArea\style\jqueryui\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="css\htmlTextArea\style\jqueryui\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="css\htmlTextArea\style\jqueryui\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="css\htmlTextArea\style\jqueryui\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="css\htmlTextArea\style\jqueryui\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="css\htmlTextArea\style\jqueryui\ui-lightness\jquery-ui-1.7.2.custom.css" />
+    <Content Include="css\jquery-ui-custom.css" />
+    <Content Include="css\jquery-ui.css" />
+    <Content Include="css\preparation.css" />
+    <Content Include="css\print83a8.css" />
+    <Content Include="css\emailTemplate\SelectedTemplate.htm" />
+    <Content Include="css\table.css" />
+    <Content Include="css\teacher.css" />
+    <Content Include="Employer\cvsaved.aspx" />
+    <Content Include="Employer\EmployerSite.aspx" />
+    <Content Include="Employer\HiringAdvice.aspx" />
+    <Content Include="Employer\HiringAdviceDetail.aspx" />
+    <Content Include="Employer\JobsManagement.aspx" />
+    <Content Include="Employer\Login.aspx" />
+    <Content Include="Employer\MyApplicants.aspx" />
+    <Content Include="Employer\RightPanel.ascx" />
+    <Content Include="Employer\TeacherTraining.aspx" />
+    <Content Include="images\buttons\copy-button.png" />
+    <Content Include="images\buttons\delete-button-small.png" />
+    <Content Include="images\buttons\delete-button.png" />
+    <Content Include="images\buttons\edit-button-small.png" />
+    <Content Include="images\buttons\edit-button.png" />
+    <Content Include="images\buttons\tweet.png" />
+    <Content Include="images\companyLogo\14.jpg" />
+    <Content Include="images\companyLogo\logoDemo.jpg" />
+    <Content Include="images\companyLogo\noLogo.jpg" />
+    <Content Include="images\companyLogo\no_image.jpg" />
+    <Content Include="images\companyLogo\no_image_100x100.jpg" />
+    <Content Include="images\companyLogo\no_photo.jpg" />
+    <Content Include="images\footer\arrow_back.png" />
+    <Content Include="images\footer\arrow_back_big.png" />
+    <Content Include="images\footer\arrow_button.png" />
+    <Content Include="images\footer\arrow_details.png" />
+    <Content Include="images\footer\arrow_img_left.png" />
+    <Content Include="images\footer\arrow_img_right.png" />
+    <Content Include="images\footer\arrow_item.gif" />
+    <Content Include="images\footer\arrow_next.png" />
+    <Content Include="images\footer\arrow_next_big.png" />
+    <Content Include="images\footer\bkg_button.gif" />
+    <Content Include="images\footer\bkg_collapse.gif" />
+    <Content Include="images\footer\bkg_rating.gif" />
+    <Content Include="images\footer\btn_edit.gif" />
+    <Content Include="images\footer\btn_remove.gif" />
+    <Content Include="images\footer\btn_trash.gif" />
+    <Content Include="images\footer\btn_window_close.gif" />
+    <Content Include="images\footer\content_shadow.png" />
+    <Content Include="images\footer\error.png" />
+    <Content Include="images\footer\f_border.png" />
+    <Content Include="images\footer\icon_add_cart_product_view.png" />
+    <Content Include="images\footer\icon_breadcrumb.gif" />
+    <Content Include="images\footer\icon_buy.png" />
+    <Content Include="images\footer\icon_cart.gif" />
+    <Content Include="images\footer\icon_compare.gif" />
+    <Content Include="images\footer\icon_email.gif" />
+    <Content Include="images\footer\icon_f_facebook.png" />
+    <Content Include="images\footer\icon_f_facebook_light.png" />
+    <Content Include="images\footer\icon_f_google.png" />
+    <Content Include="images\footer\icon_f_google_light.png" />
+    <Content Include="images\footer\icon_f_mail.png" />
+    <Content Include="images\footer\icon_f_mail_light.png" />
+    <Content Include="images\footer\icon_f_twitter.png" />
+    <Content Include="images\footer\icon_f_twitter_light.png" />
+    <Content Include="images\footer\icon_search.png" />
+    <Content Include="images\footer\icon_search_light.png" />
+    <Content Include="images\footer\icon_wishlist.gif" />
+    <Content Include="images\footer\i_asc_arrow.gif" />
+    <Content Include="images\footer\i_availability_only_arrow.gif" />
+    <Content Include="images\footer\i_desc_arrow.gif" />
+    <Content Include="images\footer\i_msg-error.gif" />
+    <Content Include="images\footer\i_msg-note.gif" />
+    <Content Include="images\footer\i_msg-notice.gif" />
+    <Content Include="images\footer\i_msg-success.gif" />
+    <Content Include="images\footer\i_notice.gif" />
+    <Content Include="images\footer\i_print.gif" />
+    <Content Include="images\footer\i_rss-big.png" />
+    <Content Include="images\footer\i_rss.gif" />
+    <Content Include="images\footer\labels.png" />
+    <Content Include="images\footer\magnifier_handle.gif" />
+    <Content Include="images\footer\newsletter_arrow.png" />
+    <Content Include="images\footer\newsletter_arrow_light.png" />
+    <Content Include="images\footer\pager_arrow_left.gif" />
+    <Content Include="images\footer\pager_arrow_left.png" />
+    <Content Include="images\footer\pager_arrow_right.gif" />
+    <Content Include="images\footer\pager_arrow_right.png" />
+    <Content Include="images\footer\preview\bg_stoggle.png" />
+    <Content Include="images\footer\preview\i_reset.png" />
+    <Content Include="images\footer\shadow_bottom.png" />
+    <Content Include="images\footer\shadow_top.png" />
+    <Content Include="images\footer\slider_bg.gif" />
+    <Content Include="images\footer\validation_advice_bg.gif" />
+    <Content Include="images\icons\addicon.png" />
+    <Content Include="images\icons\back-icon.png" />
+    <Content Include="images\icons\business-acount-icon.jpg" />
+    <Content Include="images\icons\chat-icon.png" />
+    <Content Include="images\icons\chat-icon2.png" />
+    <Content Include="images\icons\close.png" />
+    <Content Include="images\icons\close_hover.png" />
+    <Content Include="images\icons\CRUD\delete-icon.png" />
+    <Content Include="images\icons\CRUD\delete.png" />
+    <Content Include="images\icons\CRUD\read.png" />
+    <Content Include="images\icons\CRUD\update.png" />
+    <Content Include="images\icons\CRUD\view.png" />
+    <Content Include="images\icons\like.png" />
+    <Content Include="images\icons\my-account.png" />
+    <Content Include="images\icons\advice-module-icons.png" />
+    <Content Include="images\icons\arrow-small.png" />
+    <Content Include="images\icons\arrow-sprite.png" />
+    <Content Include="images\icons\benefit-icons.png" />
+    <Content Include="images\icons\checkbox-checked.jpg" />
+    <Content Include="images\icons\checkbox.jpg" />
+    <Content Include="images\icons\cross.png" />
+    <Content Include="images\icons\cv_icon.png" />
+    <Content Include="images\icons\document_small.png" />
+    <Content Include="images\icons\exclamation_diamond.png" />
+    <Content Include="images\icons\favicon.jpg" />
+    <Content Include="images\icons\hat.gif" />
+    <Content Include="images\icons\icon-sprite.png" />
+    <Content Include="images\icons\my_jobs.png" />
+    <Content Include="images\icons\openid-small.gif" />
+    <Content Include="images\icons\postajob.png" />
+    <Content Include="images\icons\postajob_2.png" />
+    <Content Include="images\icons\price-range-close-icon.png" />
+    <Content Include="images\icons\ReturnIcon.png" />
+    <Content Include="images\icons\revolve.png" />
+    <Content Include="images\icons\ribbon3.png" />
+    <Content Include="images\icons\savethisjob.png" />
+    <Content Include="images\icons\small-icon-sprite.png" />
+    <Content Include="images\icons\star.png" />
+    <Content Include="images\icons\tick_circle.png" />
+    <Content Include="images\icons\tools-to-help\advice.png" />
+    <Content Include="images\icons\tools-to-help\create-cv.png" />
+    <Content Include="images\icons\tools-to-help\cv-match.png" />
+    <Content Include="images\icons\tools-to-help\profile.png" />
+    <Content Include="images\icons\unlike.png" />
+    <Content Include="images\icons\User-icon.png" />
+    <Content Include="images\icons\User-icon_2.png" />
+    <Content Include="images\inm\beltel.png" />
+    <Content Include="images\inm\cars.png" />
+    <Content Include="images\inm\grab.png" />
+    <Content Include="images\inm\mad.png" />
+    <Content Include="images\inm\property.png" />
+    <Content Include="images\job\demoAvatar1.jpg" />
+    <Content Include="images\loader.gif" />
+    <Content Include="images\Logo.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo_admin.jpg" />
+    <Content Include="images\openid\logos\aol-logo.jpg" />
+    <Content Include="images\openid\logos\blogger-logo.jpg" />
+    <Content Include="images\openid\logos\flickr-logo.jpg" />
+    <Content Include="images\openid\logos\google-logo.jpg" />
+    <Content Include="images\openid\logos\myopenid-logo.jpg" />
+    <Content Include="images\openid\logos\openid-logo.jpg" />
+    <Content Include="images\openid\logos\wordpress-logo.jpg" />
+    <Content Include="images\openid\logos\yahoo-logo.jpg" />
+    <Content Include="images\services\BES_SE_Banner_Vietnam.png" />
+    <Content Include="images\services\prepare\internshipbanner.jpg" />
+    <Content Include="images\services\prepare\liBullet12x12.png" />
+    <Content Include="images\services\prepare\navHeader.jpg" />
+    <Content Include="images\services\prepare\prepareHeader.jpg" />
+    <Content Include="images\services\sky.png" />
+    <Content Include="images\services\testimonial\hiringAdvice.jpg" />
+    <Content Include="images\services\testimonial\TestimonialHeader.jpg" />
+    <Content Include="images\sitefiles\ajax-loader.gif" />
+    <Content Include="images\sitefiles\bel-tel-stamp.png" />
+    <Content Include="images\sitefiles\blog-date-bg.png" />
+    <Content Include="images\sitefiles\blog-header-bg.jpg" />
+    <Content Include="images\sitefiles\blog\facebook.png" />
+    <Content Include="images\sitefiles\blog\facebook_22x22.png" />
+    <Content Include="images\sitefiles\blog\linkedin_22x22.png" />
+    <Content Include="images\sitefiles\blog\phongbi.jpg" />
+    <Content Include="images\sitefiles\blog\linkedin.png" />
+    <Content Include="images\sitefiles\blog\twitter.png" />
+    <Content Include="images\sitefiles\blog\twitter_22x22.png" />
+    <Content Include="images\sitefiles\blog\USFlag.png" />
+    <Content Include="images\sitefiles\blog\VietnamFlag.png" />
+    <Content Include="images\sitefiles\blog\youtube.jpg" />
+    <Content Include="images\sitefiles\bullet-arrow.gif" />
+    <Content Include="images\sitefiles\competitions\competition-result-image-small.png" />
+    <Content Include="images\sitefiles\competitions\competition-result-image.png" />
+    <Content Include="images\sitefiles\dialogs\large-dialog-bottom.png" />
+    <Content Include="images\sitefiles\dialogs\large-dialog-middle.png" />
+    <Content Include="images\sitefiles\dialogs\large-dialog-right.png" />
+    <Content Include="images\sitefiles\dialogs\large-dialog-top.png" />
+    <Content Include="images\sitefiles\dialogs\price-range-middle.png" />
+    <Content Include="images\sitefiles\dialogs\price-range.png" />
+    <Content Include="images\sitefiles\dialogs\refine-dialog.png" />
+    <Content Include="images\sitefiles\dialogue_mini.png" />
+    <Content Include="images\sitefiles\featured-job-bg.png" />
+    <Content Include="images\sitefiles\featured-job.png" />
+    <Content Include="images\sitefiles\footer-bg.gif" />
+    <Content Include="images\sitefiles\gradient-contrast.png" />
+    <Content Include="images\sitefiles\gradient-contrast_Origin.png" />
+    <Content Include="images\sitefiles\gradient-dark.png" />
+    <Content Include="images\sitefiles\gradient-light.png" />
+    <Content Include="images\sitefiles\gradient-orange.png" />
+    <Content Include="images\sitefiles\gradients\activity-bar-gradient.png" />
+    <Content Include="images\sitefiles\gradients\full-module-bottom-gradient.png" />
+    <Content Include="images\sitefiles\gradients\full-module-top-gradient.png" />
+    <Content Include="images\sitefiles\gradients\gradient-green.png" />
+    <Content Include="images\sitefiles\gradients\refine-gradient-larger.png" />
+    <Content Include="images\sitefiles\gradients\refine-gradient.png" />
+    <Content Include="images\sitefiles\gradients\small-module-bottom.png" />
+    <Content Include="images\sitefiles\green-dot2.png" />
+    <Content Include="images\sitefiles\grey-line.png" />
+    <Content Include="images\sitefiles\grid-layout-circle.png" />
+    <Content Include="images\sitefiles\header-bg-intership.png" />
+    <Content Include="images\sitefiles\header-bg-simple.png" />
+    <Content Include="images\sitefiles\header-bg-small.png" />
+    <Content Include="images\sitefiles\header-bg-special.png" />
+    <Content Include="images\sitefiles\header-bg.gif" />
+    <Content Include="images\sitefiles\header-bg.png" />
+    <Content Include="images\sitefiles\hero-frame-bottom.png" />
+    <Content Include="images\sitefiles\hero-frame-top.png" />
+    <Content Include="images\sitefiles\homepage\advert-bg.gif" />
+    <Content Include="images\sitefiles\homepage\cr-slide-bg.png" />
+    <Content Include="images\sitefiles\inm-logo.png" />
+    <Content Include="images\sitefiles\leftNavUnderline216x1.png" />
+    <Content Include="images\sitefiles\menu-left-icon_2.png" />
+    <Content Include="images\sitefiles\module-heading.gif" />
+    <Content Include="images\sitefiles\nav-glow.png" />
+    <Content Include="images\sitefiles\orange_vertical.png" />
+    <Content Include="images\sitefiles\profile-photo-bg.png" />
+    <Content Include="images\sitefiles\profiles-frame-smaller.png" />
+    <Content Include="images\sitefiles\profiles-frame.png" />
+    <Content Include="images\sitefiles\profiles\brief.png" />
+    <Content Include="images\sitefiles\programTitle-vietnam199x66.png" />
+    <Content Include="images\sitefiles\recruiter\140-60---logo %281%29.jpg" />
+    <Content Include="images\sitefiles\recruiter\140-60---logo %282%29.jpg" />
+    <Content Include="images\sitefiles\recruiter\140-60---logo %283%29.jpg" />
+    <Content Include="images\sitefiles\recruiter\140-60---logo %284%29.jpg" />
+    <Content Include="images\sitefiles\recruiter\140-60---logo.jpg" />
+    <Content Include="images\sitefiles\recruiter\Logo1.png" />
+    <Content Include="images\sitefiles\results-option-bg.png" />
+    <Content Include="images\sitefiles\search-dialogue-mini.png" />
+    <Content Include="images\sitefiles\search-dialogue-mini2.png" />
+    <Content Include="images\sitefiles\search-dialogue.png" />
+    <Content Include="images\sitefiles\search.png" />
+    <Content Include="images\sitefiles\search1.gif" />
+    <Content Include="images\sitefiles\services\advice.png" />
+    <Content Include="images\sitefiles\services\app-store.png" />
+    <Content Include="images\sitefiles\services\connect.png" />
+    <Content Include="images\sitefiles\services\cv-match.png" />
+    <Content Include="images\sitefiles\services\cv.png" />
+    <Content Include="images\sitefiles\services\email.png" />
+    <Content Include="images\sitefiles\services\graduate.png" />
+    <Content Include="images\sitefiles\services\iphone.png" />
+    <Content Include="images\sitefiles\services\member.png" />
+    <Content Include="images\sitefiles\services\pound-sign.png" />
+    <Content Include="images\sitefiles\services\vacancy.png" />
+    <Content Include="images\sitefiles\sticker.png" />
+    <Content Include="images\sitefiles\Testimonials.png" />
+    <Content Include="images\sitefiles\titles\be-inspired-series.png" />
+    <Content Include="images\sitefiles\titles\be-inspired-title.png" />
+    <Content Include="images\sitefiles\titles\job-people-heading.gif" />
+    <Content Include="images\sitefiles\titles\recommended.png" />
+    <Content Include="images\sitefiles\titles\wardrobe-heading.gif" />
+    <Content Include="images\sitefiles\tools-bg.png" />
+    <Content Include="images\sitefiles\white-dot2.png" />
+    <Content Include="Intership.aspx" />
+    <Content Include="js\auto-complete\css\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="js\auto-complete\css\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="js\auto-complete\css\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="js\auto-complete\css\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="js\auto-complete\css\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="js\auto-complete\css\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="js\auto-complete\css\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="js\auto-complete\css\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="js\auto-complete\css\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="js\auto-complete\css\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="js\auto-complete\css\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="js\auto-complete\css\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="js\auto-complete\css\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="js\auto-complete\css\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="js\auto-complete\css\ui-lightness\jquery-ui-1.8.24.custom.css" />
+    <Content Include="js\auto-complete\js\jquery-1.8.2.min.js" />
+    <Content Include="js\auto-complete\js\jquery-ui-1.8.24.custom.min.js" />
+    <Content Include="js\common.js" />
+    <Content Include="js\currently-recruitinge486.js" />
+    <Content Include="js\f8d2e22e64ecf89e946fda7a4f30f33b.js" />
+    <Content Include="js\footerOrgType.js" />
+    <Content Include="js\jquery-dialogfbf6.js" />
+    <Content Include="js\jquery-ui.min.js" />
+    <Content Include="js\jquery.dot-slidere486.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\modernizr-1.7.min.js" />
+    <Content Include="js\nicEdit-latest.js" />
+    <Content Include="js\popouts0731.js" />
+    <Content Include="memberArea\AdsAJob.aspx" />
+    <Content Include="Account\MemberOnly.aspx" />
+    <Content Include="memberArea\AdsCv.aspx" />
+    <Content Include="memberArea\AppManagement.aspx" />
+    <Content Include="memberArea\ContactEmployer.aspx" />
+    <Content Include="memberArea\ContactWithoutLogin.aspx" />
+    <Content Include="memberArea\CV\JobAlert.aspx" />
+    <Content Include="memberArea\CV\privacy-setting.aspx" />
+    <Content Include="memberArea\directive.aspx" />
+    <Content Include="memberArea\DoneCV.aspx" />
+    <Content Include="memberArea\finish-apply.aspx" />
+    <Content Include="memberArea\indicator.gif" />
+    <Content Include="memberArea\ManageSavedJob.aspx" />
+    <Content Include="memberArea\PostJobSuccess.aspx" />
+    <Content Include="memberArea\Preview.aspx" />
+    <Content Include="memberArea\style.css" />
+    <Content Include="publicArea\aboutus-master.aspx" />
+    <Content Include="publicArea\ActivateUser.aspx" />
+    <Content Include="publicArea\AdvanceSearch.aspx" />
+    <Content Include="publicArea\CV\AdvanceSearchCV.aspx" />
+    <Content Include="publicArea\CV\BottomBackground_Blue_1.png" />
+    <Content Include="publicArea\CV\BottomBackground_Blue_2.png" />
+    <Content Include="publicArea\CV\css\960.css" />
+    <Content Include="publicArea\CV\css\jquery.more.css" />
+    <Content Include="publicArea\CV\css\jquery.more.js" />
+    <Content Include="publicArea\CV\css\PIE.htc" />
+    <Content Include="publicArea\CV\css\reset.css" />
+    <Content Include="publicArea\CV\Detail.aspx" />
+    <Content Include="publicArea\CV\img\bg.jpg" />
+    <Content Include="publicArea\CV\img\choose-color.png" />
+    <Content Include="publicArea\CV\img\colors\celestial_sky.png" />
+    <Content Include="publicArea\CV\img\colors\charcoal_black.png" />
+    <Content Include="publicArea\CV\img\colors\dark_indigo.png" />
+    <Content Include="publicArea\CV\img\colors\dark_violet.png" />
+    <Content Include="publicArea\CV\img\colors\electric_blue.png" />
+    <Content Include="publicArea\CV\img\colors\light_indigo.png" />
+    <Content Include="publicArea\CV\img\colors\lime_green.png" />
+    <Content Include="publicArea\CV\img\colors\lobster_red.png" />
+    <Content Include="publicArea\CV\img\colors\olive_green.png" />
+    <Content Include="publicArea\CV\img\colors\orange_peel.png" />
+    <Content Include="publicArea\CV\img\colors\royal_magenta.png" />
+    <Content Include="publicArea\CV\img\colors\scarlet_red.png" />
+    <Content Include="publicArea\CV\img\colors\silver_grey.png" />
+    <Content Include="publicArea\CV\img\curriculum_bg.png" />
+    <Content Include="publicArea\CV\js\loader.gif" />
+    <Content Include="publicArea\CV\img\shadow.png" />
+    <Content Include="publicArea\CV\img\social\Button-Add-icon.png" />
+    <Content Include="publicArea\CV\img\social\Check-icon.png" />
+    <Content Include="publicArea\CV\img\social\download.png" />
+    <Content Include="publicArea\CV\img\social\Email-Download-icon.png" />
+    <Content Include="publicArea\CV\img\social\email.png" />
+    <Content Include="publicArea\CV\img\social\facebook.png" />
+    <Content Include="publicArea\CV\img\social\floppy.png" />
+    <Content Include="publicArea\CV\img\social\linkedin.png" />
+    <Content Include="publicArea\CV\img\social\Mail-icon.png" />
+    <Content Include="publicArea\CV\img\social\save.png" />
+    <Content Include="publicArea\CV\img\social\save_2.png" />
+    <Content Include="publicArea\CV\img\social\twitter.png" />
+    <Content Include="publicArea\CV\InternalUpdate\configuration.html" />
+    <Content Include="publicArea\CV\InternalUpdate\StatementUpdate.aspx" />
+    <Content Include="publicArea\CV\InternalUpdate\style.css" />
+    <Content Include="publicArea\CV\InternalUpdate\UpdatePersonal.aspx" />
+    <Content Include="publicArea\CV\InternalUpdate\UpdateProfile.aspx" />
+    <Content Include="publicArea\CV\js\cufon_yui.js" />
+    <Content Include="publicArea\CV\js\Delicious_500-Delicious_700-Delicious_italic_500-Delicious_italic_700.font.js" />
+    <Content Include="publicArea\CV\js\jquery-latest.js" />
+    <Content Include="publicArea\CV\js\jquery_mail.js" />
+    <Content Include="publicArea\CV\js\scroll-follow.js" />
+    <Content Include="publicArea\CV\js\scroll.js" />
+    <Content Include="publicArea\CV\js\ui.core.js" />
+    <Content Include="publicArea\CV\Logo.png" />
+    <Content Include="publicArea\CV\photo\avatar.png" />
+    <Content Include="publicArea\CV\RequestSuccess.aspx" />
+    <Content Include="publicArea\CV\SearchResultcv.aspx" />
+    <Content Include="publicArea\CV\style.css" />
+    <Content Include="publicArea\CV\UpdateCV.aspx" />
+    <Content Include="publicArea\DetailTestimonial.aspx" />
+    <Content Include="publicArea\EmployerInfo.aspx" />
+    <Content Include="publicArea\EmployerList.aspx" />
+    <Content Include="publicArea\errorpages\Error403.aspx" />
+    <Content Include="publicArea\errorpages\Error404.aspx" />
+    <Content Include="publicArea\errorpages\ErrorNetworkNotFound.aspx" />
+    <Content Include="publicArea\errorpages\images\404.png" />
+    <Content Include="publicArea\errorpages\images\bg-repeat.jpg" />
+    <Content Include="publicArea\errorpages\images\bg.jpg" />
+    <Content Include="publicArea\errorpages\images\box.png" />
+    <Content Include="publicArea\errorpages\images\delicious_24.png" />
+    <Content Include="publicArea\errorpages\images\facebook_24.png" />
+    <Content Include="publicArea\errorpages\images\flickr_24.png" />
+    <Content Include="publicArea\errorpages\images\logo.png" />
+    <Content Include="publicArea\errorpages\images\rss_24.png" />
+    <Content Include="publicArea\errorpages\images\search-field.png" />
+    <Content Include="publicArea\errorpages\images\search-icon.png" />
+    <Content Include="publicArea\errorpages\images\stumbleupon_24.png" />
+    <Content Include="publicArea\errorpages\images\twitter_24.png" />
+    <Content Include="publicArea\errorpages\index.html" />
+    <Content Include="publicArea\errorpages\index463b.html" />
+    <Content Include="publicArea\errorpages\js\akaDora_400.font.js" />
+    <Content Include="publicArea\errorpages\js\cufon-yui.js" />
+    <Content Include="publicArea\errorpages\js\iepngfix_tilebg.js" />
+    <Content Include="publicArea\errorpages\sample-page\css\reset.css" />
+    <Content Include="publicArea\errorpages\sample-page\css\style.css" />
+    <Content Include="publicArea\errorpages\sample-page\css\superfish.css" />
+    <Content Include="publicArea\errorpages\sample-page\index.html" />
+    <Content Include="publicArea\index.html" />
+    <Content Include="publicArea\intership.aspx" />
+    <Content Include="publicArea\privacy-policy-master.aspx" />
+    <Content Include="publicArea\TeacherTraining.aspx" />
+    <Content Include="publicArea\template\about-us.txt" />
+    <Content Include="publicArea\template\HiringAdvice.txt" />
+    <Content Include="publicArea\template\Preparation.txt" />
+    <Content Include="publicArea\template\privacy-policy.txt" />
+    <Content Include="publicArea\template\TermAndCondition.txt" />
+    <Content Include="publicArea\template\Testimonial.txt" />
+    <Content Include="publicArea\term-condition-master.aspx" />
+    <Content Include="publicArea\terms-conditions.aspx" />
+    <Content Include="publicArea\Training\CourseSearchResult.aspx" />
+    <Content Include="publicArea\Training\TrainingCourse.aspx" />
+    <Content Include="Scripts\ckeditor\adapters\jquery.js" />
+    <Content Include="Scripts\ckeditor\CHANGES.html" />
+    <Content Include="Scripts\ckeditor\ckeditor.js" />
+    <Content Include="Scripts\ckeditor\ckeditor_basic.js" />
+    <Content Include="Scripts\ckeditor\config.js" />
+    <Content Include="Scripts\ckeditor\contents.css" />
+    <Content Include="Scripts\ckeditor\deployckeditor.js" />
+    <Content Include="Scripts\ckeditor\images\spacer.gif" />
+    <Content Include="Scripts\ckeditor\INSTALL.html" />
+    <Content Include="Scripts\ckeditor\lang\af.js" />
+    <Content Include="Scripts\ckeditor\lang\ar.js" />
+    <Content Include="Scripts\ckeditor\lang\bg.js" />
+    <Content Include="Scripts\ckeditor\lang\bn.js" />
+    <Content Include="Scripts\ckeditor\lang\bs.js" />
+    <Content Include="Scripts\ckeditor\lang\ca.js" />
+    <Content Include="Scripts\ckeditor\lang\cs.js" />
+    <Content Include="Scripts\ckeditor\lang\cy.js" />
+    <Content Include="Scripts\ckeditor\lang\da.js" />
+    <Content Include="Scripts\ckeditor\lang\de.js" />
+    <Content Include="Scripts\ckeditor\lang\el.js" />
+    <Content Include="Scripts\ckeditor\lang\en-au.js" />
+    <Content Include="Scripts\ckeditor\lang\en-ca.js" />
+    <Content Include="Scripts\ckeditor\lang\en-gb.js" />
+    <Content Include="Scripts\ckeditor\lang\en.js" />
+    <Content Include="Scripts\ckeditor\lang\eo.js" />
+    <Content Include="Scripts\ckeditor\lang\es.js" />
+    <Content Include="Scripts\ckeditor\lang\et.js" />
+    <Content Include="Scripts\ckeditor\lang\eu.js" />
+    <Content Include="Scripts\ckeditor\lang\fa.js" />
+    <Content Include="Scripts\ckeditor\lang\fi.js" />
+    <Content Include="Scripts\ckeditor\lang\fo.js" />
+    <Content Include="Scripts\ckeditor\lang\fr-ca.js" />
+    <Content Include="Scripts\ckeditor\lang\fr.js" />
+    <Content Include="Scripts\ckeditor\lang\gl.js" />
+    <Content Include="Scripts\ckeditor\lang\gu.js" />
+    <Content Include="Scripts\ckeditor\lang\he.js" />
+    <Content Include="Scripts\ckeditor\lang\hi.js" />
+    <Content Include="Scripts\ckeditor\lang\hr.js" />
+    <Content Include="Scripts\ckeditor\lang\hu.js" />
+    <Content Include="Scripts\ckeditor\lang\id.js" />
+    <Content Include="Scripts\ckeditor\lang\is.js" />
+    <Content Include="Scripts\ckeditor\lang\it.js" />
+    <Content Include="Scripts\ckeditor\lang\ja.js" />
+    <Content Include="Scripts\ckeditor\lang\ka.js" />
+    <Content Include="Scripts\ckeditor\lang\km.js" />
+    <Content Include="Scripts\ckeditor\lang\ko.js" />
+    <Content Include="Scripts\ckeditor\lang\lt.js" />
+    <Content Include="Scripts\ckeditor\lang\lv.js" />
+    <Content Include="Scripts\ckeditor\lang\mk.js" />
+    <Content Include="Scripts\ckeditor\lang\mn.js" />
+    <Content Include="Scripts\ckeditor\lang\ms.js" />
+    <Content Include="Scripts\ckeditor\lang\nb.js" />
+    <Content Include="Scripts\ckeditor\lang\nl.js" />
+    <Content Include="Scripts\ckeditor\lang\no.js" />
+    <Content Include="Scripts\ckeditor\lang\pl.js" />
+    <Content Include="Scripts\ckeditor\lang\pt-br.js" />
+    <Content Include="Scripts\ckeditor\lang\pt.js" />
+    <Content Include="Scripts\ckeditor\lang\ro.js" />
+    <Content Include="Scripts\ckeditor\lang\ru.js" />
+    <Content Include="Scripts\ckeditor\lang\sk.js" />
+    <Content Include="Scripts\ckeditor\lang\sl.js" />
+    <Content Include="Scripts\ckeditor\lang\sr-latn.js" />
+    <Content Include="Scripts\ckeditor\lang\sr.js" />
+    <Content Include="Scripts\ckeditor\lang\sv.js" />
+    <Content Include="Scripts\ckeditor\lang\th.js" />
+    <Content Include="Scripts\ckeditor\lang\tr.js" />
+    <Content Include="Scripts\ckeditor\lang\ug.js" />
+    <Content Include="Scripts\ckeditor\lang\uk.js" />
+    <Content Include="Scripts\ckeditor\lang\vi.js" />
+    <Content Include="Scripts\ckeditor\lang\zh-cn.js" />
+    <Content Include="Scripts\ckeditor\lang\zh.js" />
+    <Content Include="Scripts\ckeditor\lang\_languages.js" />
+    <Content Include="Scripts\ckeditor\lang\_translationstatus.txt" />
+    <Content Include="Scripts\ckeditor\LICENSE.html" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\a11yhelp.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\cs.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\cy.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\da.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\de.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\el.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\en.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\eo.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\fa.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\fi.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\fr.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\gu.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\he.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\it.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\mk.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\nb.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\nl.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\no.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\pt-br.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\ro.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\tr.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\ug.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\vi.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\zh-cn.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\_translationstatus.txt" />
+    <Content Include="Scripts\ckeditor\plugins\about\dialogs\about.js" />
+    <Content Include="Scripts\ckeditor\plugins\about\dialogs\logo_ckeditor.png" />
+    <Content Include="Scripts\ckeditor\plugins\adobeair\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\ajax\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\autogrow\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\bbcode\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\clipboard\dialogs\paste.js" />
+    <Content Include="Scripts\ckeditor\plugins\colordialog\dialogs\colordialog.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\bg.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\cs.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\cy.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\da.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\de.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\el.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\en.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\eo.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\et.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\fa.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\fi.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\fr.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\gu.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\he.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\hr.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\it.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\nb.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\nl.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\no.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\pl.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\pt-br.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\tr.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\ug.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\uk.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\vi.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\zh-cn.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\_translationstatus.txt" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\dialog\dialogDefinition.js" />
+    <Content Include="Scripts\ckeditor\plugins\div\dialogs\div.js" />
+    <Content Include="Scripts\ckeditor\plugins\docprops\dialogs\docprops.js" />
+    <Content Include="Scripts\ckeditor\plugins\docprops\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\find\dialogs\find.js" />
+    <Content Include="Scripts\ckeditor\plugins\flash\dialogs\flash.js" />
+    <Content Include="Scripts\ckeditor\plugins\flash\images\placeholder.png" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\button.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\checkbox.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\form.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\hiddenfield.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\radio.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\select.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\textarea.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\textfield.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\images\hiddenfield.gif" />
+    <Content Include="Scripts\ckeditor\plugins\iframedialog\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\iframe\dialogs\iframe.js" />
+    <Content Include="Scripts\ckeditor\plugins\iframe\images\placeholder.png" />
+    <Content Include="Scripts\ckeditor\plugins\image\dialogs\image.js" />
+    <Content Include="Scripts\ckeditor\plugins\link\dialogs\anchor.js" />
+    <Content Include="Scripts\ckeditor\plugins\link\dialogs\link.js" />
+    <Content Include="Scripts\ckeditor\plugins\link\images\anchor.gif" />
+    <Content Include="Scripts\ckeditor\plugins\liststyle\dialogs\liststyle.js" />
+    <Content Include="Scripts\ckeditor\plugins\pagebreak\images\pagebreak.gif" />
+    <Content Include="Scripts\ckeditor\plugins\pastefromword\filter\default.js" />
+    <Content Include="Scripts\ckeditor\plugins\pastetext\dialogs\pastetext.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\dialogs\placeholder.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\bg.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\cs.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\cy.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\da.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\de.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\el.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\en.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\eo.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\et.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\fa.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\fi.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\fr.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\he.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\hr.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\it.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\nb.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\nl.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\no.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\pl.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\pt-br.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\tr.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\ug.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\uk.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\vi.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\zh-cn.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\_translationstatus.txt" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\placeholder.gif" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\preview\preview.html" />
+    <Content Include="Scripts\ckeditor\plugins\scayt\dialogs\options.js" />
+    <Content Include="Scripts\ckeditor\plugins\scayt\dialogs\toolbar.css" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_address.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_blockquote.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_div.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_h1.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_h2.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_h3.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_h4.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_h5.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_h6.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_p.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_pre.png" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\dialogs\smiley.js" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\angel_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\angry_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\broken_heart.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\confused_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\cry_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\devil_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\embaressed_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\envelope.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\heart.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\kiss.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\lightbulb.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\omg_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\regular_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\sad_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\shades_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\teeth_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\thumbs_down.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\thumbs_up.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\tounge_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\whatchutalkingabout_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\wink_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\specialchar.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\cs.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\cy.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\de.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\el.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\en.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\eo.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\et.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\fa.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\fi.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\fr.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\he.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\hr.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\it.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\nb.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\nl.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\no.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\pt-br.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\tr.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\ug.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\zh-cn.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\_translationstatus.txt" />
+    <Content Include="Scripts\ckeditor\plugins\stylesheetparser\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\styles\styles\default.js" />
+    <Content Include="Scripts\ckeditor\plugins\tableresize\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\tabletools\dialogs\tableCell.js" />
+    <Content Include="Scripts\ckeditor\plugins\table\dialogs\table.js" />
+    <Content Include="Scripts\ckeditor\plugins\templates\dialogs\templates.js" />
+    <Content Include="Scripts\ckeditor\plugins\templates\templates\default.js" />
+    <Content Include="Scripts\ckeditor\plugins\templates\templates\images\template1.gif" />
+    <Content Include="Scripts\ckeditor\plugins\templates\templates\images\template2.gif" />
+    <Content Include="Scripts\ckeditor\plugins\templates\templates\images\template3.gif" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\dialogs\uicolor.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\bg.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\cs.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\cy.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\da.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\de.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\el.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\en.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\eo.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\et.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\fa.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\fi.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\fr.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\he.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\hr.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\it.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\mk.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\nb.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\nl.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\no.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\pl.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\pt-br.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\tr.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\ug.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\uk.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\vi.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\zh-cn.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\_translationstatus.txt" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\uicolor.gif" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\yui\assets\hue_bg.png" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\yui\assets\hue_thumb.png" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\yui\assets\picker_mask.png" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\yui\assets\picker_thumb.png" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\yui\assets\yui.css" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\yui\yui.js" />
+    <Content Include="Scripts\ckeditor\plugins\wsc\dialogs\ciframe.html" />
+    <Content Include="Scripts\ckeditor\plugins\wsc\dialogs\tmpFrameset.html" />
+    <Content Include="Scripts\ckeditor\plugins\wsc\dialogs\wsc.css" />
+    <Content Include="Scripts\ckeditor\plugins\wsc\dialogs\wsc.js" />
+    <Content Include="Scripts\ckeditor\plugins\xml\plugin.js" />
+    <Content Include="Scripts\ckeditor\skins\kama\dialog.css" />
+    <Content Include="Scripts\ckeditor\skins\kama\editor.css" />
+    <Content Include="Scripts\ckeditor\skins\kama\icons.png" />
+    <Content Include="Scripts\ckeditor\skins\kama\icons_rtl.png" />
+    <Content Include="Scripts\ckeditor\skins\kama\images\dialog_sides.gif" />
+    <Content Include="Scripts\ckeditor\skins\kama\images\dialog_sides.png" />
+    <Content Include="Scripts\ckeditor\skins\kama\images\dialog_sides_rtl.png" />
+    <Content Include="Scripts\ckeditor\skins\kama\images\mini.gif" />
+    <Content Include="Scripts\ckeditor\skins\kama\images\noimage.png" />
+    <Content Include="Scripts\ckeditor\skins\kama\images\sprites.png" />
+    <Content Include="Scripts\ckeditor\skins\kama\images\sprites_ie6.png" />
+    <Content Include="Scripts\ckeditor\skins\kama\images\toolbar_start.gif" />
+    <Content Include="Scripts\ckeditor\skins\kama\skin.js" />
+    <Content Include="Scripts\ckeditor\skins\kama\templates.css" />
+    <Content Include="Scripts\ckeditor\skins\office2003\dialog.css" />
+    <Content Include="Scripts\ckeditor\skins\office2003\editor.css" />
+    <Content Include="Scripts\ckeditor\skins\office2003\icons.png" />
+    <Content Include="Scripts\ckeditor\skins\office2003\icons_rtl.png" />
+    <Content Include="Scripts\ckeditor\skins\office2003\images\dialog_sides.gif" />
+    <Content Include="Scripts\ckeditor\skins\office2003\images\dialog_sides.png" />
+    <Content Include="Scripts\ckeditor\skins\office2003\images\dialog_sides_rtl.png" />
+    <Content Include="Scripts\ckeditor\skins\office2003\images\mini.gif" />
+    <Content Include="Scripts\ckeditor\skins\office2003\images\noimage.png" />
+    <Content Include="Scripts\ckeditor\skins\office2003\images\sprites.png" />
+    <Content Include="Scripts\ckeditor\skins\office2003\images\sprites_ie6.png" />
+    <Content Include="Scripts\ckeditor\skins\office2003\skin.js" />
+    <Content Include="Scripts\ckeditor\skins\office2003\templates.css" />
+    <Content Include="Scripts\ckeditor\skins\v2\dialog.css" />
+    <Content Include="Scripts\ckeditor\skins\v2\editor.css" />
+    <Content Include="Scripts\ckeditor\skins\v2\icons.png" />
+    <Content Include="Scripts\ckeditor\skins\v2\icons_rtl.png" />
+    <Content Include="Scripts\ckeditor\skins\v2\images\dialog_sides.gif" />
+    <Content Include="Scripts\ckeditor\skins\v2\images\dialog_sides.png" />
+    <Content Include="Scripts\ckeditor\skins\v2\images\dialog_sides_rtl.png" />
+    <Content Include="Scripts\ckeditor\skins\v2\images\mini.gif" />
+    <Content Include="Scripts\ckeditor\skins\v2\images\noimage.png" />
+    <Content Include="Scripts\ckeditor\skins\v2\images\sprites.png" />
+    <Content Include="Scripts\ckeditor\skins\v2\images\sprites_ie6.png" />
+    <Content Include="Scripts\ckeditor\skins\v2\images\toolbar_start.gif" />
+    <Content Include="Scripts\ckeditor\skins\v2\skin.js" />
+    <Content Include="Scripts\ckeditor\skins\v2\templates.css" />
+    <Content Include="Scripts\ckeditor\themes\default\theme.js" />
+    <Content Include="Scripts\ckeditor\WebForm1.aspx" />
+    <Content Include="Scripts\htmlTextArea\Default.htm" />
+    <Content Include="Scripts\htmlTextArea\images\disk.png" />
+    <Content Include="Scripts\htmlTextArea\scripts\jHtmlArea-0.7.5-vsdoc.js" />
+    <Content Include="Scripts\htmlTextArea\scripts\jHtmlArea-0.7.5.js" />
+    <Content Include="Scripts\htmlTextArea\scripts\jHtmlArea-0.7.5.min-vsdoc.js" />
+    <Content Include="Scripts\htmlTextArea\scripts\jHtmlArea-0.7.5.min.js" />
+    <Content Include="Scripts\htmlTextArea\scripts\jHtmlArea.ColorPickerMenu-0.7.0.js" />
+    <Content Include="Scripts\htmlTextArea\scripts\jHtmlArea.ColorPickerMenu-0.7.0.min.js" />
+    <Content Include="Scripts\htmlTextArea\scripts\jquery-1.3.2-vsdoc.js" />
+    <Content Include="Scripts\htmlTextArea\scripts\jquery-1.3.2.js" />
+    <Content Include="Scripts\htmlTextArea\scripts\jquery-1.3.2.min-vsdoc.js" />
+    <Content Include="Scripts\htmlTextArea\scripts\jquery-1.3.2.min.js" />
+    <Content Include="Scripts\htmlTextArea\scripts\jquery-ui-1.7.2.custom.min.js" />
+    <Content Include="Scripts\htmlTextArea\style\jHtmlArea.ColorPickerMenu.css" />
+    <Content Include="Scripts\htmlTextArea\style\jHtmlArea.css" />
+    <Content Include="Scripts\htmlTextArea\style\jHtmlArea.Editor.css" />
+    <Content Include="Scripts\htmlTextArea\style\jHtmlArea.png" />
+    <Content Include="Scripts\htmlTextArea\style\jHtmlArea_Toolbar_Group_BG.png" />
+    <Content Include="Scripts\htmlTextArea\style\jHtmlArea_Toolbar_Group__Btn_Select_BG.png" />
+    <Content Include="Scripts\htmlTextArea\style\jqueryui\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Scripts\htmlTextArea\style\jqueryui\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Scripts\htmlTextArea\style\jqueryui\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Scripts\htmlTextArea\style\jqueryui\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Scripts\htmlTextArea\style\jqueryui\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Scripts\htmlTextArea\style\jqueryui\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Scripts\htmlTextArea\style\jqueryui\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Scripts\htmlTextArea\style\jqueryui\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Scripts\htmlTextArea\style\jqueryui\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Scripts\htmlTextArea\style\jqueryui\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Scripts\htmlTextArea\style\jqueryui\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Scripts\htmlTextArea\style\jqueryui\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Scripts\htmlTextArea\style\jqueryui\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Scripts\htmlTextArea\style\jqueryui\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Scripts\htmlTextArea\style\jqueryui\ui-lightness\jquery-ui-1.7.2.custom.css" />
+    <Content Include="Scripts\jquery.blockUI188b.js" />
+    <Content Include="publicArea\errorpages\style.css" />
+    <Content Include="publicArea\errorpages\WebForm1.aspx" />
+    <Content Include="publicArea\ExecutiveJob.aspx" />
+    <Content Include="publicArea\JobDetails.aspx" />
+    <Content Include="publicArea\JobSector.aspx" />
+    <Content Include="publicArea\NewJobs.aspx" />
+    <Content Include="publicArea\Pending.aspx" />
+    <Content Include="publicArea\CV\engines\caption\css\boxplus.caption.css" />
+    <Content Include="publicArea\CV\engines\caption\css\camera.png" />
+    <Content Include="publicArea\CV\engines\caption\css\disk.png" />
+    <Content Include="publicArea\CV\engines\caption\js\boxplus.caption.js" />
+    <Content Include="publicArea\CV\engines\lang\boxplus.lang9ed2.js" />
+    <Content Include="publicArea\CV\engines\popup\css\boxplus.css" />
+    <Content Include="publicArea\CV\engines\popup\css\boxplus.darkrounded.css" />
+    <Content Include="publicArea\CV\engines\popup\css\boxplus.darksquare.css" />
+    <Content Include="publicArea\CV\engines\popup\css\boxplus.lightrounded.css" />
+    <Content Include="publicArea\CV\engines\popup\css\boxplus.lightsquare.css" />
+    <Content Include="publicArea\CV\engines\popup\css\boxplus.prettyphoto.css" />
+    <Content Include="publicArea\CV\engines\popup\css\buttons.png" />
+    <Content Include="publicArea\CV\engines\popup\css\darkrounded\pattern.png" />
+    <Content Include="publicArea\CV\engines\popup\css\loading.png" />
+    <Content Include="publicArea\CV\engines\popup\css\navigation.png" />
+    <Content Include="publicArea\CV\engines\popup\css\resize.png" />
+    <Content Include="publicArea\CV\engines\popup\css\transparent.gif" />
+    <Content Include="publicArea\CV\engines\popup\js\boxplus.js" />
+    <Content Include="publicArea\CV\engines\slider\css\boxplus.slider.css" />
+    <Content Include="publicArea\CV\engines\slider\css\boxplus.transition.css" />
+    <Content Include="publicArea\CV\engines\slider\css\btnDownLarge.png" />
+    <Content Include="publicArea\CV\engines\slider\css\btnDownSmall.png" />
+    <Content Include="publicArea\CV\engines\slider\css\btnLeftLarge.png" />
+    <Content Include="publicArea\CV\engines\slider\css\btnLeftSmall.png" />
+    <Content Include="publicArea\CV\engines\slider\css\btnRightLarge.png" />
+    <Content Include="publicArea\CV\engines\slider\css\btnRightSmall.png" />
+    <Content Include="publicArea\CV\engines\slider\css\btnUpLarge.png" />
+    <Content Include="publicArea\CV\engines\slider\css\btnUpSmall.png" />
+    <Content Include="publicArea\CV\engines\slider\css\loading.gif" />
+    <Content Include="publicArea\CV\engines\slider\css\paging.png" />
+    <Content Include="publicArea\CV\engines\slider\css\transparent.gif" />
+    <Content Include="publicArea\CV\engines\slider\js\boxplus.slider.js" />
+    <Content Include="publicArea\CV\engines\slider\js\boxplus.transition.js" />
+    <Content Include="publicArea\CV\InternalUpdate\jsapi.js" />
+    <Content Include="publicArea\Preparation.aspx" />
+    <Content Include="publicArea\RecruitmentCenter.aspx" />
+    <Content Include="publicArea\SearchResult.aspx" />
+    <Content Include="publicArea\Testimonial.aspx" />
+    <Content Include="publicArea\Welcome.aspx" />
+    <Content Include="Scripts\highlight.js" />
+    <Content Include="Scripts\jsapi.js" />
+    <Content Include="Scripts\slider\bjqs.css" />
+    <Content Include="Scripts\slider\slide.css" />
+    <Content Include="Scripts\slider\img\banner01.jpg" />
+    <Content Include="Scripts\slider\img\banner02.jpg" />
+    <Content Include="Scripts\slider\img\banner03.jpg" />
+    <Content Include="Scripts\slider\index.html" />
+    <Content Include="Scripts\slider\js\bjqs-1.3.js" />
+    <Content Include="Scripts\slider\js\bjqs-1.3.min.js" />
+    <Content Include="Scripts\slider\js\libs\jquery.secret-source.min.js" />
+    <Content Include="Scripts\tiny_mce\langs\en.js" />
+    <Content Include="Scripts\tiny_mce\license.txt" />
+    <Content Include="Scripts\tiny_mce\plugins\advhr\css\advhr.css" />
+    <Content Include="Scripts\tiny_mce\plugins\advhr\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\advhr\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\advhr\js\rule.js" />
+    <Content Include="Scripts\tiny_mce\plugins\advhr\langs\en_dlg.js" />
+    <Content Include="Scripts\tiny_mce\plugins\advhr\rule.htm" />
+    <Content Include="Scripts\tiny_mce\plugins\advimage\css\advimage.css" />
+    <Content Include="Scripts\tiny_mce\plugins\advimage\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\advimage\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\advimage\image.htm" />
+    <Content Include="Scripts\tiny_mce\plugins\advimage\img\sample.gif" />
+    <Content Include="Scripts\tiny_mce\plugins\advimage\js\image.js" />
+    <Content Include="Scripts\tiny_mce\plugins\advimage\langs\en_dlg.js" />
+    <Content Include="Scripts\tiny_mce\plugins\advlink\css\advlink.css" />
+    <Content Include="Scripts\tiny_mce\plugins\advlink\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\advlink\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\advlink\js\advlink.js" />
+    <Content Include="Scripts\tiny_mce\plugins\advlink\langs\en_dlg.js" />
+    <Content Include="Scripts\tiny_mce\plugins\advlink\link.htm" />
+    <Content Include="Scripts\tiny_mce\plugins\advlist\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\advlist\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\autolink\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\autolink\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\autoresize\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\autoresize\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\autosave\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\autosave\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\autosave\langs\en.js" />
+    <Content Include="Scripts\tiny_mce\plugins\bbcode\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\bbcode\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\contextmenu\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\contextmenu\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\directionality\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\directionality\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\emotions\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\emotions\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\emotions\emotions.htm" />
+    <Content Include="Scripts\tiny_mce\plugins\emotions\img\smiley-cool.gif" />
+    <Content Include="Scripts\tiny_mce\plugins\emotions\img\smiley-cry.gif" />
+    <Content Include="Scripts\tiny_mce\plugins\emotions\img\smiley-embarassed.gif" />
+    <Content Include="Scripts\tiny_mce\plugins\emotions\img\smiley-foot-in-mouth.gif" />
+    <Content Include="Scripts\tiny_mce\plugins\emotions\img\smiley-frown.gif" />
+    <Content Include="Scripts\tiny_mce\plugins\emotions\img\smiley-innocent.gif" />
+    <Content Include="Scripts\tiny_mce\plugins\emotions\img\smiley-kiss.gif" />
+    <Content Include="Scripts\tiny_mce\plugins\emotions\img\smiley-laughing.gif" />
+    <Content Include="Scripts\tiny_mce\plugins\emotions\img\smiley-money-mouth.gif" />
+    <Content Include="Scripts\tiny_mce\plugins\emotions\img\smiley-sealed.gif" />
+    <Content Include="Scripts\tiny_mce\plugins\emotions\img\smiley-smile.gif" />
+    <Content Include="Scripts\tiny_mce\plugins\emotions\img\smiley-surprised.gif" />
+    <Content Include="Scripts\tiny_mce\plugins\emotions\img\smiley-tongue-out.gif" />
+    <Content Include="Scripts\tiny_mce\plugins\emotions\img\smiley-undecided.gif" />
+    <Content Include="Scripts\tiny_mce\plugins\emotions\img\smiley-wink.gif" />
+    <Content Include="Scripts\tiny_mce\plugins\emotions\img\smiley-yell.gif" />
+    <Content Include="Scripts\tiny_mce\plugins\emotions\js\emotions.js" />
+    <Content Include="Scripts\tiny_mce\plugins\emotions\langs\en_dlg.js" />
+    <Content Include="Scripts\tiny_mce\plugins\example\dialog.htm" />
+    <Content Include="Scripts\tiny_mce\plugins\example\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\example\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\example\img\example.gif" />
+    <Content Include="Scripts\tiny_mce\plugins\example\js\dialog.js" />
+    <Content Include="Scripts\tiny_mce\plugins\example\langs\en.js" />
+    <Content Include="Scripts\tiny_mce\plugins\example\langs\en_dlg.js" />
+    <Content Include="Scripts\tiny_mce\plugins\example_dependency\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\example_dependency\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\fullpage\css\fullpage.css" />
+    <Content Include="Scripts\tiny_mce\plugins\fullpage\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\fullpage\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\fullpage\fullpage.htm" />
+    <Content Include="Scripts\tiny_mce\plugins\fullpage\js\fullpage.js" />
+    <Content Include="Scripts\tiny_mce\plugins\fullpage\langs\en_dlg.js" />
+    <Content Include="Scripts\tiny_mce\plugins\fullscreen\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\fullscreen\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\fullscreen\fullscreen.htm" />
+    <Content Include="Scripts\tiny_mce\plugins\iespell\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\iespell\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\inlinepopups\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\inlinepopups\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\alert.gif" />
+    <Content Include="Scripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\button.gif" />
+    <Content Include="Scripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\buttons.gif" />
+    <Content Include="Scripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\confirm.gif" />
+    <Content Include="Scripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\corners.gif" />
+    <Content Include="Scripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\horizontal.gif" />
+    <Content Include="Scripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\vertical.gif" />
+    <Content Include="Scripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\window.css" />
+    <Content Include="Scripts\tiny_mce\plugins\inlinepopups\template.htm" />
+    <Content Include="Scripts\tiny_mce\plugins\insertdatetime\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\insertdatetime\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\layer\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\layer\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\legacyoutput\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\legacyoutput\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\lists\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\lists\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\media\css\media.css" />
+    <Content Include="Scripts\tiny_mce\plugins\media\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\media\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\media\js\embed.js" />
+    <Content Include="Scripts\tiny_mce\plugins\media\js\media.js" />
+    <Content Include="Scripts\tiny_mce\plugins\media\langs\en_dlg.js" />
+    <Content Include="Scripts\tiny_mce\plugins\media\media.htm" />
+    <Content Include="Scripts\tiny_mce\plugins\media\moxieplayer.swf" />
+    <Content Include="Scripts\tiny_mce\plugins\nonbreaking\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\nonbreaking\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\noneditable\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\noneditable\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\pagebreak\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\pagebreak\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\paste\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\paste\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\paste\js\pastetext.js" />
+    <Content Include="Scripts\tiny_mce\plugins\paste\js\pasteword.js" />
+    <Content Include="Scripts\tiny_mce\plugins\paste\langs\en_dlg.js" />
+    <Content Include="Scripts\tiny_mce\plugins\paste\pastetext.htm" />
+    <Content Include="Scripts\tiny_mce\plugins\paste\pasteword.htm" />
+    <Content Include="Scripts\tiny_mce\plugins\preview\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\preview\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\preview\example.html" />
+    <Content Include="Scripts\tiny_mce\plugins\preview\jscripts\embed.js" />
+    <Content Include="Scripts\tiny_mce\plugins\preview\preview.html" />
+    <Content Include="Scripts\tiny_mce\plugins\print\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\print\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\save\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\save\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\searchreplace\css\searchreplace.css" />
+    <Content Include="Scripts\tiny_mce\plugins\searchreplace\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\searchreplace\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\searchreplace\js\searchreplace.js" />
+    <Content Include="Scripts\tiny_mce\plugins\searchreplace\langs\en_dlg.js" />
+    <Content Include="Scripts\tiny_mce\plugins\searchreplace\searchreplace.htm" />
+    <Content Include="Scripts\tiny_mce\plugins\spellchecker\css\content.css" />
+    <Content Include="Scripts\tiny_mce\plugins\spellchecker\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\spellchecker\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\spellchecker\img\wline.gif" />
+    <Content Include="Scripts\tiny_mce\plugins\style\css\props.css" />
+    <Content Include="Scripts\tiny_mce\plugins\style\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\style\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\style\js\props.js" />
+    <Content Include="Scripts\tiny_mce\plugins\style\langs\en_dlg.js" />
+    <Content Include="Scripts\tiny_mce\plugins\style\props.htm" />
+    <Content Include="Scripts\tiny_mce\plugins\style\readme.txt" />
+    <Content Include="Scripts\tiny_mce\plugins\tabfocus\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\tabfocus\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\table\cell.htm" />
+    <Content Include="Scripts\tiny_mce\plugins\table\css\cell.css" />
+    <Content Include="Scripts\tiny_mce\plugins\table\css\row.css" />
+    <Content Include="Scripts\tiny_mce\plugins\table\css\table.css" />
+    <Content Include="Scripts\tiny_mce\plugins\table\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\table\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\table\js\cell.js" />
+    <Content Include="Scripts\tiny_mce\plugins\table\js\merge_cells.js" />
+    <Content Include="Scripts\tiny_mce\plugins\table\js\row.js" />
+    <Content Include="Scripts\tiny_mce\plugins\table\js\table.js" />
+    <Content Include="Scripts\tiny_mce\plugins\table\langs\en_dlg.js" />
+    <Content Include="Scripts\tiny_mce\plugins\table\merge_cells.htm" />
+    <Content Include="Scripts\tiny_mce\plugins\table\row.htm" />
+    <Content Include="Scripts\tiny_mce\plugins\table\table.htm" />
+    <Content Include="Scripts\tiny_mce\plugins\template\blank.htm" />
+    <Content Include="Scripts\tiny_mce\plugins\template\css\template.css" />
+    <Content Include="Scripts\tiny_mce\plugins\template\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\template\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\template\js\template.js" />
+    <Content Include="Scripts\tiny_mce\plugins\template\langs\en_dlg.js" />
+    <Content Include="Scripts\tiny_mce\plugins\template\template.htm" />
+    <Content Include="Scripts\tiny_mce\plugins\visualblocks\css\visualblocks.css" />
+    <Content Include="Scripts\tiny_mce\plugins\visualblocks\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\visualblocks\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\visualchars\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\visualchars\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\wordcount\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\wordcount\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\xhtmlxtras\abbr.htm" />
+    <Content Include="Scripts\tiny_mce\plugins\xhtmlxtras\acronym.htm" />
+    <Content Include="Scripts\tiny_mce\plugins\xhtmlxtras\attributes.htm" />
+    <Content Include="Scripts\tiny_mce\plugins\xhtmlxtras\cite.htm" />
+    <Content Include="Scripts\tiny_mce\plugins\xhtmlxtras\css\attributes.css" />
+    <Content Include="Scripts\tiny_mce\plugins\xhtmlxtras\css\popup.css" />
+    <Content Include="Scripts\tiny_mce\plugins\xhtmlxtras\del.htm" />
+    <Content Include="Scripts\tiny_mce\plugins\xhtmlxtras\editor_plugin.js" />
+    <Content Include="Scripts\tiny_mce\plugins\xhtmlxtras\editor_plugin_src.js" />
+    <Content Include="Scripts\tiny_mce\plugins\xhtmlxtras\ins.htm" />
+    <Content Include="Scripts\tiny_mce\plugins\xhtmlxtras\js\abbr.js" />
+    <Content Include="Scripts\tiny_mce\plugins\xhtmlxtras\js\acronym.js" />
+    <Content Include="Scripts\tiny_mce\plugins\xhtmlxtras\js\attributes.js" />
+    <Content Include="Scripts\tiny_mce\plugins\xhtmlxtras\js\cite.js" />
+    <Content Include="Scripts\tiny_mce\plugins\xhtmlxtras\js\del.js" />
+    <Content Include="Scripts\tiny_mce\plugins\xhtmlxtras\js\element_common.js" />
+    <Content Include="Scripts\tiny_mce\plugins\xhtmlxtras\js\ins.js" />
+    <Content Include="Scripts\tiny_mce\plugins\xhtmlxtras\langs\en_dlg.js" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\about.htm" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\anchor.htm" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\charmap.htm" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\color_picker.htm" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\editor_template.js" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\editor_template_src.js" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\image.htm" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\img\colorpicker.jpg" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\img\flash.gif" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\img\icons.gif" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\img\iframe.gif" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\img\pagebreak.gif" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\img\quicktime.gif" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\img\realmedia.gif" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\img\shockwave.gif" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\img\trans.gif" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\img\video.gif" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\img\windowsmedia.gif" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\js\about.js" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\js\anchor.js" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\js\charmap.js" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\js\color_picker.js" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\js\image.js" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\js\link.js" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\js\source_editor.js" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\langs\en.js" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\langs\en_dlg.js" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\link.htm" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\shortcuts.htm" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\skins\default\content.css" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\skins\default\dialog.css" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\skins\default\img\buttons.png" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\skins\default\img\items.gif" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\skins\default\img\menu_arrow.gif" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\skins\default\img\menu_check.gif" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\skins\default\img\progress.gif" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\skins\default\img\tabs.gif" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\skins\default\ui.css" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\skins\highcontrast\content.css" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\skins\highcontrast\dialog.css" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\skins\highcontrast\ui.css" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\skins\o2k7\content.css" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\skins\o2k7\dialog.css" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\skins\o2k7\img\button_bg.png" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\skins\o2k7\img\button_bg_black.png" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\skins\o2k7\img\button_bg_silver.png" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\skins\o2k7\ui.css" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\skins\o2k7\ui_black.css" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\skins\o2k7\ui_silver.css" />
+    <Content Include="Scripts\tiny_mce\themes\advanced\source_editor.htm" />
+    <Content Include="Scripts\tiny_mce\themes\simple\editor_template.js" />
+    <Content Include="Scripts\tiny_mce\themes\simple\editor_template_src.js" />
+    <Content Include="Scripts\tiny_mce\themes\simple\img\icons.gif" />
+    <Content Include="Scripts\tiny_mce\themes\simple\langs\en.js" />
+    <Content Include="Scripts\tiny_mce\themes\simple\skins\default\content.css" />
+    <Content Include="Scripts\tiny_mce\themes\simple\skins\default\ui.css" />
+    <Content Include="Scripts\tiny_mce\themes\simple\skins\o2k7\content.css" />
+    <Content Include="Scripts\tiny_mce\themes\simple\skins\o2k7\img\button_bg.png" />
+    <Content Include="Scripts\tiny_mce\themes\simple\skins\o2k7\ui.css" />
+    <Content Include="Scripts\tiny_mce\tiny_mce.js" />
+    <Content Include="Scripts\tiny_mce\tiny_mce_popup.js" />
+    <Content Include="Scripts\tiny_mce\tiny_mce_src.js" />
+    <Content Include="Scripts\tiny_mce\utils\editable_selects.js" />
+    <Content Include="Scripts\tiny_mce\utils\form_utils.js" />
+    <Content Include="Scripts\tiny_mce\utils\mctabs.js" />
+    <Content Include="Scripts\tiny_mce\utils\validate.js" />
+    <Content Include="Styles\intership.css" />
+    <Content Include="Styles\jquery-dialogfbf6.js" />
+    <Content Include="Styles\jquery.min.js" />
+    <Content Include="Styles\simple-tabs9fab.js" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\image_list.js" />
+    <Content Include="Scripts\link_list.js" />
+    <Content Include="Scripts\media_list.js" />
+    <Content Include="Scripts\template_list.js" />
+    <Content Include="s\services.aspx" />
+    <Content Include="Templates\Pages\AddNewInternship.aspx" />
+    <Content Include="Templates\Pages\Article.aspx" />
+    <Content Include="Templates\Pages\InternshipGuide.aspx" />
+    <Content Include="Templates\Pages\SubmitYourInternship.aspx" />
+    <Content Include="Templates\UserControl\IntershipAds.ascx" />
+    <Content Include="Templates\UserControl\Social4Master.ascx" />
+    <Content Include="Templates\UserControl\SocialLinkArticle.ascx" />
+    <Content Include="Templates\UserControl\SocialReference.ascx" />
+    <Content Include="testM.aspx" />
+    <Content Include="uploader.css" />
+    <Content Include="UserControls\Header.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\AccManagement.aspx.cs">
+      <DependentUpon>AccManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\AccManagement.aspx.designer.cs">
+      <DependentUpon>AccManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\my-jobs.aspx.cs">
+      <DependentUpon>my-jobs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\my-jobs.aspx.designer.cs">
+      <DependentUpon>my-jobs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\myAccount.aspx.cs">
+      <DependentUpon>myAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\myAccount.aspx.designer.cs">
+      <DependentUpon>myAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Reactivation.aspx.cs">
+      <DependentUpon>Reactivation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Reactivation.aspx.designer.cs">
+      <DependentUpon>Reactivation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RecoveryPassword.aspx.cs">
+      <DependentUpon>RecoveryPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RecoveryPassword.aspx.designer.cs">
+      <DependentUpon>RecoveryPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RecoveryPasswordSuccess.aspx.cs">
+      <DependentUpon>RecoveryPasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RecoveryPasswordSuccess.aspx.designer.cs">
+      <DependentUpon>RecoveryPasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RecoveryPwd.aspx.cs">
+      <DependentUpon>RecoveryPwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RecoveryPwd.aspx.designer.cs">
+      <DependentUpon>RecoveryPwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RecruiterInfo.aspx.cs">
+      <DependentUpon>RecruiterInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RecruiterInfo.aspx.designer.cs">
+      <DependentUpon>RecruiterInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RegisterAsEmployer.aspx.cs">
+      <DependentUpon>RegisterAsEmployer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RegisterAsEmployer.aspx.designer.cs">
+      <DependentUpon>RegisterAsEmployer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admintj\AdminSite.Master.cs">
+      <DependentUpon>AdminSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admintj\AdminSite.Master.designer.cs">
+      <DependentUpon>AdminSite.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admintj\Categorys\CategorysEdit.aspx.cs">
+      <DependentUpon>CategorysEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admintj\Categorys\CategorysEdit.aspx.designer.cs">
+      <DependentUpon>CategorysEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admintj\Common\BrowseFiles.aspx.cs">
+      <DependentUpon>BrowseFiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admintj\Common\BrowseFiles.aspx.designer.cs">
+      <DependentUpon>BrowseFiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admintj\FeatureLogo.aspx.cs">
+      <DependentUpon>FeatureLogo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admintj\FeatureLogo.aspx.designer.cs">
+      <DependentUpon>FeatureLogo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admintj\ImageUpload.aspx.cs">
+      <DependentUpon>ImageUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admintj\ImageUpload.aspx.designer.cs">
+      <DependentUpon>ImageUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admintj\InternshipGuideManagement.aspx.cs">
+      <DependentUpon>InternshipGuideManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admintj\InternshipGuideManagement.aspx.designer.cs">
+      <DependentUpon>InternshipGuideManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admintj\InternshipUserSubmitManagement.aspx.cs">
+      <DependentUpon>InternshipUserSubmitManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admintj\InternshipUserSubmitManagement.aspx.designer.cs">
+      <DependentUpon>InternshipUserSubmitManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admintj\IntershipManagement.aspx.cs">
+      <DependentUpon>IntershipManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admintj\IntershipManagement.aspx.designer.cs">
+      <DependentUpon>IntershipManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admintj\SendingEmailTeach.aspx.cs">
+      <DependentUpon>SendingEmailTeach.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admintj\SendingEmailTeach.aspx.designer.cs">
+      <DependentUpon>SendingEmailTeach.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admintj\SendingEmailEmp.aspx.cs">
+      <DependentUpon>SendingEmailEmp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admintj\SendingEmailEmp.aspx.designer.cs">
+      <DependentUpon>SendingEmailEmp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admintj\CVManagement\CV.aspx.cs">
+      <DependentUpon>CV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admintj\CVManagement\CV.aspx.designer.cs">
+      <DependentUpon>CV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admintj\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admintj\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admintj\EditUser.aspx.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admintj\EditUser.aspx.designer.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admintj\JobManagement\Jobs.aspx.cs">
+      <DependentUpon>Jobs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admintj\JobManagement\Jobs.aspx.designer.cs">
+      <DependentUpon>Jobs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admintj\model\UserModel.cs" />
+    <Compile Include="admintj\SendingEmail.aspx.cs">
+      <DependentUpon>SendingEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admintj\SendingEmail.aspx.designer.cs">
+      <DependentUpon>SendingEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admintj\Role.aspx.cs">
+      <DependentUpon>Role.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admintj\Role.aspx.designer.cs">
+      <DependentUpon>Role.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admintj\ServiceManagement.aspx.cs">
+      <DependentUpon>ServiceManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admintj\ServiceManagement.aspx.designer.cs">
+      <DependentUpon>ServiceManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admintj\SystemTools\SetupMailAuto.aspx.cs">
+      <DependentUpon>SetupMailAuto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admintj\SystemTools\SetupMailAuto.aspx.designer.cs">
+      <DependentUpon>SetupMailAuto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admintj\SystemTools\SQL.aspx.cs">
+      <DependentUpon>SQL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admintj\SystemTools\SQL.aspx.designer.cs">
+      <DependentUpon>SQL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admintj\User.aspx.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admintj\User.aspx.designer.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admintj\UserRole.aspx.cs">
+      <DependentUpon>UserRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admintj\UserRole.aspx.designer.cs">
+      <DependentUpon>UserRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intership.aspx.cs">
+      <DependentUpon>Intership.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intership.aspx.designer.cs">
+      <DependentUpon>Intership.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\intership.aspx.cs">
+      <DependentUpon>intership.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\intership.aspx.designer.cs">
+      <DependentUpon>intership.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\Training\CourseSearchResult.aspx.cs">
+      <DependentUpon>CourseSearchResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\Training\CourseSearchResult.aspx.designer.cs">
+      <DependentUpon>CourseSearchResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\Training\TrainingCourse.aspx.cs">
+      <DependentUpon>TrainingCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\Training\TrainingCourse.aspx.designer.cs">
+      <DependentUpon>TrainingCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="s\services.aspx.cs">
+      <DependentUpon>services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="s\services.aspx.designer.cs">
+      <DependentUpon>services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\Masterpage\HomeIntership.Master.cs">
+      <DependentUpon>HomeIntership.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Templates\Masterpage\HomeIntership.Master.designer.cs">
+      <DependentUpon>HomeIntership.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\Pages\AddNewInternship.aspx.cs">
+      <DependentUpon>AddNewInternship.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Templates\Pages\AddNewInternship.aspx.designer.cs">
+      <DependentUpon>AddNewInternship.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\Pages\Article.aspx.cs">
+      <DependentUpon>Article.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Templates\Pages\Article.aspx.designer.cs">
+      <DependentUpon>Article.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\Pages\InternshipGuide.aspx.cs">
+      <DependentUpon>InternshipGuide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Templates\Pages\InternshipGuide.aspx.designer.cs">
+      <DependentUpon>InternshipGuide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\Pages\SubmitYourInternship.aspx.cs">
+      <DependentUpon>SubmitYourInternship.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Templates\Pages\SubmitYourInternship.aspx.designer.cs">
+      <DependentUpon>SubmitYourInternship.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\UserControl\IntershipAds.ascx.cs">
+      <DependentUpon>IntershipAds.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Templates\UserControl\IntershipAds.ascx.designer.cs">
+      <DependentUpon>IntershipAds.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\UserControl\Social4Master.ascx.cs">
+      <DependentUpon>Social4Master.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Templates\UserControl\Social4Master.ascx.designer.cs">
+      <DependentUpon>Social4Master.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\UserControl\SocialLinkArticle.ascx.cs">
+      <DependentUpon>SocialLinkArticle.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Templates\UserControl\SocialLinkArticle.ascx.designer.cs">
+      <DependentUpon>SocialLinkArticle.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\UserControl\SocialReference.ascx.cs">
+      <DependentUpon>SocialReference.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Templates\UserControl\SocialReference.ascx.designer.cs">
+      <DependentUpon>SocialReference.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="testM.aspx.cs">
+      <DependentUpon>testM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testM.aspx.designer.cs">
+      <DependentUpon>testM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Training.Master.cs">
+      <DependentUpon>Training.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Training.Master.designer.cs">
+      <DependentUpon>Training.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Content Include="App_Code\CompressionModule.cs" />
+    <Content Include="App_Code\Compressor.cs" />
+    <Compile Include="App_GlobalResources\Resource.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resource.vi-VN.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.vi-VN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Course\Courses.aspx.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Course\Courses.aspx.designer.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\General.cs" />
+    <Compile Include="Data\MailUtils.cs" />
+    <Compile Include="Data\Utils.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\cvsaved.aspx.cs">
+      <DependentUpon>cvsaved.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\cvsaved.aspx.designer.cs">
+      <DependentUpon>cvsaved.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\EmployerSite.aspx.cs">
+      <DependentUpon>EmployerSite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\EmployerSite.aspx.designer.cs">
+      <DependentUpon>EmployerSite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\HiringAdvice.aspx.cs">
+      <DependentUpon>HiringAdvice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\HiringAdvice.aspx.designer.cs">
+      <DependentUpon>HiringAdvice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\HiringAdviceDetail.aspx.cs">
+      <DependentUpon>HiringAdviceDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\HiringAdviceDetail.aspx.designer.cs">
+      <DependentUpon>HiringAdviceDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\JobsManagement.aspx.cs">
+      <DependentUpon>JobsManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\JobsManagement.aspx.designer.cs">
+      <DependentUpon>JobsManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\MyApplicants.aspx.cs">
+      <DependentUpon>MyApplicants.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\MyApplicants.aspx.designer.cs">
+      <DependentUpon>MyApplicants.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\RightPanel.ascx.cs">
+      <DependentUpon>RightPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\RightPanel.ascx.designer.cs">
+      <DependentUpon>RightPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\TeacherTraining.aspx.cs">
+      <DependentUpon>TeacherTraining.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\TeacherTraining.aspx.designer.cs">
+      <DependentUpon>TeacherTraining.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="memberArea\AdsAJob.aspx.cs">
+      <DependentUpon>AdsAJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="memberArea\AdsAJob.aspx.designer.cs">
+      <DependentUpon>AdsAJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\MemberOnly.aspx.cs">
+      <DependentUpon>MemberOnly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\MemberOnly.aspx.designer.cs">
+      <DependentUpon>MemberOnly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="memberArea\AdsCv.aspx.cs">
+      <DependentUpon>AdsCv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="memberArea\AdsCv.aspx.designer.cs">
+      <DependentUpon>AdsCv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="memberArea\AppManagement.aspx.cs">
+      <DependentUpon>AppManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="memberArea\AppManagement.aspx.designer.cs">
+      <DependentUpon>AppManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="memberArea\ContactEmployer.aspx.cs">
+      <DependentUpon>ContactEmployer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="memberArea\ContactEmployer.aspx.designer.cs">
+      <DependentUpon>ContactEmployer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="memberArea\ContactWithoutLogin.aspx.cs">
+      <DependentUpon>ContactWithoutLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="memberArea\ContactWithoutLogin.aspx.designer.cs">
+      <DependentUpon>ContactWithoutLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="memberArea\CV\JobAlert.aspx.cs">
+      <DependentUpon>JobAlert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="memberArea\CV\JobAlert.aspx.designer.cs">
+      <DependentUpon>JobAlert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="memberArea\CV\privacy-setting.aspx.cs">
+      <DependentUpon>privacy-setting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="memberArea\CV\privacy-setting.aspx.designer.cs">
+      <DependentUpon>privacy-setting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="memberArea\directive.aspx.cs">
+      <DependentUpon>directive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="memberArea\directive.aspx.designer.cs">
+      <DependentUpon>directive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="memberArea\DoneCV.aspx.cs">
+      <DependentUpon>DoneCV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="memberArea\DoneCV.aspx.designer.cs">
+      <DependentUpon>DoneCV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="memberArea\finish-apply.aspx.cs">
+      <DependentUpon>finish-apply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="memberArea\finish-apply.aspx.designer.cs">
+      <DependentUpon>finish-apply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="memberArea\ManageSavedJob.aspx.cs">
+      <DependentUpon>ManageSavedJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="memberArea\ManageSavedJob.aspx.designer.cs">
+      <DependentUpon>ManageSavedJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="memberArea\PostJobSuccess.aspx.cs">
+      <DependentUpon>PostJobSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="memberArea\PostJobSuccess.aspx.designer.cs">
+      <DependentUpon>PostJobSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="memberArea\Preview.aspx.cs">
+      <DependentUpon>Preview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="memberArea\Preview.aspx.designer.cs">
+      <DependentUpon>Preview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="publicArea\aboutus-master.aspx.cs">
+      <DependentUpon>aboutus-master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\aboutus-master.aspx.designer.cs">
+      <DependentUpon>aboutus-master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\ActivateUser.aspx.cs">
+      <DependentUpon>ActivateUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\ActivateUser.aspx.designer.cs">
+      <DependentUpon>ActivateUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\AdvanceSearch.aspx.cs">
+      <DependentUpon>AdvanceSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\AdvanceSearch.aspx.designer.cs">
+      <DependentUpon>AdvanceSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\CV\AdvanceSearchCV.aspx.cs">
+      <DependentUpon>AdvanceSearchCV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\CV\AdvanceSearchCV.aspx.designer.cs">
+      <DependentUpon>AdvanceSearchCV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\CV\Detail.aspx.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\CV\Detail.aspx.designer.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\CV\InternalUpdate\StatementUpdate.aspx.cs">
+      <DependentUpon>StatementUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\CV\InternalUpdate\StatementUpdate.aspx.designer.cs">
+      <DependentUpon>StatementUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\CV\InternalUpdate\UpdatePersonal.aspx.cs">
+      <DependentUpon>UpdatePersonal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\CV\InternalUpdate\UpdatePersonal.aspx.designer.cs">
+      <DependentUpon>UpdatePersonal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\CV\InternalUpdate\UpdateProfile.aspx.cs">
+      <DependentUpon>UpdateProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\CV\InternalUpdate\UpdateProfile.aspx.designer.cs">
+      <DependentUpon>UpdateProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\CV\objValue.cs" />
+    <Compile Include="publicArea\CV\RequestSuccess.aspx.cs">
+      <DependentUpon>RequestSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\CV\RequestSuccess.aspx.designer.cs">
+      <DependentUpon>RequestSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\CV\SearchResultcv.aspx.cs">
+      <DependentUpon>SearchResultcv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\CV\SearchResultcv.aspx.designer.cs">
+      <DependentUpon>SearchResultcv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\CV\UpdateCV.aspx.cs">
+      <DependentUpon>UpdateCV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\CV\UpdateCV.aspx.designer.cs">
+      <DependentUpon>UpdateCV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\DetailTestimonial.aspx.cs">
+      <DependentUpon>DetailTestimonial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\DetailTestimonial.aspx.designer.cs">
+      <DependentUpon>DetailTestimonial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\EmployerInfo.aspx.cs">
+      <DependentUpon>EmployerInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\EmployerInfo.aspx.designer.cs">
+      <DependentUpon>EmployerInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\EmployerList.aspx.cs">
+      <DependentUpon>EmployerList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\EmployerList.aspx.designer.cs">
+      <DependentUpon>EmployerList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\errorpages\Error403.aspx.cs">
+      <DependentUpon>Error403.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\errorpages\Error403.aspx.designer.cs">
+      <DependentUpon>Error403.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\errorpages\Error404.aspx.cs">
+      <DependentUpon>Error404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\errorpages\Error404.aspx.designer.cs">
+      <DependentUpon>Error404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\errorpages\ErrorNetworkNotFound.aspx.cs">
+      <DependentUpon>ErrorNetworkNotFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\errorpages\ErrorNetworkNotFound.aspx.designer.cs">
+      <DependentUpon>ErrorNetworkNotFound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\errorpages\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\errorpages\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\ExecutiveJob.aspx.cs">
+      <DependentUpon>ExecutiveJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\ExecutiveJob.aspx.designer.cs">
+      <DependentUpon>ExecutiveJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\JobDetails.aspx.cs">
+      <DependentUpon>JobDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\JobDetails.aspx.designer.cs">
+      <DependentUpon>JobDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\JobSector.aspx.cs">
+      <DependentUpon>JobSector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\JobSector.aspx.designer.cs">
+      <DependentUpon>JobSector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\NewJobs.aspx.cs">
+      <DependentUpon>NewJobs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\NewJobs.aspx.designer.cs">
+      <DependentUpon>NewJobs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\Pending.aspx.cs">
+      <DependentUpon>Pending.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\Pending.aspx.designer.cs">
+      <DependentUpon>Pending.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\Preparation.aspx.cs">
+      <DependentUpon>Preparation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\Preparation.aspx.designer.cs">
+      <DependentUpon>Preparation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\privacy-policy-master.aspx.cs">
+      <DependentUpon>privacy-policy-master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\privacy-policy-master.aspx.designer.cs">
+      <DependentUpon>privacy-policy-master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\RecruitmentCenter.aspx.cs">
+      <DependentUpon>RecruitmentCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\RecruitmentCenter.aspx.designer.cs">
+      <DependentUpon>RecruitmentCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\SearchResult.aspx.cs">
+      <DependentUpon>SearchResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\SearchResult.aspx.designer.cs">
+      <DependentUpon>SearchResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\TeacherTraining.aspx.cs">
+      <DependentUpon>TeacherTraining.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\TeacherTraining.aspx.designer.cs">
+      <DependentUpon>TeacherTraining.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\term-condition-master.aspx.cs">
+      <DependentUpon>term-condition-master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\term-condition-master.aspx.designer.cs">
+      <DependentUpon>term-condition-master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\terms-conditions.aspx.cs">
+      <DependentUpon>terms-conditions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\terms-conditions.aspx.designer.cs">
+      <DependentUpon>terms-conditions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\Testimonial.aspx.cs">
+      <DependentUpon>Testimonial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\Testimonial.aspx.designer.cs">
+      <DependentUpon>Testimonial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publicArea\Welcome.aspx.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publicArea\Welcome.aspx.designer.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scripts\ckeditor\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scripts\ckeditor\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="admintj\Mail\" />
+    <Folder Include="admintj\Services\" />
+    <Folder Include="App_Data\" />
+    <Folder Include="css\css_backup\" />
+    <Folder Include="images\upload\" />
+    <Folder Include="memberArea\Recruiter-site\" />
+    <Folder Include="temp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj">
+      <Project>{472B1CD6-C3FD-47A8-B835-3ED07022D0CA}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="memberArea\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admintj\AdminSite.Master" />
+    <Content Include="App_Browsers\Form.browser" />
+    <None Include="bin\FredCK.FCKeditorV2.dll.refresh" />
+    <None Include="bin\Intelligencia.UrlRewriter.dll.refresh" />
+    <Content Include="Employer\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="images\sitefiles\gradient-contrast.rar" />
+    <Content Include="Web.sitemap" />
+    <Content Include="publicArea\CV\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="publicArea\web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="publicArea\CV\InternalUpdate\Web.config" />
+    <None Include="Scripts\ckeditor\.htaccess" />
+    <Content Include="Training.Master" />
+    <Content Include="Templates\Masterpage\HomeIntership.Master" />
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Scripts\slider\img\.gitignore" />
+    <None Include="Scripts\slider\README" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Resource.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resource.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Resource.vi-VN.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resource.vi-VN.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>8389</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
