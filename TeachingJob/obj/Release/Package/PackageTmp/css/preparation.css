@@ -1,0 +1,330 @@
+﻿.postnew
+{
+    position: absolute;
+    top: -3px;
+    right: 15px;
+}
+.postnew2
+{
+    position: absolute;
+    top: 8px;
+    right: 15px;
+}
+.postnewTestimonial
+{
+    position: absolute;
+    top: 5px;
+    right: 15px;
+}
+.returnlist
+{
+    position: absolute;
+    top: 8px;
+    right: 15px;
+}
+.hide
+{
+    display: none;
+}
+
+.paddingtop10px
+{
+  padding-top:10px;   
+}
+.imagepadding
+{
+    padding: 0px 15px 2px 10px;
+    
+}
+.imagehiring
+{
+    max-width:80%;
+}
+.postnewarticle
+{
+    color: #006699;
+    font-weight: bold;
+}
+.paddingtop
+{
+    padding-top: 0px;
+}
+.customPanel
+{
+    height: 175px;
+    display: inline-block;
+    overflow: hidden;
+}
+.full-width2
+{
+    width: 75%;
+}
+.custom-simple-tab-panel.full-width3
+{
+    width: 191px;
+}
+.spanclass
+{
+    color:#003366;
+    font-weight:bold; 
+}
+.question
+{
+    color:#003366;
+    font-weight:bold; 
+    font-size:14px;
+    padding-right:5%;
+}
+.question a:hover
+{
+    text-decoration:none;
+}
+.uploaddedDate
+{
+    color:black; 
+    font-style:italic;   
+}
+/*
+.uploaddedDate:hover
+{
+    color:black;   
+}*/
+.lastestcomment
+{
+    color:#40A54E;
+    font-size:12px;
+}
+.detailComment
+{
+    font-size:11px;   
+}
+.showdetail
+{
+    padding-left:10px;
+    padding-right:10px;
+    font-size:12px;      
+    line-height:19px;
+}
+/*------------------Comment---------------*/
+
+.paddingCommentDiv
+{
+    padding:20px;   
+}
+.CommentTitle
+{
+    text-align:left;
+    font-size:18px;
+    font-weight:bold;
+    padding:15px 0 5px 0;
+}
+.CommentList
+{
+    text-align:left;
+    font-size:18px;
+    font-weight:bold;
+    padding:25px 10px 5px 10px;
+}
+.paddingcommenttable
+{
+     padding:5px;
+}
+.commentstt
+{
+  text-align:center;
+  padding-bottom:20px;   
+}
+.commentemail
+{
+    font-size:10px;
+    padding: 0px 3px 3px 4px;   
+}
+.commentTitle
+{
+    color: Red;
+    padding: 3px 3px 0px 3px;
+    font-family: Sans-Serif;
+    font-size: small;
+}
+.commentbody
+{
+    padding: 5px 5px 5px 20px;   
+    font-size:12px;
+}
+.commentbody1
+{
+    padding: 5px 5px 5px 5px;   
+    font-size:12px;
+}
+.skyheight
+{
+    height:310px;
+}
+.skyTestimonial
+{
+    height:300px;
+}
+.employerInfo
+{
+    height:30px;
+}
+.skyTerm
+{
+    height:50px;
+}
+.cursorpointer
+{
+    cursor:pointer;   
+}
+.resulttitledisplay
+{
+  width:300px; line-height:12px; height:12px; display:inline-block;overflow:hidden;   
+}
+.coluomleft
+{
+ width:200px;
+ float:left;   
+ overflow:hidden;
+}
+.coluomright
+{
+    padding: 10px 10px 10px 20px;
+    width:725px;
+    float:left; 
+}
+.whitebg
+{
+      background-color:#fff;
+}
+.fullwidth
+{
+ width:100%;   
+}
+
+
+.custom-simple-tab-panel1
+{
+    min-height: 10px;
+    z-index: 1;
+    position: relative;
+    background-color: #fff;
+}
+.custom-simple-tab-panel1.full-width11
+{
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+.cateSelected
+{
+    font-weight:bold;
+}
+.lbtn
+{
+    display: block;
+    padding: 10px 20px 20px 20px;
+    text-decoration: none;
+    color: #888;
+    background-color: #fafafa;
+    height:10px;
+    font-family:Tahoma;
+    font-size:14px;
+    border-bottom: 1px solid #ddd;
+    border-right:1px solid #ddd;
+    overflow:hidden;
+}
+.lbtn2
+{
+    display: block;
+    padding: 10px 20px 20px 20px;
+    text-decoration: none;
+    background-color: #fafafa;
+    height:10px;
+    font-family:Tahoma;
+    font-size:14px;
+    border-bottom: 1px solid #ddd;
+    border-right:1px solid #ddd;
+    overflow:hidden;
+    font-weight:bold;
+}
+.hiringImageDiv
+{
+    float:left;  
+    min-height:60px; 
+}
+/*Image of the creator*/
+.hiringImageDiv img {
+    max-width: 80px;
+    height: auto !important;
+    width: expression(this.width > 80 ? 80: true);
+}
+/*Image of the comment*/
+.MaxHeightPersonalImage
+{
+    max-width: 80px;
+    height: auto !important;
+    width: expression(this.width > 80 ? 80: true);
+}
+.andiv
+{
+  float:left;   
+}
+.btnanswer
+{
+  margin-top:3px;
+}
+.paddingleftImageDiv
+{
+    padding-left:10px; 
+    text-align:center;  
+}
+.paddingrightImageDiv
+{
+    padding-right:15px;   
+}
+.paddingright10px
+{
+    padding-right:10px;
+}
+.hiringQuestionDiv
+{
+    overflow:hidden;
+    
+}
+.standard-button2
+{
+    text-align: center;
+    border: 0;
+    font-family: Calibri; /*line-height: 1.6em;*/
+    padding: 2px 3px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    color: #fff !important;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #aaa;
+    border: 0px solid #ccc;
+}
+.standard-button2.orange
+{
+    background: #ff810a;
+}
+.standard-button2.orange:hover
+{
+    background-image: none;
+    background-color: #3eb365;
+    cursor: pointer;
+}
+
+.standard-button2.large
+{
+    font-size: 1.8em;
+    padding: 10px 30px;
+}
+.standard-button2.small
+{
+    font-size: 11px;
+    padding: 2px 3px;
+}

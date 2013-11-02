@@ -1,0 +1,123 @@
+
+/*  */
+ul.arrow-list li span.icon { width: 4px; height: 7px; background-position: -75px -48px; margin-top: 5px; }
+
+
+/*  */
+#brochure-nav { background-color: #efeeee; -webkit-border-radius: 8px 8px 0 0; -moz-border-radius: 8px 8px 0 0; border-radius: 8px 8px 0 0; padding: 10px; margin: 0 20px; font-size: 1.2em; }
+#brochure-nav .prev-next-links { float: right; width: 50%; text-align: right; }
+#brochure-nav .prev-next-links .next-link { margin-left: 15px; }
+
+#brochure { padding: 0; }
+#brochure #recruiter { padding: 0 15px 0 0;  position: relative;  -webkit-border-radius: 8px 8px 0 0; -moz-border-radius: 8px 8px 0 0; border-radius: 8px 8px 0 0; }
+#brochure #recruiter img.gradient { position: absolute; bottom: 0; z-index: 100; left: 30px; }
+#brochure #recruiter #recruiter-logo { position: relative; float:left; background-color: white;  -webkit-border-radius: 8px 0 0 0; -moz-border-radius: 8px 0 0 0; border-radius: 8px 0 0 0; }
+#brochure #recruiter #recruiter-logo table { width: 210px; height: 75px; }
+#brochure #recruiter #recruiter-logo table td { vertical-align: top; text-align: center; height: 90px; }
+#brochure #recruiter #recruiter-details { position: relative; float:left;  position: relative;
+    top: 0px;
+    left: 0px;
+    width: 550px;
+}
+.img
+{
+    max-height: 80px;
+    max-width: 160px;
+}
+.img2
+{
+    width:80%;
+    height: auto;
+    max-width: 160px;
+    float:right;
+}
+#r-logo{position: absolute; right:25px;}
+#r-info{padding: 0 15px 10px 15px;}
+#brochure #recruiter #recruiter-details h2 { margin: 0; font-family: sans-serif; font-size: 1.8em; color:#666666; font-weight:bold; }
+#brochure #recruiter #recruiter-details table { font-size: 1.1em; margin-top: 10px; color: #666666;}
+#brochure #recruiter #recruiter-details table tr td { display:table-cell; margin-right: 4px; margin: 0; padding-right:5px; }
+.boldFont
+{   font-weight:bold;
+}
+.borderleft
+{
+    padding-left:10px;
+}
+.OrgDescription
+{
+    padding: 0 15px 0 15px;
+}
+#brochure #recruiter #recruiter-details p.tel { 
+    width: 550px;
+}
+#brochure #recruiter #recruiter-details p.tel em { color: #333333; }
+#brochure #recruiter #recruiter-details ul#recruiter-actions { position: absolute; top: 25px; right: 0; font-size: 1.1em; }
+#brochure #main {  }
+#brochure #main #main-details { width: 95% /*555px*/; padding: 15px 25px 0 25px; float: left; position: relative; }
+#brochure #main #main-details h1 { font-size: 2.4em; color:#ff9900; width:525px;}
+
+#brochure #main #main-details h2 { margin: 0; font-family: sans-serif; font-size: 1.6em; font-weight: normal; }
+#brochure #main #main-details h2 span { display: inline; color: #666666; }
+#brochure #main #main-details h2.salary { margin-bottom: 15px; }
+#brochure #main #main-details .apply-group { position: absolute; top: 15px; right:28px; }
+#brochure #main #main-details .apply-button { float: left; width: 191px; margin-right: 15px; }
+#brochure #main #main-details ul.dates { float: left; font-size: 1.1em; margin-top: 1px; }
+#brochure #main #main-details ul.dates li { float: left; }
+#brochure #main #main-details ul.dates li { border-right: 1px dotted #aaaaaa; margin-right: 15px; padding-right: 15px; }
+#brochure #main #main-details ul.dates li:last-child{border-right: 0px dotted #aaaaaa; margin-right: 0px; padding-right: 0px;}
+.ref { text-align:center; float: right; background-color: green; padding: 5px 5px; -webkit-border-radius: 5px 5px 5px 5px; -moz-border-radius: 5px 5px 5px 5px; border-radius: 5px 5px 5px 5px; max-width: 110px; }
+.ref a{ color:White;}
+.topright
+{
+    position:absolute; top:5px; right:5px;
+}
+#brochure #main #main-actions { width: 214px; padding: 15px; float: left; border-left: 1px dotted #aaaaaa; }
+#brochure #main #main-actions table { margin: 0 0 15px 0; }
+#brochure #main #main-actions ul { margin: 0; }
+#brochure #main #main-actions li { margin: 4px 0; }
+#brochure #main #main-actions li.apply span.icon { width: 16px; height: 16px; background-position: -33px -61px; }
+#brochure #main #main-actions li.send span.icon { width: 16px; height: 16px; background-position: -31px -79px; }
+#brochure #main #main-actions li.print span.icon { width: 16px; height: 16px; background-position: -51px -81px; }
+#brochure #details { padding: 15px; background: url("../images/sitefiles/gradients/full-module-bottom-gradient.png") no-repeat top center; }
+#brochure #details #summary { background-color: #fff; border: 1px solid #98b954;  padding: 15px; width: 180px; float: left; margin-left: 10px; margin-bottom: 15px; }
+#brochure #details #summary h3 { color: #ff9900; font-size: 1.2em; font-family: sans-serif; }
+#brochure #details #summary dl { font-size: 1.1em; margin: 0; width:170px; overflow:auto; }
+#brochure #details #summary dt { color:#569150; font-weight: bold; margin: 0; width:170px;}
+#brochure #details #summary dd { margin-bottom: 10px; color: #666666;width:170px; }
+
+#brochure #details .description {  min-height: 410px; margin-left:250px; }
+#brochure #details .description p {width: 550px; display:inline-block; overflow:hidden;}
+#brochure #details .description ul { list-style: disc; margin: 0 0 10px 15px; }
+#brochure #apply { padding: 15px; border-top: 1px dotted #aaaaaa; }
+#brochure #apply .apply-button { width: 191px;  }
+#brochure #apply span#apply-line { font-size: 1.2em; margin-left: 241px; display: block; }
+#brochure #apply span#apply-line span { font-size: 11px; font-weight: bold; }
+#brochure #apply1 { padding:3px 5px 3px 5px; border-top: 1px dotted #aaaaaa; }
+#brochure #apply1 .apply-button { width: 191px; position: absolute; }
+#brochure #apply1 span#apply-line { font-size: 1.2em; margin-left: 241px; display: block; }
+#brochure #apply1 span#apply-line span { font-size: 11px; font-weight: bold; }
+#brochure #apply1 table tr td
+{
+    padding-left:30px;
+    vertical-align:middle;
+}
+
+#brochure #additional { border-top: 1px dotted #aaaaaa; padding: 15px; }
+#brochure #additional #other, #brochure #additional #related { width: 390px; float: left; margin-right: 10px; }
+#brochure #additional #other p, #brochure #additional #related p { margin: 0; font-size: 1.1em; font-weight: bold; }
+#brochure #additional #related span.salary { color: #666666; }
+#brochure #additional #other { margin: 0; }
+#brochure #additional h3 { font-size: 1.2em; font-family: sans-serif; }
+
+.description .h3
+{
+    font-family:Calibri;
+	font-size: 1.8em;
+	color: #ff9900;
+	padding-bottom: 3px;
+	font-weight:bold;
+	margin-bottom:5px;
+}
+.postedjoblink{font-family:Sans-Serif; font-size:12px;}
+.trainingcourseinfo{font-family:Sans-Serif; border:1px solid #6B92A1; padding:8px;-webkit-border-radius:8px 8px 8px 8px;  -moz-border-radius:8px 8px 8px 8px;  border-radius:8px 8px 8px 8px; }
+.biggerfont{ font-size:14px; font-weight:bold;}

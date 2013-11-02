@@ -1,0 +1,11 @@
+
+/* For generic page styles. Not for sliders. */
+
+
+#status {display:inline-block; margin-left:26px;line-height:50px;height:50px;vertical-align:middle;}
+
+.code
+{
+    border: dashed 1px #BCBCCB; padding:8px 12px; background-color: #F3F3F9; white-space:pre; font-family:"Courier New", Georgia;
+    font-size:12px; margin:6px 0;overflow:auto; 
+}

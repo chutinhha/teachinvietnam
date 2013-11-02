@@ -1,0 +1,208 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminSite.master.cs"
+    Inherits="TeachingJob.admintj.AdminSite" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Admin Panel - TeachinVietnam</title>
+    <meta name="description" content="" />
+    <link rel="shortcut icon" href="images/favicon.html" />
+    <%-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Cuprum" />--%>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fancybox.css" media="screen" />
+    <link rel="stylesheet" href="css/jquery-ui-1.8.16.custom.css" media="screen" />
+    <link rel="stylesheet" href="css/fullcalendar.css" media="screen" />
+    <link rel="stylesheet" href="lib/elfinder/css/elfinder.css" media="screen" />
+    <link rel="stylesheet" href="lib/editor/jquery.wysiwyg.css" media="screen" />
+    <link rel="stylesheet" href="lib/editor/default.css" media="screen" />
+    <link rel="stylesheet" href="lib/player/css/style.css" />
+    <link rel="stylesheet" href="css/tipTip.css" media="screen" />
+    <link rel="stylesheet" href="css/chosen.css" media="screen" />
+    <link rel="stylesheet" href="css/colorpicker.css" type="text/css" />
+    <link rel="stylesheet" href="css/tables.css" media="screen" />
+    <link rel="stylesheet" href="css/jquery.jgrowl.css" media="screen" />
+    <%--
+    <!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    --%>
+    <script type="text/javascript" src="lib/jquery.min.js"></script>
+    <script src="lib/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
+    <script src="lib/ddaccordion.js" type="text/javascript"></script>
+    <script src="lib/jquery.flot.min.js" type="text/javascript"></script>
+    <script src="lib/jquery.flot.pie.js" type="text/javascript"></script>
+    <script src="lib/jquery.flot.orderBars.js" type="text/javascript"></script>
+    <script src="lib/fancybox/fancybox.js" type="text/javascript"></script>
+    <script src="lib/fullcalendar.min.js" type="text/javascript"></script>
+    <script src="lib/elfinder/js/elfinder.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="lib/editor/jquery.wysiwyg.js" type="text/javascript" charset="utf-8"></script>
+    <script src="lib/editor/wysiwyg.image.js" type="text/javascript" charset="utf-8"></script>
+    <script src="lib/editor/default.js" type="text/javascript" charset="utf-8"></script>
+    <script src="lib/editor/wysiwyg.link.js" type="text/javascript" charset="utf-8"></script>
+    <script src="lib/editor/wysiwyg.table.js" type="text/javascript" charset="utf-8"></script>
+    <script src="lib/player/jquery-jplayer/jquery.jplayer.js" type="text/javascript"></script>
+    <script src="lib/player/ttw-video-player-min.js" type="text/javascript"></script>
+    <script src="lib/jquery.tipTip.minified.js" type="text/javascript"></script>
+    <script src="lib/forms.js" type="text/javascript"></script>
+    <script src="lib/chosen.jquery.min.js" type="text/javascript"></script>
+    <script src="lib/autoresize.jquery.min.js" type="text/javascript"></script>
+    <script src="lib/colorpicker.js" type="text/javascript"></script>
+    <script src="lib/validation.js" type="text/javascript"></script>
+    <script src="lib/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="lib/jquery.jgrowl_minimized.js" type="text/javascript"></script>
+    <script src="lib/slidernav-min.js" type="text/javascript"></script>
+    <script src="lib/formToWizard.js" type="text/javascript"></script>
+    <%--<script type="text/javascript">        $(document).ready(function () { $("#SignupForm").formToWizard({ submitButton: 'SaveAccount' }) });</script>--%>
+    <script src="lib/functions.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <section id="main-content">
+ <header>
+	  <div class="centered">
+      
+	  <h1><a runat="server" href="~/admintj/User.aspx" class="logo">Admin Panel</a></h1>
+ 
+ 	  <ul class="menu-head">
+            <li><a href="~/" runat="server"><span id="visit-icon">Home</span></a></li>
+      	   <li><a href="http://adminbehind.teachinvietnam.com.vn"><span id="jobs">Jobs</span></a></li>
+           <li><a runat="server" href="~/admintj/User.aspx"><span id="users-icon">User</span></a></li>
+           <li><a runat="server" href="~/admintj/Role.aspx"><span id="news-icon">Role</span></a></li>
+           <li><a runat="server" href="~/admintj/UserRole.aspx"><span id="statistics-icon">User in Role</span></a></li>
+      </ul>
+      <nav>
+        <ul>
+            <li id="login">
+                <a id="login-trigger" href="#">
+ 					<span id="user-panel-check"></span>
+  					<span id="user-panel-title">Welcome, <asp:LoginName ID="LoginName1" runat="server"></asp:LoginName></span>
+                    <span id="user-panel"></span>
+                </a>
+                <div id="login-content">
+                  <ul>
+                  <li><asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Logout"
+                                                LogoutPageUrl="~/" /></li>
+                  </ul>
+               </div>                     
+            </li> 
+        </ul>
+      </nav>     
+       </div>
+ </header>
+ 
+  
+  <div class="centered">  
+  <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+  
+  <!-- END MAIN-->
+   
+   <!-- SIDEBAR -->
+   <div class="sidebar">
+   
+   
+   <div id="search">
+          <form action="#">
+         	 <input type="text" placeholder="Search" value="" />
+             <div class="submit">
+				<input type="image" src="images/px.gif" title="Search" alt="Search" />
+			 </div>
+          </form>
+   </div>
+   
+   <ul class="menu">
+		<li class="expand">
+			<a href="#"><span class="four-prong icon">Job Management</span><span class="num">2</span></a>
+			<ul class="acitem">
+				<li><a href="~/admintj/JobManagement/Jobs.aspx" runat="server"><span class="dashboard icon">Job</span></a></li>
+				<li><a href="~/admintj/CVManagement/CV.aspx" runat="server"><span class="charts icon">CV</span></a></li>
+                <%--<li><a href="gallery.html"><span class="gallery-pic icon">Image Gallery</span></a></li>
+                <li><a href="calendar.html"><span class="cal icon">Calendar</span></a></li>
+                <li><a href="messages.html"><span class="conversations icon">Page Messages</span></a></li>--%>
+			</ul>
+		</li>
+		<li>
+			<a href="#"><span class="four-prong icon">Mail</span><span class="num">3</span></a>
+			<ul class="acitem">
+            	<li><a runat="server" href="~/admintj/SendingEmail.aspx"><span class="typo icon">Send a Email</span></a></li>	
+                <li><a id="A1" runat="server" href="~/admintj/SendingEmailEmp.aspx"><span class="typo icon">Send a Email to Employer</span></a></li>	
+                <li><a id="A2" runat="server" href="~/admintj/SendingEmailTeach.aspx"><span class="typo icon">Send a Email to Teacher</span></a></li>	
+			</ul>
+		</li>
+        <li>
+			<a href="javascript:void(0)"><span class="four-prong icon">Service</span><span class="num">3</span></a>
+			<ul class="acitem">
+            	<li><a id="A6" runat="server" href="~/admintj/ServiceManagement.aspx"><span class="typo icon">Services Management</span></a></li>	
+                <li><a id="A7" href="#"><span class="typo icon">Other Services</span></a></li>	
+			</ul>
+		</li>
+        <li>
+			<a href="javascript:void(0)"><span class="four-prong icon">Internship</span><span class="num">3</span></a>
+			<ul class="acitem">
+            	<li><a id="lnkServicesManagement" runat="server" href="~/admintj/IntershipManagement.aspx"><span class="typo icon">Internship</span></a></li>	
+                <li><a id="A3" runat="server" href="~/admintj/InternshipGuideManagement.aspx"><span class="typo icon">Internship Guide</span></a></li>	
+                <li><a id="A4" runat="server" href="~/admintj/InternshipUserSubmitManagement.aspx"><span class="typo icon">Internship User Submission</span></a></li>
+			</ul>
+		</li>
+        <li>
+			<a href="javascript:void(0)"><span class="four-prong icon">System Tools</span><span class="num">2</span></a>
+			<ul class="acitem">
+            	<li><a id="A5" runat="server" href="~/admintj/ImageUpload.aspx"><span class="typo icon">Image Upload</span></a></li>	
+                <li><a id="lnkSQLQuery" runat="server" href="~/admintj/SystemTools/SQL.aspx"><span class="typo icon">SQL Query</span></a></li>	
+			</ul>
+		</li>
+		<%--<li>
+			<a href="#"><span class="four-prong icon">Plugins</span><span class="num">6</span></a>
+			<ul class="acitem">
+                <li><a href="widgets.html"><span class="invoice icon">Widgets</span></a></li>
+                <li><a href="plaeyr.html"><span class="youtube icon">HTML5 Player</span></a></li>
+                <li><a href="editor.html"><span class="w-editor icon">WYSIWYG Editor</span></a></li>	
+       		    <li><a href="file.html"><span class="files icon">File Manager</span></a></li>
+                <li><a href="step.html"><span class="steps icon">Step By Step Wizard</span></a></li>
+                <li><a href="contact.html"><span class="connection icon">Contact List</span></a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#"><span class="four-prong icon">Errore Page</span><span class="num">3</span></a>
+			<ul class="acitem">
+                <li><a href="404.html"><span class="errors icon">Error 404</span></a></li>
+                <li><a href="500.html"><span class="errors icon">Error 500</span></a></li>
+                <li><a href="503.html"><span class="errors icon">Error 503</span></a></li>
+			</ul>
+		</li>--%>
+	</ul>	
+    
+	</div>
+ 	<!-- SIDEBAR -->
+    
+    
+    </div>
+
+
+<div class="empty"></div>
+</section>
+    <!--end main-content-->
+    <footer>
+        <div class="info-footer">
+        	<div id="left">
+                <ul id="menu-footer">
+            	    <li><a href="~/" runat="server" title="Return HomePage">Home</a></li>
+                    <li><a href="http://adminbehind.teachinvietnam.com.vn" target="_blank" title="Go to Job Management">Jobs</a></li>
+                    <li><a href="~/publicArea/Preparation.aspx" runat="server" target="_blank" title="Preparation">Preparation</a></li>
+                    <li><a href="~/publicArea/term-condition-master.aspx" runat="server" target="_blank" title="Edit Term & Condition">Terms</a></li>
+                    <li><asp:LinkButton ID="lbtn_ClearTemp" runat="server" OnClick="ClearTempFolder">Clear Temp folder</asp:LinkButton>
+                        &nbsp;<asp:Label ID="lbl_Stt" runat="server" CssClass="redColor" Text=""></asp:Label>
+                    </li>
+                </ul>
+                <p><asp:Label ID="Label1" runat="server" Text="Copyright © 2011-2012  TeachinVietnam" ToolTip="QuyenNguyen@"></asp:Label></p>
+                <p>Mail <a href="MailTo:bookworm6289@gmail.com">Vu Thanh Luan</a></p> 
+	        </div>
+            <div id="right">
+            	<h1><a href="user.aspx" class="logo">Admin Panel</a></h1>
+            </div>
+        </div>
+    </footer>
+    </form>
+</body>
+</html>

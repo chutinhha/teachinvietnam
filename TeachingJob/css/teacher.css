@@ -1,0 +1,7 @@
+﻿.t_wrap
+{
+    border:1px solid #6B92A1;   
+    margin: 0 15px 10px 15px;
+    padding:5px;
+    -webkit-border-radius:8px 8px 8px 8px;  -moz-border-radius:8px 8px 8px 8px;  border-radius:8px 8px 8px 8px;
+}

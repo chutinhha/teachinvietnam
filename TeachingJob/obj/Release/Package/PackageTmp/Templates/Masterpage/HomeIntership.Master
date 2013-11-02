@@ -1,0 +1,240 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HomeIntership.master.cs" Inherits="TeachingJob.Templates.Masterpage.HomeIntership" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <asp:ContentPlaceHolder ID="title" runat="server">
+        <title>TeachinVietnam - Jobs</title>
+    </asp:ContentPlaceHolder>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="Visit Teach in Vietnam to find teaching English jobs, Education jobs, keep up with friends and colleagues. Good preparation for pre-departure to Vietnam." />
+    <meta name="keywords" content="Jobs, teaching Jobs, education, tim viec lam giang day, tim cong viec giang day" />
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <link href="~/css/base83a8.css" type="text/css" rel="stylesheet" media="screen" />
+    <link href="~/css/footer.css"  type="text/css" rel="stylesheet" media="screen" />
+    <link href="~/images/icons/favicon.jpg" rel="shortcut icon" />
+    <%--<script src="<%#this.ResolveClientUrl("https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js") %>"
+        type="text/javascript"></script>
+    <script src="<%#this.ResolveClientUrl("https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js") %>"
+        type="text/javascript"></script>--%>
+   <%-- <script src="<%#this.ResolveClientUrl("~/js/jquery.min.js") %>" type="text/javascript"></script>
+    <script src="<%#this.ResolveClientUrl("~/js/jquery-ui.min.js") %>" type="text/javascript"></script>
+    <script src="<%#this.ResolveClientUrl("~/js/f8d2e22e64ecf89e946fda7a4f30f33b.js") %>"
+        type="text/javascript"></script>
+    <script src="<%#this.ResolveClientUrl("~/js/currently-recruitinge486.js?mt=1317200214") %>"
+        type="text/javascript"></script>
+    <script src="<%#this.ResolveClientUrl("~/js/popouts0731.js?mt=1327508670") %>" type="text/javascript"></script>
+    <script src="<%#this.ResolveClientUrl("~/Scripts/highlight.js") %>" type="text/javascript"></script>--%>
+    <%--js for highlighting menu--%>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <ajaxToolkit:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" CombineScripts="false">
+    </ajaxToolkit:ToolkitScriptManager>
+    <div id="topIntership">
+        <div id="shell">
+            <!-- End of header div -->
+            <div id="page">
+                <div id="frame">
+                    <div id="content">
+                        <div id="subnav">
+                            <ul id="additional-nav" class="colsubnav width265">
+                                <li class="home">
+                                    <asp:HyperLink ID="hplHomeMenu" runat="server" NavigateUrl="~/" EnableViewState="false">
+                                        <asp:Label ID="lblHome" runat="server" Text="<%$Resources:Resource, Home %>" EnableViewState="false"></asp:Label></asp:HyperLink>
+                                    </li>
+                                <li class="home">
+                                    <asp:HyperLink ID="hplAdsCv" runat="server" NavigateUrl="~/memberArea/AdsCv.aspx"
+                                        EnableViewState="false">
+                                        <asp:Label ID="lblAdsCv" runat="server" Text="<%$Resources:Resource, AdsACv %>" EnableViewState="false"></asp:Label></asp:HyperLink></li>
+                                <li>
+                                    <asp:HyperLink ID="hplAdsAJob" runat="server" NavigateUrl="~/memberArea/AdsAJob.aspx?r=e"
+                                        EnableViewState="false" Text="<%$Resources:Resource, AdsAJob %>"></asp:HyperLink></li>
+                                <li class="last">
+                                    <asp:HyperLink ID="hplContactUs" runat="server" NavigateUrl="~/ContactUs.aspx" EnableViewState="false">
+                                        <asp:Label ID="lblContactUs" runat="server" Text="<%$Resources:Resource, Contact %>"
+                                            EnableViewState="false"></asp:Label></asp:HyperLink>
+                                </li>
+                                <%--<li><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/publicArea/terms-conditions.aspx#about-us"
+                                    EnableViewState="false" Text="About us"></asp:HyperLink>
+                                </li>--%>
+                            </ul>
+                            <ul id="header-social" class="width:100px float-left">
+                                <li class="noborder"><a class="twitter" href="https://twitter.com/vietnamteachers" target="social"><asp:Image ID="Image1" runat="server" ImageUrl="~/images/footer/icon_f_twitter_light.png" /></a></li>
+                                <li class="noborder"><a class="facebook" href="http://facebook.com/teachinvietnam" target="social"><asp:Image ID="Image13" runat="server" ImageUrl="~/images/footer/icon_f_facebook_light.png" /></a></li>
+                                <li class="noborder"><a class="email" href="mailto:info@teachinvietnam.org"><asp:Image ID="Image4" runat="server" ImageUrl="~/images/footer/icon_f_mail_light.png" /></a></li>
+                                <li class="noborder"><a class="google" href="https://plus.google.com/u/1/106899382166860652206/posts" target="social"><asp:Image ID="Image5" runat="server" ImageUrl="~/images/footer/icon_f_google_light.png" /></a></li>
+                                <li class="noborder last"><a class="google" href="skype:toquyen1979?chat" target="social">
+                                    <asp:Image ID="Image6" runat="server" ImageUrl="~/images/footer/icon_f_skype_light.png" /></a></li>
+                            </ul>
+                            <p id="member-nav" class="col span-4 last">
+                                <span class="inner">
+                                    <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="true" OnPreRender="LoginView_OnPreRender">
+                                        <AnonymousTemplate>
+                                            [
+                                            <%if (Request.Params["r"] == "e")
+                                              { %>
+                                            <asp:HyperLink ID="HeadLoginStatus_emp" runat="server" NavigateUrl="~/Account/Login.aspx?r=e"
+                                                EnableViewState="false">
+                                                <asp:Label ID="lbl_Login_emp" runat="server" Text="<%$ Resources:Resource, loginLabel %>"
+                                                    EnableViewState="false"></asp:Label>
+                                            </asp:HyperLink>
+                                            <%}
+                                              else
+                                              { %>
+                                            <asp:HyperLink ID="HeadLoginStatus" runat="server" NavigateUrl="~/Account/Login.aspx"
+                                                EnableViewState="false">
+                                                <asp:Label ID="lbl_Login" runat="server" Text="<%$ Resources:Resource, loginLabel %>"
+                                                    EnableViewState="false"></asp:Label>
+                                            </asp:HyperLink>
+                                            <%} %>
+                                            ]
+                                            <asp:Label ID="lbl_or" runat="server" Text="<%$ Resources:Resource, or %>" EnableViewState="false"></asp:Label>
+                                            [ <a id="HeadRegisterStatus" href="~/Account/Register.aspx" runat="server">
+                                                <asp:Label ID="lbl_Register" runat="server" Text="<%$ Resources:Resource, registerLabel %>"
+                                                    EnableViewState="false"></asp:Label></a> ]
+                                            <ajaxToolkit:ModalPopupExtender ID="ModalPopupExtender1" runat="server" TargetControlID="HeadRegisterStatus"
+                                                PopupControlID="panEdit" BackgroundCssClass="modalBackground" CancelControlID="btnCancel"
+                                                EnableViewState="false" PopupDragHandleControlID="panEdit" X="200" Y="200">
+                                            </ajaxToolkit:ModalPopupExtender>
+                                            <asp:Panel ID="panEdit" runat="server" Height="180px" Width="410px" CssClass="ModalWindow"
+                                                EnableViewState="false">
+                                                <p class="popup">
+                                                    <asp:Label ID="lbl_RegisterAs" runat="server" Text="<%$ Resources:Resource, RegisterAs %>"></asp:Label></p>
+                                                <center>
+                                                    <asp:Button ID="btn_RegisterEmployer" runat="server" Text="<%$ Resources:Resource, Recruitertxt %>"
+                                                        CssClass="standard-button orange" OnClick="RegisterEmployer_Click" EnableViewState="false" />
+                                                    <asp:Button ID="btn_RegisterEmployee" runat="server" Text="<%$ Resources:Resource, Candidatetxt %>"
+                                                        CssClass="standard-button orange" OnClick="RegisterEmployee_Click" EnableViewState="false" />
+                                                </center>
+                                                <br />
+                                                <asp:Button ID="btnCancel" runat="server" Text="<%$ Resources:Resource, Canceltxt %>"
+                                                    CssClass="standard-button floatRight" EnableViewState="false" />
+                                            </asp:Panel>
+                                        </AnonymousTemplate>
+                                        <LoggedInTemplate>
+                                            <asp:Label ID="lbl_WelcomeText" runat="server" Text="<%$ Resources:Resource, Welcometxt %>"
+                                                EnableViewState="false"></asp:Label>
+                                            <span class="bold">
+                                                <asp:Label ID="lbl_Username" runat="server" Text="" EnableViewState="false"></asp:Label>
+                                            </span>! [
+                                            <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="<%$ Resources:Resource, Logouttxt %>"
+                                                OnLoggedOut="LoggedOutAction" LogoutPageUrl="~/" EnableViewState="false" />
+                                            ]
+                                        </LoggedInTemplate>
+                                    </asp:LoginView>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="clear-floats">
+                        </div>
+                        <div class="logoArea marginLogo">
+                            <asp:HyperLink ID="hplHome" NavigateUrl="~/" runat="server" ToolTip="<%$ Resources:Resource, backtohomepagetxt %>"
+                                EnableViewState="false">
+                                <asp:Image ID="Image3" runat="server" ImageUrl="~/images/logo.png" ImageAlign="Left" style="padding-top:6px"
+                                    EnableViewState="false" />
+                            </asp:HyperLink>
+                        </div>
+                        <div id="nav">
+                            <ul>
+                                <%--<li>
+                                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/s/services.aspx" Text="Services"
+                                        EnableViewState="false"></asp:HyperLink>
+                                </li>--%>
+                                <li>
+                                    <asp:HyperLink ID="htlHomeMenu2" runat="server" NavigateUrl="~/Intership.aspx" Text="<%$ Resources:Resource, Intership %>"
+                                        EnableViewState="false"></asp:HyperLink>
+                                </li>
+                                <li>
+                                    <asp:HyperLink ID="hpl_SchoolJob" runat="server" NavigateUrl="~/" Text="<%$ Resources:Resource, SchoolJobs %>"></asp:HyperLink>
+                                </li>
+                            </ul>
+                            <script type="text/javascript">setPage()</script>
+                        </div>
+                        <div id="intership-banner">
+                        <asp:ContentPlaceHolder ID="Banner" runat="server">
+                            <div class="border-top">&nbsp;</div>
+                                <asp:Image ID="Image2" runat="server" ImageUrl="~/images/services/prepare/internshipbanner.jpg" Width="100%" />
+                            </div>
+                        </asp:ContentPlaceHolder>
+                        
+                        <div id="main">
+                            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                        </div>
+                        <div class="clear-floats">
+                        </div>
+                    </div>
+                    <!-- End of content div -->
+                </div>
+                <!-- End of page div -->
+            </div>
+            <!-- end of frame div -->
+        </div>
+        <!-- End of shell div -->
+        <div id="footer-bottom">
+            <!-- end of inner div -->
+        </div>
+    </div>
+    <div id="inm-strip">
+        <div class="inner">
+            <footer>
+                <ul class="footer-links">
+                    <li> <span class="th"><asp:Literal ID="Literal4" runat="server" Text="TeachinVietnam"></asp:Literal></span> 
+                        <ul>
+                            <li><a id="A1" runat="server" href="~/"><asp:Label ID="Label3" runat="server" CssClass="textlinkfooter" Text="Home"></asp:Label></a></li>
+                            <li><a id="A2" runat="server" href="~/publicArea/terms-conditions.aspx#About-us"><asp:Label ID="Label1" runat="server" CssClass="textlinkfooter" Text="About us"></asp:Label></a></li>
+                            <li><a id="A3" runat="server" href="~/ContactUs.aspx"><asp:Label ID="Label4" runat="server" CssClass="textlinkfooter" Text="Contact Us"></asp:Label></a></li>
+                            <li><a id="A4" runat="server" href="~/publicArea/Testimonial.aspx"><asp:Label ID="Label5" runat="server" CssClass="textlinkfooter" Text="Testimonials"></asp:Label></a></li>
+                        </ul>
+                    </li>
+                    <li> <span class="th">Policies</span> 
+                        <ul>
+                            <li><a id="A5" runat="server" href="~/publicArea/JobSector.aspx"><asp:Label ID="Label6" runat="server" CssClass="textlinkfooter" Text="<%$ Resources:Resource, SchoolJobs %>"></asp:Label></a></li>
+                            <li><a id="A6" runat="server" href="~/publicArea/ExecutiveJob.aspx"><asp:Label ID="Label9" runat="server" CssClass="textlinkfooter" Text="<%$ Resources:Resource, ExecutiveJobs %>"></asp:Label></a></li>
+                            <li><a id="A7" runat="server" href="~/publicArea/terms-conditions.aspx#term-of-use"><asp:Label ID="Label7" runat="server" CssClass="textlinkfooter" Text="Terms of Use"></asp:Label></a></li>
+                            <li><a id="A8" runat="server" href="~/publicArea/terms-conditions.aspx#privacy-policy"><asp:Label ID="Label8" runat="server" CssClass="textlinkfooter" Text="Privacy Policy"></asp:Label></a></li>
+                        </ul>
+                    </li>
+                    <li> <span class="th">Customer Service</span> 
+                        <ul>
+                            <li><asp:LinkButton ID="LinkButton1" runat="server" CssClass="textlinkfooter" OnClick="EmployerSite_Click"><asp:Label ID="Label11" runat="server" CssClass="textlinkfooter" Text="Employers"></asp:Label></asp:LinkButton></li>
+                            <li><asp:LinkButton ID="LinkButton2" runat="server" CssClass="textlinkfooter" OnClick="CandidateSite_Click"><asp:Label ID="Label12" runat="server" CssClass="textlinkfooter" Text="Teachers"></asp:Label></asp:LinkButton></li>
+                            <li><asp:HyperLink ID="hpl_adminsite" runat="server"></asp:HyperLink></li>
+                            <li><asp:HyperLink ID="hpl_List" Visible="false" runat="server" Text="Schools" NavigateUrl="~/publicArea/EmployerList.aspx"></asp:HyperLink></li>
+                            <li><asp:HyperLink ID="hpl_TeacherTraining" Visible="false" runat="server" NavigateUrl="~/publicArea/training/TrainingCourse.aspx" Text="Training courses"></asp:HyperLink></li>
+                        </ul>
+                    </li>
+                    <li> <span class="th">Connect with Us</span> 
+                        <ul class="footer-social">
+                            <li><a class="twitter" href="https://twitter.com/vietnamteachers" target="social"><asp:Label ID="Label16" runat="server" CssClass="textlinkfooter" Text="Twitter"></asp:Label></a></li>
+                            <li><a class="facebook" href="http://facebook.com/teachinvietnam" target="social"><asp:Label ID="Label17" runat="server" CssClass="textlinkfooter" Text="Facebook"></asp:Label></a></li>
+                            <li><a class="email" href="mailto:info@teachinvietnam.org"><asp:Label ID="Label18" runat="server" CssClass="textlinkfooter" Text="Email"></asp:Label></a></li>
+                            <li><a class="google" href="https://plus.google.com/u/1/106899382166860652206/posts" target="social"><asp:Label ID="Label19" runat="server" CssClass="textlinkfooter" Text="Google"></asp:Label></a></li>
+                        </ul>
+                    </li>
+                </ul>                
+
+                <div style="clear:both;"></div>
+                <address>Copyright &copy; 2011-2012 TeachinVietnam</address>
+            </footer>
+        </div>
+    </div>
+    </form>
+</body>
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-34143082-1']);
+    _gaq.push(['_setDomainName', 'teachinvietnam.org']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+</html>
