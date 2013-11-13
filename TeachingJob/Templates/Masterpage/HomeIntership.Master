@@ -160,6 +160,9 @@
                                 <li>
                                     <asp:HyperLink ID="hpl_TeacherAdvice" runat="server" NavigateUrl="~/Employer/HiringAdvice.aspx" Text="Teacher Advice"></asp:HyperLink>
                                 </li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Templates/Pages/Vietnamese-training.aspx" Text="Vietnamese training"></asp:HyperLink>
+                                </li>
                             </ul>
                             <script type="text/javascript">setPage()</script>
                         </div>

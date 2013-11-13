@@ -48,7 +48,7 @@
                         <td></td>
                         <td>
                             <asp:Button ID="btnCreate" runat="server" Text="Create &raquo;" OnClick="btnPost_Click" CssClass="standard-button orange small" ValidationGroup="intershipGroup" />
-                            <asp:Button ID="btnCancel" runat="server" Text="Cancel" OnClientClick="ClearContent()" CssClass="standard-button small" CausesValidation="false" />
+                            <asp:Button ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" CssClass="standard-button small" CausesValidation="false" />
                         </td>
                     </tr>
                 </table>

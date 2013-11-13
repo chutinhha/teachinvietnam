@@ -116,6 +116,7 @@
     <Content Include="admintj\InternshipGuideManagement.aspx" />
     <Content Include="admintj\InternshipUserSubmitManagement.aspx" />
     <Content Include="admintj\IntershipManagement.aspx" />
+    <Content Include="admintj\module-vietnamese-training.aspx" />
     <Content Include="admintj\SendingEmailTeach.aspx" />
     <Content Include="admintj\SendingEmailEmp.aspx" />
     <Content Include="admintj\css\chosen.css" />
@@ -1489,6 +1490,7 @@
     <Content Include="Templates\Pages\Article.aspx" />
     <Content Include="Templates\Pages\InternshipGuide.aspx" />
     <Content Include="Templates\Pages\SubmitYourInternship.aspx" />
+    <Content Include="Templates\Pages\Vietnamese-training.aspx" />
     <Content Include="Templates\UserControl\IntershipAds.ascx" />
     <Content Include="Templates\UserControl\Social4Master.ascx" />
     <Content Include="Templates\UserControl\SocialLinkArticle.ascx" />
@@ -1652,6 +1654,13 @@
     <Compile Include="admintj\IntershipManagement.aspx.designer.cs">
       <DependentUpon>IntershipManagement.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admintj\module-vietnamese-training.aspx.cs">
+      <DependentUpon>module-vietnamese-training.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admintj\module-vietnamese-training.aspx.designer.cs">
+      <DependentUpon>module-vietnamese-training.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admintj\SendingEmailTeach.aspx.cs">
       <DependentUpon>SendingEmailTeach.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1813,6 +1822,13 @@
     </Compile>
     <Compile Include="Templates\Pages\SubmitYourInternship.aspx.designer.cs">
       <DependentUpon>SubmitYourInternship.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\Pages\Vietnamese-training.aspx.cs">
+      <DependentUpon>Vietnamese-training.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Templates\Pages\Vietnamese-training.aspx.designer.cs">
+      <DependentUpon>Vietnamese-training.aspx</DependentUpon>
     </Compile>
     <Compile Include="Templates\UserControl\IntershipAds.ascx.cs">
       <DependentUpon>IntershipAds.ascx</DependentUpon>
