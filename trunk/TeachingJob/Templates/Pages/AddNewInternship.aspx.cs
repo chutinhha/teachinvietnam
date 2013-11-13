@@ -25,6 +25,10 @@ namespace TeachingJob.Templates.Pages
             {
                 Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "PopopScript", "<script>alert('" + ex.Message + "');</script>");
             }
-        } 
+        }
+        protected void btnCancel_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Intership.aspx");
+        }
     }
 }
