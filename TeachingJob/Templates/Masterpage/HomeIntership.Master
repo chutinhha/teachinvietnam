@@ -155,10 +155,10 @@
                                         EnableViewState="false"></asp:HyperLink>
                                 </li>
                                 <li>
-                                    <asp:HyperLink ID="hpl_SchoolJob" runat="server" NavigateUrl="~/" Text="<%$ Resources:Resource, SchoolJobs %>"></asp:HyperLink>
+                                    <asp:HyperLink ID="hpl_SchoolJob" runat="server" NavigateUrl="~/Default.aspx" Text="<%$ Resources:Resource, SchoolJobs %>"></asp:HyperLink>
                                 </li>
                                 <li>
-                                    <asp:HyperLink ID="hpl_TeacherAdvice" runat="server" NavigateUrl="~/Employer/HiringAdvice.aspx" Text="Teacher Advice"></asp:HyperLink>
+                                    <asp:HyperLink ID="hpl_TeacherAdvice" runat="server" NavigateUrl="~/publicArea/Preparation.aspx" Text="Teacher Advice"></asp:HyperLink>
                                 </li>
                                 <li>
                                     <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Templates/Pages/Vietnamese-training.aspx" Text="Vietnamese training"></asp:HyperLink>
