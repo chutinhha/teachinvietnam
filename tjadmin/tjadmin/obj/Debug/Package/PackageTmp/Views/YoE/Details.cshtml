@@ -1,0 +1,25 @@
+﻿@model tjadmin.Models.tbl_cv_YearsOfExp
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>tbl_cv_YearsOfExp</legend>
+
+    <div class="display-label">yoe_name_en</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.yoe_name_en)
+    </div>
+
+    <div class="display-label">yoe_name_vn</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.yoe_name_vn)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.yoe_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

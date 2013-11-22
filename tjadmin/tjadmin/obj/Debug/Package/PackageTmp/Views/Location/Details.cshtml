@@ -1,0 +1,25 @@
+﻿@model tjadmin.Models.tbl_Job_Location
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>tbl_Job_Location</legend>
+
+    <div class="display-label">lName_en</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.lName_en)
+    </div>
+
+    <div class="display-label">lName_vi</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.lName_vi)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.lId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

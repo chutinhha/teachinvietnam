@@ -1,0 +1,25 @@
+﻿@model tjadmin.Models.tbl_OrganizationType
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>tbl_OrganizationType</legend>
+
+    <div class="display-label">typename_en</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.typename_en)
+    </div>
+
+    <div class="display-label">typename_vi</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.typename_vi)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

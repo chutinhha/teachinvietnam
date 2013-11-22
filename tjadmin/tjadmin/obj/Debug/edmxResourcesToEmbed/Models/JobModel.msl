@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TeachingJobModelStoreContainer" CdmEntityContainer="TeachingJobEntities">
+    <EntitySetMapping Name="aspnet_Applications">
+      <EntityTypeMapping TypeName="TeachingJobModel.aspnet_Applications">
+        <MappingFragment StoreEntitySet="aspnet_Applications">
+          <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
+          <ScalarProperty Name="LoweredApplicationName" ColumnName="LoweredApplicationName" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Membership">
+      <EntityTypeMapping TypeName="TeachingJobModel.aspnet_Membership">
+        <MappingFragment StoreEntitySet="aspnet_Membership">
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="PasswordFormat" ColumnName="PasswordFormat" />
+          <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
+          <ScalarProperty Name="MobilePIN" ColumnName="MobilePIN" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="LoweredEmail" ColumnName="LoweredEmail" />
+          <ScalarProperty Name="PasswordQuestion" ColumnName="PasswordQuestion" />
+          <ScalarProperty Name="PasswordAnswer" ColumnName="PasswordAnswer" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="IsLockedOut" ColumnName="IsLockedOut" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+          <ScalarProperty Name="LastPasswordChangedDate" ColumnName="LastPasswordChangedDate" />
+          <ScalarProperty Name="LastLockoutDate" ColumnName="LastLockoutDate" />
+          <ScalarProperty Name="FailedPasswordAttemptCount" ColumnName="FailedPasswordAttemptCount" />
+          <ScalarProperty Name="FailedPasswordAttemptWindowStart" ColumnName="FailedPasswordAttemptWindowStart" />
+          <ScalarProperty Name="FailedPasswordAnswerAttemptCount" ColumnName="FailedPasswordAnswerAttemptCount" />
+          <ScalarProperty Name="FailedPasswordAnswerAttemptWindowStart" ColumnName="FailedPasswordAnswerAttemptWindowStart" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Paths">
+      <EntityTypeMapping TypeName="TeachingJobModel.aspnet_Paths">
+        <MappingFragment StoreEntitySet="aspnet_Paths">
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="PathId" ColumnName="PathId" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+          <ScalarProperty Name="LoweredPath" ColumnName="LoweredPath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_PersonalizationAllUsers">
+      <EntityTypeMapping TypeName="TeachingJobModel.aspnet_PersonalizationAllUsers">
+        <MappingFragment StoreEntitySet="aspnet_PersonalizationAllUsers">
+          <ScalarProperty Name="PathId" ColumnName="PathId" />
+          <ScalarProperty Name="PageSettings" ColumnName="PageSettings" />
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_PersonalizationPerUser">
+      <EntityTypeMapping TypeName="TeachingJobModel.aspnet_PersonalizationPerUser">
+        <MappingFragment StoreEntitySet="aspnet_PersonalizationPerUser">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PathId" ColumnName="PathId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="PageSettings" ColumnName="PageSettings" />
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Profile">
+      <EntityTypeMapping TypeName="TeachingJobModel.aspnet_Profile">
+        <MappingFragment StoreEntitySet="aspnet_Profile">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="PropertyNames" ColumnName="PropertyNames" />
+          <ScalarProperty Name="PropertyValuesString" ColumnName="PropertyValuesString" />
+          <ScalarProperty Name="PropertyValuesBinary" ColumnName="PropertyValuesBinary" />
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Roles">
+      <EntityTypeMapping TypeName="TeachingJobModel.aspnet_Roles">
+        <MappingFragment StoreEntitySet="aspnet_Roles">
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="LoweredRoleName" ColumnName="LoweredRoleName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_SchemaVersions">
+      <EntityTypeMapping TypeName="TeachingJobModel.aspnet_SchemaVersions">
+        <MappingFragment StoreEntitySet="aspnet_SchemaVersions">
+          <ScalarProperty Name="Feature" ColumnName="Feature" />
+          <ScalarProperty Name="CompatibleSchemaVersion" ColumnName="CompatibleSchemaVersion" />
+          <ScalarProperty Name="IsCurrentVersion" ColumnName="IsCurrentVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Users">
+      <EntityTypeMapping TypeName="TeachingJobModel.aspnet_Users">
+        <MappingFragment StoreEntitySet="aspnet_Users">
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="LoweredUserName" ColumnName="LoweredUserName" />
+          <ScalarProperty Name="MobileAlias" ColumnName="MobileAlias" />
+          <ScalarProperty Name="IsAnonymous" ColumnName="IsAnonymous" />
+          <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_WebEvent_Events">
+      <EntityTypeMapping TypeName="TeachingJobModel.aspnet_WebEvent_Events">
+        <MappingFragment StoreEntitySet="aspnet_WebEvent_Events">
+          <ScalarProperty Name="EventId" ColumnName="EventId" />
+          <ScalarProperty Name="EventTimeUtc" ColumnName="EventTimeUtc" />
+          <ScalarProperty Name="EventTime" ColumnName="EventTime" />
+          <ScalarProperty Name="EventType" ColumnName="EventType" />
+          <ScalarProperty Name="EventSequence" ColumnName="EventSequence" />
+          <ScalarProperty Name="EventOccurrence" ColumnName="EventOccurrence" />
+          <ScalarProperty Name="EventCode" ColumnName="EventCode" />
+          <ScalarProperty Name="EventDetailCode" ColumnName="EventDetailCode" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="ApplicationPath" ColumnName="ApplicationPath" />
+          <ScalarProperty Name="ApplicationVirtualPath" ColumnName="ApplicationVirtualPath" />
+          <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+          <ScalarProperty Name="RequestUrl" ColumnName="RequestUrl" />
+          <ScalarProperty Name="ExceptionType" ColumnName="ExceptionType" />
+          <ScalarProperty Name="Details" ColumnName="Details" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_cv_DesiredTravel">
+      <EntityTypeMapping TypeName="TeachingJobModel.tbl_cv_DesiredTravel">
+        <MappingFragment StoreEntitySet="tbl_cv_DesiredTravel">
+          <ScalarProperty Name="dt_name_vi" ColumnName="dt_name_vi" />
+          <ScalarProperty Name="dt_id" ColumnName="dt_id" />
+          <ScalarProperty Name="dt_name_en" ColumnName="dt_name_en" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_CV_EduLevel">
+      <EntityTypeMapping TypeName="TeachingJobModel.tbl_CV_EduLevel">
+        <MappingFragment StoreEntitySet="tbl_CV_EduLevel">
+          <ScalarProperty Name="el_name_vi" ColumnName="el_name_vi" />
+          <ScalarProperty Name="el_id" ColumnName="el_id" />
+          <ScalarProperty Name="el_name_en" ColumnName="el_name_en" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_cv_SalaryExpectation">
+      <EntityTypeMapping TypeName="TeachingJobModel.tbl_cv_SalaryExpectation">
+        <MappingFragment StoreEntitySet="tbl_cv_SalaryExpectation">
+          <ScalarProperty Name="se_name_vi" ColumnName="se_name_vi" />
+          <ScalarProperty Name="se_id" ColumnName="se_id" />
+          <ScalarProperty Name="se_name_en" ColumnName="se_name_en" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_cv_wilingtorelocate">
+      <EntityTypeMapping TypeName="TeachingJobModel.tbl_cv_wilingtorelocate">
+        <MappingFragment StoreEntitySet="tbl_cv_wilingtorelocate">
+          <ScalarProperty Name="el_name_vi" ColumnName="el_name_vi" />
+          <ScalarProperty Name="el_id" ColumnName="el_id" />
+          <ScalarProperty Name="el_name_en" ColumnName="el_name_en" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_cv_YearsOfExp">
+      <EntityTypeMapping TypeName="TeachingJobModel.tbl_cv_YearsOfExp">
+        <MappingFragment StoreEntitySet="tbl_cv_YearsOfExp">
+          <ScalarProperty Name="yoe_name_vn" ColumnName="yoe_name_vi" />
+          <ScalarProperty Name="yoe_id" ColumnName="yoe_id" />
+          <ScalarProperty Name="yoe_name_en" ColumnName="yoe_name_en" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Job_Citizenship">
+      <EntityTypeMapping TypeName="TeachingJobModel.tbl_Job_Citizenship">
+        <MappingFragment StoreEntitySet="tbl_Job_Citizenship">
+          <ScalarProperty Name="ctName_vi" ColumnName="ctName_vi" />
+          <ScalarProperty Name="ctId" ColumnName="ctId" />
+          <ScalarProperty Name="ctName_en" ColumnName="ctName_en" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Job_EmploymentType">
+      <EntityTypeMapping TypeName="TeachingJobModel.tbl_Job_EmploymentType">
+        <MappingFragment StoreEntitySet="tbl_Job_EmploymentType">
+          <ScalarProperty Name="etName_vi" ColumnName="etName_vi" />
+          <ScalarProperty Name="etId" ColumnName="etId" />
+          <ScalarProperty Name="etName_en" ColumnName="etName_en" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Job_JobLevel">
+      <EntityTypeMapping TypeName="TeachingJobModel.tbl_Job_JobLevel">
+        <MappingFragment StoreEntitySet="tbl_Job_JobLevel">
+          <ScalarProperty Name="jrName_vi" ColumnName="jrName_vi" />
+          <ScalarProperty Name="jrId" ColumnName="jrId" />
+          <ScalarProperty Name="jrName_en" ColumnName="jrName_en" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Job_Location">
+      <EntityTypeMapping TypeName="TeachingJobModel.tbl_Job_Location">
+        <MappingFragment StoreEntitySet="tbl_Job_Location">
+          <ScalarProperty Name="lName_vi" ColumnName="lName_vi" />
+          <ScalarProperty Name="lId" ColumnName="lId" />
+          <ScalarProperty Name="lName_en" ColumnName="lName_en" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Job_SchoolType">
+      <EntityTypeMapping TypeName="TeachingJobModel.tbl_Job_SchoolType">
+        <MappingFragment StoreEntitySet="tbl_Job_SchoolType">
+          <ScalarProperty Name="stName_vn" ColumnName="stName_vn" />
+          <ScalarProperty Name="stId" ColumnName="stId" />
+          <ScalarProperty Name="stName_en" ColumnName="stName_en" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Job_Sector">
+      <EntityTypeMapping TypeName="TeachingJobModel.tbl_Job_Sector">
+        <MappingFragment StoreEntitySet="tbl_Job_Sector">
+          <ScalarProperty Name="seName_vi" ColumnName="seName_vi" />
+          <ScalarProperty Name="seId" ColumnName="seId" />
+          <ScalarProperty Name="seName_en" ColumnName="seName_en" />
+          <ScalarProperty Name="seParentId" ColumnName="seParentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Lang">
+      <EntityTypeMapping TypeName="TeachingJobModel.tbl_Lang">
+        <MappingFragment StoreEntitySet="tbl_Lang">
+          <ScalarProperty Name="lang_name_vi" ColumnName="lang_name_vi" />
+          <ScalarProperty Name="lang_Id" ColumnName="lang_Id" />
+          <ScalarProperty Name="lang_name_en" ColumnName="lang_name_en" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Langlvl">
+      <EntityTypeMapping TypeName="TeachingJobModel.tbl_Langlvl">
+        <MappingFragment StoreEntitySet="tbl_Langlvl">
+          <ScalarProperty Name="langlvl_name_vi" ColumnName="langlvl_name_vi" />
+          <ScalarProperty Name="langlvl_Id" ColumnName="langlvl_Id" />
+          <ScalarProperty Name="langlvl_name_en" ColumnName="langlvl_name_en" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_OrganizationType">
+      <EntityTypeMapping TypeName="TeachingJobModel.tbl_OrganizationType">
+        <MappingFragment StoreEntitySet="tbl_OrganizationType">
+          <ScalarProperty Name="typename_vi" ColumnName="typename_vi" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="typename_en" ColumnName="typename_en" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SaveCV">
+      <EntityTypeMapping TypeName="TeachingJobModel.tbl_SaveCV">
+        <MappingFragment StoreEntitySet="tbl_SaveCV">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Saver" ColumnName="Saver" />
+          <ScalarProperty Name="cvUserId" ColumnName="cvUserId" />
+          <ScalarProperty Name="createdDate" ColumnName="createdDate" />
+          <ScalarProperty Name="favorite" ColumnName="favorite" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SaveJob">
+      <EntityTypeMapping TypeName="TeachingJobModel.tbl_SaveJob">
+        <MappingFragment StoreEntitySet="tbl_SaveJob">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="candidate" ColumnName="candidate" />
+          <ScalarProperty Name="jId" ColumnName="jId" />
+          <ScalarProperty Name="savedate" ColumnName="savedate" />
+          <ScalarProperty Name="stt" ColumnName="stt" />
+          <ScalarProperty Name="fullname" ColumnName="fullname" />
+          <ScalarProperty Name="readbefore" ColumnName="readbefore" />
+          <ScalarProperty Name="favorite" ColumnName="favorite" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SaveJob2">
+      <EntityTypeMapping TypeName="TeachingJobModel.tbl_SaveJob2">
+        <MappingFragment StoreEntitySet="tbl_SaveJob2">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="candidate" ColumnName="candidate" />
+          <ScalarProperty Name="jId" ColumnName="jId" />
+          <ScalarProperty Name="savedate" ColumnName="savedate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SlideshowImage">
+      <EntityTypeMapping TypeName="TeachingJobModel.tbl_SlideshowImage">
+        <MappingFragment StoreEntitySet="tbl_SlideshowImage">
+          <ScalarProperty Name="ss_id" ColumnName="ss_id" />
+          <ScalarProperty Name="ss_img" ColumnName="ss_img" />
+          <ScalarProperty Name="ss_description" ColumnName="ss_description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_TeachingJob">
+      <EntityTypeMapping TypeName="TeachingJobModel.tbl_TeachingJob">
+        <MappingFragment StoreEntitySet="tbl_TeachingJob">
+          <ScalarProperty Name="jId" ColumnName="jId" />
+          <ScalarProperty Name="jTitle_en" ColumnName="jTitle_en" />
+          <ScalarProperty Name="jDescription_en" ColumnName="jDescription_en" />
+          <ScalarProperty Name="jEmployer" ColumnName="jEmployer" />
+          <ScalarProperty Name="jLocation_en" ColumnName="jLocation_en" />
+          <ScalarProperty Name="jSalary_en" ColumnName="jSalary_en" />
+          <ScalarProperty Name="jSalaryTo_en" ColumnName="jSalaryTo_en" />
+          <ScalarProperty Name="jSector_en" ColumnName="jSector_en" />
+          <ScalarProperty Name="jJobLevel_en" ColumnName="jJobLevel_en" />
+          <ScalarProperty Name="jEmploymentType_en" ColumnName="jEmploymentType_en" />
+          <ScalarProperty Name="jCitizenship_en" ColumnName="jCitizenship_en" />
+          <ScalarProperty Name="jEducationRequirement_en" ColumnName="jEducationRequirement_en" />
+          <ScalarProperty Name="jContact" ColumnName="jContact" />
+          <ScalarProperty Name="jClosingDate" ColumnName="jClosingDate" />
+          <ScalarProperty Name="jUploadDate" ColumnName="jUploadDate" />
+          <ScalarProperty Name="jFeaturedJob" ColumnName="jFeaturedJob" />
+          <ScalarProperty Name="jViewCount" ColumnName="jViewCount" />
+          <ScalarProperty Name="jSector_en2" ColumnName="jSector_en2" />
+          <ScalarProperty Name="jSector_en3" ColumnName="jSector_en3" />
+          <ScalarProperty Name="jLocation_en2" ColumnName="jLocation_en2" />
+          <ScalarProperty Name="jLocation_en3" ColumnName="jLocation_en3" />
+          <ScalarProperty Name="jSalaryType" ColumnName="jSalaryType" />
+          <ScalarProperty Name="jSalaryCurrency" ColumnName="jSalaryCurrency" />
+          <ScalarProperty Name="jSalaryPaymentType" ColumnName="jSalaryPaymentType" />
+          <ScalarProperty Name="jEmailToApplication" ColumnName="jEmailToApplication" />
+          <ScalarProperty Name="jExecutiveJob" ColumnName="jExecutiveJob" />
+          <ScalarProperty Name="jActive" ColumnName="jActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="aspnet_UsersInRoles" TypeName="TeachingJobModel.aspnet_UsersInRoles" StoreEntitySet="aspnet_UsersInRoles">
+      <EndProperty Name="aspnet_Roles">
+        <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+      </EndProperty>
+      <EndProperty Name="aspnet_Users">
+        <ScalarProperty Name="UserId" ColumnName="UserId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="view_Membership">
+      <EntityTypeMapping TypeName="TeachingJobModel.view_Membership">
+        <MappingFragment StoreEntitySet="view_Membership">
+          <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Testimonial_Article">
+      <EntityTypeMapping TypeName="TeachingJobModel.Testimonial_Article">
+        <MappingFragment StoreEntitySet="Testimonial_Article">
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="setAsSlider" ColumnName="setAsSlider" />
+          <ScalarProperty Name="body" ColumnName="body" />
+          <ScalarProperty Name="logo" ColumnName="logo" />
+          <ScalarProperty Name="citizenship" ColumnName="citizenship" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Preparation_Article">
+      <EntityTypeMapping TypeName="TeachingJobModel.Preparation_Article">
+        <MappingFragment StoreEntitySet="Preparation_Article">
+          <ScalarProperty Name="sort_order" ColumnName="sort_order" />
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="IsItRecruitArticle" ColumnName="IsItRecruitArticle" />
+          <ScalarProperty Name="body" ColumnName="body" />
+          <ScalarProperty Name="logo" ColumnName="logo" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Comment">
+      <EntityTypeMapping TypeName="TeachingJobModel.tbl_Comment">
+        <MappingFragment StoreEntitySet="tbl_Comment">
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="createddate" ColumnName="createddate" />
+          <ScalarProperty Name="body" ColumnName="body" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="writername" ColumnName="writername" />
+          <ScalarProperty Name="tid" ColumnName="tid" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_CommentHiring">
+      <EntityTypeMapping TypeName="TeachingJobModel.tbl_CommentHiring">
+        <MappingFragment StoreEntitySet="tbl_CommentHiring">
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="createddate" ColumnName="createddate" />
+          <ScalarProperty Name="body" ColumnName="body" />
+          <ScalarProperty Name="writer" ColumnName="writer" />
+          <ScalarProperty Name="tid" ColumnName="tid" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_HiringAdvice">
+      <EntityTypeMapping TypeName="TeachingJobModel.tbl_HiringAdvice">
+        <MappingFragment StoreEntitySet="tbl_HiringAdvice">
+          <ScalarProperty Name="detail" ColumnName="detail" />
+          <ScalarProperty Name="uploadedDate" ColumnName="uploadedDate" />
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="writer" ColumnName="writer" />
+          <ScalarProperty Name="cate_id" ColumnName="cate_id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_HiringAdvice_Category">
+      <EntityTypeMapping TypeName="TeachingJobModel.tbl_HiringAdvice_Category">
+        <MappingFragment StoreEntitySet="tbl_HiringAdvice_Category">
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="cate_name" ColumnName="cate_name" />
+          <ScalarProperty Name="cate_id" ColumnName="cate_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

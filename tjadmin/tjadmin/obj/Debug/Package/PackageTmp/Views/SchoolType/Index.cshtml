@@ -1,0 +1,39 @@
+﻿@model IEnumerable<tjadmin.Models.tbl_Job_SchoolType>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            stName_en
+        </th>
+        <th>
+            stName_vn
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.stName_en)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.stName_vn)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.stId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.stId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.stId })
+        </td>
+    </tr>
+}
+
+</table>

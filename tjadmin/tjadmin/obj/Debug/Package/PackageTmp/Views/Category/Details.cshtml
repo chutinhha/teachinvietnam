@@ -1,0 +1,30 @@
+﻿@model tjadmin.Models.tbl_Job_Sector
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>tbl_Job_Sector</legend>
+
+    <div class="display-label">seName_en</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.seName_en)
+    </div>
+        <div class="display-label">seName_vi</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.seName_vi)
+    </div>
+    <div class="display-label">seParentId</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.seParentId)
+    </div>
+
+
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.seId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
