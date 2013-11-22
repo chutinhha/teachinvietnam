@@ -1,0 +1,25 @@
+﻿@model tjadmin.Models.tbl_Job_EmploymentType
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>tbl_Job_EmploymentType</legend>
+
+    <div class="display-label">etName_en</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.etName_en)
+    </div>
+
+    <div class="display-label">etName_vi</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.etName_vi)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.etId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

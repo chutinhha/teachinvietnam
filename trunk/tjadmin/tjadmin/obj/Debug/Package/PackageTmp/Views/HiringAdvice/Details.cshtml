@@ -1,0 +1,45 @@
+﻿@model tjadmin.Models.tbl_HiringAdvice
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>tbl_HiringAdvice</legend>
+
+    <div class="display-label">title</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.title)
+    </div>
+
+    <div class="display-label">Category</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.tbl_HiringAdvice_Category.cate_name)
+    </div>
+
+    <div class="display-label">writer</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.writer)
+    </div>
+
+    <div class="display-label">detail</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.detail)
+    </div>
+
+    <div class="display-label">active</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.active)
+    </div>
+
+    <div class="display-label">Upload Date</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.uploadedDate)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

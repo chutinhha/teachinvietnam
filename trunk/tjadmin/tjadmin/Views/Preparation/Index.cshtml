@@ -1,0 +1,55 @@
+﻿@model IEnumerable<tjadmin.Models.Preparation_Article>
+@{
+    ViewBag.Title = "Index";
+}
+<h2>
+    Index</h2>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            title
+        </th>
+        <th>
+            logo
+        </th>
+        <th>
+            IsItRecruitArticle
+        </th>
+        <th>
+            active
+        </th>
+        <th>
+            sort_order
+        </th>
+        <th>
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.logo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsItRecruitArticle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.active)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.sort_order)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.id })
+            </td>
+        </tr>
+    }
+</table>

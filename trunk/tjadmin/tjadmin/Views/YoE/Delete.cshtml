@@ -1,0 +1,28 @@
+﻿@model tjadmin.Models.tbl_cv_YearsOfExp
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>tbl_cv_YearsOfExp</legend>
+
+    <div class="display-label">yoe_name_en</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.yoe_name_en)
+    </div>
+
+    <div class="display-label">yoe_name_vn</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.yoe_name_vn)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

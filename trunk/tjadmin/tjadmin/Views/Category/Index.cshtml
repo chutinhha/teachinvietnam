@@ -1,0 +1,43 @@
+﻿@model IEnumerable<tjadmin.Models.tbl_Job_Sector>
+@{
+    ViewBag.Title = "Index";
+}
+<h2>
+    Index</h2>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            seName_en
+        </th>
+        <th>
+            seName_vi
+        </th>
+        <th>
+            seParentId
+        </th>
+        <th>
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.seName_en)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.seName_vi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.seParentId)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.seId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.seId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.seId })
+            </td>
+        </tr>
+    }
+</table>

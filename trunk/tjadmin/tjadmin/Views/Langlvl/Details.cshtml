@@ -1,0 +1,25 @@
+﻿@model tjadmin.Models.tbl_Langlvl
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>tbl_Langlvl</legend>
+
+    <div class="display-label">langlvl_name_en</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.langlvl_name_en)
+    </div>
+
+    <div class="display-label">langlvl_name_vi</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.langlvl_name_vi)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.langlvl_Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

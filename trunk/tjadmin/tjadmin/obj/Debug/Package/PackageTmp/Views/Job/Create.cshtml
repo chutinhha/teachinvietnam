@@ -1,0 +1,233 @@
+﻿@model tjadmin.Models.tbl_TeachingJob
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>tbl_TeachingJob</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.jTitle_en)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.jTitle_en)
+            @Html.ValidationMessageFor(model => model.jTitle_en)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.jDescription_en)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.jDescription_en)
+            @Html.ValidationMessageFor(model => model.jDescription_en)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.jEmployer, "aspnet_Users")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("jEmployer", String.Empty)
+            @Html.ValidationMessageFor(model => model.jEmployer)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.jLocation_en)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.jLocation_en)
+            @Html.ValidationMessageFor(model => model.jLocation_en)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.jSalary_en)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.jSalary_en)
+            @Html.ValidationMessageFor(model => model.jSalary_en)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.jSalaryTo_en)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.jSalaryTo_en)
+            @Html.ValidationMessageFor(model => model.jSalaryTo_en)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.jSector_en)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.jSector_en)
+            @Html.ValidationMessageFor(model => model.jSector_en)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.jJobLevel_en)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.jJobLevel_en)
+            @Html.ValidationMessageFor(model => model.jJobLevel_en)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.jEmploymentType_en)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.jEmploymentType_en)
+            @Html.ValidationMessageFor(model => model.jEmploymentType_en)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.jCitizenship_en)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.jCitizenship_en)
+            @Html.ValidationMessageFor(model => model.jCitizenship_en)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.jEducationRequirement_en)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.jEducationRequirement_en)
+            @Html.ValidationMessageFor(model => model.jEducationRequirement_en)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.jContact)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.jContact)
+            @Html.ValidationMessageFor(model => model.jContact)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.jClosingDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.jClosingDate)
+            @Html.ValidationMessageFor(model => model.jClosingDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.jUploadDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.jUploadDate)
+            @Html.ValidationMessageFor(model => model.jUploadDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.jFeaturedJob)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.jFeaturedJob)
+            @Html.ValidationMessageFor(model => model.jFeaturedJob)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.jViewCount)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.jViewCount)
+            @Html.ValidationMessageFor(model => model.jViewCount)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.jSector_en2)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.jSector_en2)
+            @Html.ValidationMessageFor(model => model.jSector_en2)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.jSector_en3)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.jSector_en3)
+            @Html.ValidationMessageFor(model => model.jSector_en3)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.jLocation_en2)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.jLocation_en2)
+            @Html.ValidationMessageFor(model => model.jLocation_en2)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.jLocation_en3)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.jLocation_en3)
+            @Html.ValidationMessageFor(model => model.jLocation_en3)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.jSalaryType)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.jSalaryType)
+            @Html.ValidationMessageFor(model => model.jSalaryType)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.jSalaryCurrency)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.jSalaryCurrency)
+            @Html.ValidationMessageFor(model => model.jSalaryCurrency)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.jSalaryPaymentType)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.jSalaryPaymentType)
+            @Html.ValidationMessageFor(model => model.jSalaryPaymentType)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.jEmailToApplication)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.jEmailToApplication)
+            @Html.ValidationMessageFor(model => model.jEmailToApplication)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.jExecutiveJob)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.jExecutiveJob)
+            @Html.ValidationMessageFor(model => model.jExecutiveJob)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.jActive)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.jActive)
+            @Html.ValidationMessageFor(model => model.jActive)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

@@ -1,0 +1,75 @@
+﻿@model tjadmin.Models.tbl_HiringAdvice
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>tbl_HiringAdvice</legend>
+
+        @Html.HiddenFor(model => model.id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.title)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.title)
+            @Html.ValidationMessageFor(model => model.title)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.cate_id, "tbl_HiringAdvice_Category")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("cate_id", String.Empty)
+            @Html.ValidationMessageFor(model => model.cate_id)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.writer)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.writer)
+            @Html.ValidationMessageFor(model => model.writer)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.detail)
+        </div>
+        <div class="editor-field">
+            @Html.TextAreaFor(model => model.detail, new {@cols=100m, @rows=10})
+            @Html.ValidationMessageFor(model => model.detail)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.active)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.active)
+            @Html.ValidationMessageFor(model => model.active)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.uploadedDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.uploadedDate)
+            @Html.ValidationMessageFor(model => model.uploadedDate)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

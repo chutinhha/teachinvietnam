@@ -1,0 +1,7 @@
+D:\document\aptech - fpt\C#\Project\tjadmin\tjadmin\bin\tjadmin.dll
+D:\document\aptech - fpt\C#\Project\tjadmin\tjadmin\bin\tjadmin.pdb
+D:\document\aptech - fpt\C#\Project\tjadmin\tjadmin\bin\EntityFramework.dll
+D:\document\aptech - fpt\C#\Project\tjadmin\tjadmin\bin\EntityFramework.xml
+D:\document\aptech - fpt\C#\Project\tjadmin\tjadmin\obj\Debug\ResolveAssemblyReference.cache
+D:\document\aptech - fpt\C#\Project\tjadmin\tjadmin\obj\Debug\tjadmin.dll
+D:\document\aptech - fpt\C#\Project\tjadmin\tjadmin\obj\Debug\tjadmin.pdb

@@ -1,0 +1,25 @@
+﻿@model tjadmin.Models.tbl_HiringAdvice_Category
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>tbl_HiringAdvice_Category</legend>
+
+    <div class="display-label">cate_name</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.cate_name)
+    </div>
+
+    <div class="display-label">active</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.active)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.cate_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

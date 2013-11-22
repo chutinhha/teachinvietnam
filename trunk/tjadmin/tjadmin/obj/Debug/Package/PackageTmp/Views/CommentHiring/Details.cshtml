@@ -1,0 +1,40 @@
+﻿@model tjadmin.Models.tbl_CommentHiring
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>tbl_CommentHiring</legend>
+
+    <div class="display-label">tbl_HiringAdvice</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.tbl_HiringAdvice.title)
+    </div>
+
+    <div class="display-label">writer</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.writer)
+    </div>
+
+    <div class="display-label">body</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.body)
+    </div>
+
+    <div class="display-label">createddate</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.createddate)
+    </div>
+
+    <div class="display-label">active</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.active)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

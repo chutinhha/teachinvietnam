@@ -1,0 +1,148 @@
+﻿@model tjadmin.Models.tbl_TeachingJob
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>tbl_TeachingJob</legend>
+
+    <div class="display-label">jTitle_en</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.jTitle_en)
+    </div>
+
+    <div class="display-label">jDescription_en</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.jDescription_en)
+    </div>
+
+    <div class="display-label">aspnet_Users</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.aspnet_Users.UserName)
+    </div>
+
+    <div class="display-label">jLocation_en</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.jLocation_en)
+    </div>
+
+    <div class="display-label">jSalary_en</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.jSalary_en)
+    </div>
+
+    <div class="display-label">jSalaryTo_en</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.jSalaryTo_en)
+    </div>
+
+    <div class="display-label">jSector_en</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.jSector_en)
+    </div>
+
+    <div class="display-label">jJobLevel_en</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.jJobLevel_en)
+    </div>
+
+    <div class="display-label">jEmploymentType_en</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.jEmploymentType_en)
+    </div>
+
+    <div class="display-label">jCitizenship_en</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.jCitizenship_en)
+    </div>
+
+    <div class="display-label">jEducationRequirement_en</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.jEducationRequirement_en)
+    </div>
+
+    <div class="display-label">jContact</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.jContact)
+    </div>
+
+    <div class="display-label">jClosingDate</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.jClosingDate)
+    </div>
+
+    <div class="display-label">jUploadDate</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.jUploadDate)
+    </div>
+
+    <div class="display-label">jFeaturedJob</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.jFeaturedJob)
+    </div>
+
+    <div class="display-label">jViewCount</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.jViewCount)
+    </div>
+
+    <div class="display-label">jSector_en2</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.jSector_en2)
+    </div>
+
+    <div class="display-label">jSector_en3</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.jSector_en3)
+    </div>
+
+    <div class="display-label">jLocation_en2</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.jLocation_en2)
+    </div>
+
+    <div class="display-label">jLocation_en3</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.jLocation_en3)
+    </div>
+
+    <div class="display-label">jSalaryType</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.jSalaryType)
+    </div>
+
+    <div class="display-label">jSalaryCurrency</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.jSalaryCurrency)
+    </div>
+
+    <div class="display-label">jSalaryPaymentType</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.jSalaryPaymentType)
+    </div>
+
+    <div class="display-label">jEmailToApplication</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.jEmailToApplication)
+    </div>
+
+    <div class="display-label">jExecutiveJob</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.jExecutiveJob)
+    </div>
+
+    <div class="display-label">jActive</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.jActive)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

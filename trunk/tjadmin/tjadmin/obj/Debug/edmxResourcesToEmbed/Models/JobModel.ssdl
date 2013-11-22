@@ -1,0 +1,749 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TeachingJobModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="TeachingJobModelStoreContainer">
+    <EntitySet Name="aspnet_Applications" EntityType="TeachingJobModel.Store.aspnet_Applications" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_Membership" EntityType="TeachingJobModel.Store.aspnet_Membership" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_Paths" EntityType="TeachingJobModel.Store.aspnet_Paths" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_PersonalizationAllUsers" EntityType="TeachingJobModel.Store.aspnet_PersonalizationAllUsers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_PersonalizationPerUser" EntityType="TeachingJobModel.Store.aspnet_PersonalizationPerUser" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_Profile" EntityType="TeachingJobModel.Store.aspnet_Profile" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_Roles" EntityType="TeachingJobModel.Store.aspnet_Roles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_SchemaVersions" EntityType="TeachingJobModel.Store.aspnet_SchemaVersions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_Users" EntityType="TeachingJobModel.Store.aspnet_Users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_UsersInRoles" EntityType="TeachingJobModel.Store.aspnet_UsersInRoles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_WebEvent_Events" EntityType="TeachingJobModel.Store.aspnet_WebEvent_Events" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Preparation_Article" EntityType="TeachingJobModel.Store.Preparation_Article" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Comment" EntityType="TeachingJobModel.Store.tbl_Comment" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_CommentHiring" EntityType="TeachingJobModel.Store.tbl_CommentHiring" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_cv_DesiredTravel" EntityType="TeachingJobModel.Store.tbl_cv_DesiredTravel" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_CV_EduLevel" EntityType="TeachingJobModel.Store.tbl_CV_EduLevel" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_cv_SalaryExpectation" EntityType="TeachingJobModel.Store.tbl_cv_SalaryExpectation" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_cv_wilingtorelocate" EntityType="TeachingJobModel.Store.tbl_cv_wilingtorelocate" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_cv_YearsOfExp" EntityType="TeachingJobModel.Store.tbl_cv_YearsOfExp" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_HiringAdvice" EntityType="TeachingJobModel.Store.tbl_HiringAdvice" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_HiringAdvice_Category" EntityType="TeachingJobModel.Store.tbl_HiringAdvice_Category" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Job_Citizenship" EntityType="TeachingJobModel.Store.tbl_Job_Citizenship" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Job_EmploymentType" EntityType="TeachingJobModel.Store.tbl_Job_EmploymentType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Job_JobLevel" EntityType="TeachingJobModel.Store.tbl_Job_JobLevel" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Job_Location" EntityType="TeachingJobModel.Store.tbl_Job_Location" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Job_SchoolType" EntityType="TeachingJobModel.Store.tbl_Job_SchoolType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Job_Sector" EntityType="TeachingJobModel.Store.tbl_Job_Sector" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Lang" EntityType="TeachingJobModel.Store.tbl_Lang" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Langlvl" EntityType="TeachingJobModel.Store.tbl_Langlvl" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_OrganizationType" EntityType="TeachingJobModel.Store.tbl_OrganizationType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_SaveCV" EntityType="TeachingJobModel.Store.tbl_SaveCV" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_SaveJob" EntityType="TeachingJobModel.Store.tbl_SaveJob" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_SaveJob2" EntityType="TeachingJobModel.Store.tbl_SaveJob2" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_SlideshowImage" EntityType="TeachingJobModel.Store.tbl_SlideshowImage" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_TeachingJob" EntityType="TeachingJobModel.Store.tbl_TeachingJob" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Testimonial_Article" EntityType="TeachingJobModel.Store.Testimonial_Article" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="view_Membership" EntityType="TeachingJobModel.Store.view_Membership" store:Type="Views" store:Schema="dbo" store:Name="view_Membership">
+      <DefiningQuery>SELECT 
+      [view_Membership].[UserName] AS [UserName], 
+      [view_Membership].[RoleName] AS [RoleName], 
+      [view_Membership].[LastActivityDate] AS [LastActivityDate]
+      FROM [dbo].[view_Membership] AS [view_Membership]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__aspnet_Me__Appli__681373AD" Association="TeachingJobModel.Store.FK__aspnet_Me__Appli__681373AD">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Me__UserI__690797E6" Association="TeachingJobModel.Store.FK__aspnet_Me__UserI__690797E6">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pa__Appli__5E8A0973" Association="TeachingJobModel.Store.FK__aspnet_Pa__Appli__5E8A0973">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pe__PathI__634EBE90" Association="TeachingJobModel.Store.FK__aspnet_Pe__PathI__634EBE90">
+      <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+      <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pe__PathI__69FBBC1F" Association="TeachingJobModel.Store.FK__aspnet_Pe__PathI__69FBBC1F">
+      <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+      <End Role="aspnet_PersonalizationAllUsers" EntitySet="aspnet_PersonalizationAllUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pe__UserI__6442E2C9" Association="TeachingJobModel.Store.FK__aspnet_Pe__UserI__6442E2C9">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pr__UserI__671F4F74" Association="TeachingJobModel.Store.FK__aspnet_Pr__UserI__671F4F74">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_Profile" EntitySet="aspnet_Profile" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Ro__Appli__5F7E2DAC" Association="TeachingJobModel.Store.FK__aspnet_Ro__Appli__5F7E2DAC">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Us__Appli__607251E5" Association="TeachingJobModel.Store.FK__aspnet_Us__Appli__607251E5">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Us__RoleI__65370702" Association="TeachingJobModel.Store.FK__aspnet_Us__RoleI__65370702">
+      <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+      <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Us__UserI__662B2B3B" Association="TeachingJobModel.Store.FK__aspnet_Us__UserI__662B2B3B">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Comment__tid__36470DEF" Association="TeachingJobModel.Store.FK__tbl_Comment__tid__36470DEF">
+      <End Role="Testimonial_Article" EntitySet="Testimonial_Article" />
+      <End Role="tbl_Comment" EntitySet="tbl_Comment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Comment__tid__57A801BA" Association="TeachingJobModel.Store.FK__tbl_Comment__tid__57A801BA">
+      <End Role="tbl_HiringAdvice" EntitySet="tbl_HiringAdvice" />
+      <End Role="tbl_CommentHiring" EntitySet="tbl_CommentHiring" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Hirin__cate___50FB042B" Association="TeachingJobModel.Store.FK__tbl_Hirin__cate___50FB042B">
+      <End Role="tbl_HiringAdvice_Category" EntitySet="tbl_HiringAdvice_Category" />
+      <End Role="tbl_HiringAdvice" EntitySet="tbl_HiringAdvice" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_SaveJ__candi__6AEFE058" Association="TeachingJobModel.Store.FK__tbl_SaveJ__candi__6AEFE058">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="tbl_SaveJob" EntitySet="tbl_SaveJob" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_SaveJ__candi__7C1A6C5A" Association="TeachingJobModel.Store.FK__tbl_SaveJ__candi__7C1A6C5A">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="tbl_SaveJob2" EntitySet="tbl_SaveJob2" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_SaveJob__jId__6BE40491" Association="TeachingJobModel.Store.FK__tbl_SaveJob__jId__6BE40491">
+      <End Role="tbl_TeachingJob" EntitySet="tbl_TeachingJob" />
+      <End Role="tbl_SaveJob" EntitySet="tbl_SaveJob" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_SaveJob__jId__7D0E9093" Association="TeachingJobModel.Store.FK__tbl_SaveJob__jId__7D0E9093">
+      <End Role="tbl_TeachingJob" EntitySet="tbl_TeachingJob" />
+      <End Role="tbl_SaveJob2" EntitySet="tbl_SaveJob2" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Teach__jEmpl__6166761E" Association="TeachingJobModel.Store.FK__tbl_Teach__jEmpl__6166761E">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="tbl_TeachingJob" EntitySet="tbl_TeachingJob" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="aspnet_Applications">
+    <Key>
+      <PropertyRef Name="ApplicationId" />
+    </Key>
+    <Property Name="ApplicationName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="LoweredApplicationName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="aspnet_Membership">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="PasswordFormat" Type="int" Nullable="false" />
+    <Property Name="PasswordSalt" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="MobilePIN" Type="nvarchar" MaxLength="16" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="LoweredEmail" Type="nvarchar" MaxLength="256" />
+    <Property Name="PasswordQuestion" Type="nvarchar" MaxLength="256" />
+    <Property Name="PasswordAnswer" Type="nvarchar" MaxLength="128" />
+    <Property Name="IsApproved" Type="bit" Nullable="false" />
+    <Property Name="IsLockedOut" Type="bit" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="LastLoginDate" Type="datetime" Nullable="false" />
+    <Property Name="LastPasswordChangedDate" Type="datetime" Nullable="false" />
+    <Property Name="LastLockoutDate" Type="datetime" Nullable="false" />
+    <Property Name="FailedPasswordAttemptCount" Type="int" Nullable="false" />
+    <Property Name="FailedPasswordAttemptWindowStart" Type="datetime" Nullable="false" />
+    <Property Name="FailedPasswordAnswerAttemptCount" Type="int" Nullable="false" />
+    <Property Name="FailedPasswordAnswerAttemptWindowStart" Type="datetime" Nullable="false" />
+    <Property Name="Comment" Type="ntext" />
+  </EntityType>
+  <EntityType Name="aspnet_Paths">
+    <Key>
+      <PropertyRef Name="PathId" />
+    </Key>
+    <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PathId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Path" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="LoweredPath" Type="nvarchar" Nullable="false" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="aspnet_PersonalizationAllUsers">
+    <Key>
+      <PropertyRef Name="PathId" />
+    </Key>
+    <Property Name="PathId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PageSettings" Type="image" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_PersonalizationPerUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PathId" Type="uniqueidentifier" />
+    <Property Name="UserId" Type="uniqueidentifier" />
+    <Property Name="PageSettings" Type="image" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_Profile">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PropertyNames" Type="ntext" Nullable="false" />
+    <Property Name="PropertyValuesString" Type="ntext" Nullable="false" />
+    <Property Name="PropertyValuesBinary" Type="image" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_Roles">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="RoleName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="LoweredRoleName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="Description" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="aspnet_SchemaVersions">
+    <Key>
+      <PropertyRef Name="Feature" />
+      <PropertyRef Name="CompatibleSchemaVersion" />
+    </Key>
+    <Property Name="Feature" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="CompatibleSchemaVersion" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="IsCurrentVersion" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="LoweredUserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="MobileAlias" Type="nvarchar" MaxLength="16" />
+    <Property Name="IsAnonymous" Type="bit" Nullable="false" />
+    <Property Name="LastActivityDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_UsersInRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_WebEvent_Events">
+    <Key>
+      <PropertyRef Name="EventId" />
+    </Key>
+    <Property Name="EventId" Type="char" Nullable="false" MaxLength="32" />
+    <Property Name="EventTimeUtc" Type="datetime" Nullable="false" />
+    <Property Name="EventTime" Type="datetime" Nullable="false" />
+    <Property Name="EventType" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="EventSequence" Type="decimal" Nullable="false" Precision="19" />
+    <Property Name="EventOccurrence" Type="decimal" Nullable="false" Precision="19" />
+    <Property Name="EventCode" Type="int" Nullable="false" />
+    <Property Name="EventDetailCode" Type="int" Nullable="false" />
+    <Property Name="Message" Type="nvarchar" MaxLength="1024" />
+    <Property Name="ApplicationPath" Type="nvarchar" MaxLength="256" />
+    <Property Name="ApplicationVirtualPath" Type="nvarchar" MaxLength="256" />
+    <Property Name="MachineName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="RequestUrl" Type="nvarchar" MaxLength="1024" />
+    <Property Name="ExceptionType" Type="nvarchar" MaxLength="256" />
+    <Property Name="Details" Type="ntext" />
+  </EntityType>
+  <EntityType Name="Preparation_Article">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="nvarchar" MaxLength="200" />
+    <Property Name="logo" Type="varchar" MaxLength="200" />
+    <Property Name="body" Type="nvarchar(max)" />
+    <Property Name="IsItRecruitArticle" Type="bit" />
+    <Property Name="active" Type="bit" />
+    <Property Name="sort_order" Type="smallint" />
+  </EntityType>
+  <EntityType Name="tbl_Comment">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="tid" Type="int" />
+    <Property Name="writername" Type="nvarchar" MaxLength="100" />
+    <Property Name="email" Type="nvarchar" MaxLength="100" />
+    <Property Name="body" Type="nvarchar" MaxLength="1000" />
+    <Property Name="createddate" Type="datetime" />
+    <Property Name="active" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_CommentHiring">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="tid" Type="int" />
+    <Property Name="writer" Type="uniqueidentifier" />
+    <Property Name="body" Type="nvarchar" MaxLength="1000" />
+    <Property Name="createddate" Type="datetime" />
+    <Property Name="active" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_cv_DesiredTravel">
+    <Key>
+      <PropertyRef Name="dt_id" />
+    </Key>
+    <Property Name="dt_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="dt_name_en" Type="varchar" MaxLength="100" />
+    <Property Name="dt_name_vi" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tbl_CV_EduLevel">
+    <Key>
+      <PropertyRef Name="el_id" />
+    </Key>
+    <Property Name="el_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="el_name_en" Type="varchar" MaxLength="100" />
+    <Property Name="el_name_vi" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tbl_cv_SalaryExpectation">
+    <Key>
+      <PropertyRef Name="se_id" />
+    </Key>
+    <Property Name="se_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="se_name_en" Type="varchar" MaxLength="100" />
+    <Property Name="se_name_vi" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tbl_cv_wilingtorelocate">
+    <Key>
+      <PropertyRef Name="el_id" />
+    </Key>
+    <Property Name="el_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="el_name_en" Type="varchar" MaxLength="100" />
+    <Property Name="el_name_vi" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tbl_cv_YearsOfExp">
+    <Key>
+      <PropertyRef Name="yoe_id" />
+    </Key>
+    <Property Name="yoe_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="yoe_name_en" Type="varchar" MaxLength="100" />
+    <Property Name="yoe_name_vi" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tbl_HiringAdvice">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="nvarchar" MaxLength="200" />
+    <Property Name="cate_id" Type="int" />
+    <Property Name="writer" Type="uniqueidentifier" />
+    <Property Name="active" Type="bit" />
+    <Property Name="uploadedDate" Type="datetime" />
+    <Property Name="detail" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="tbl_HiringAdvice_Category">
+    <Key>
+      <PropertyRef Name="cate_id" />
+    </Key>
+    <Property Name="cate_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="cate_name" Type="nvarchar" MaxLength="100" />
+    <Property Name="active" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_Job_Citizenship">
+    <Key>
+      <PropertyRef Name="ctId" />
+    </Key>
+    <Property Name="ctId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ctName_en" Type="varchar" MaxLength="100" />
+    <Property Name="ctName_vi" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tbl_Job_EmploymentType">
+    <Key>
+      <PropertyRef Name="etId" />
+    </Key>
+    <Property Name="etId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="etName_en" Type="varchar" MaxLength="100" />
+    <Property Name="etName_vi" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tbl_Job_JobLevel">
+    <Key>
+      <PropertyRef Name="jrId" />
+    </Key>
+    <Property Name="jrId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="jrName_en" Type="varchar" MaxLength="100" />
+    <Property Name="jrName_vi" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tbl_Job_Location">
+    <Key>
+      <PropertyRef Name="lId" />
+    </Key>
+    <Property Name="lId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="lName_en" Type="varchar" MaxLength="100" />
+    <Property Name="lName_vi" Type="nvarchar" MaxLength="100" />
+    <Property Name="lParentId" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_Job_SchoolType">
+    <Key>
+      <PropertyRef Name="stId" />
+    </Key>
+    <Property Name="stId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="stName_en" Type="varchar" MaxLength="100" />
+    <Property Name="stName_vn" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tbl_Job_Sector">
+    <Key>
+      <PropertyRef Name="seId" />
+    </Key>
+    <Property Name="seId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="seName_en" Type="varchar" MaxLength="100" />
+    <Property Name="seName_vi" Type="nvarchar" MaxLength="100" />
+    <Property Name="seParentId" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_Lang">
+    <Key>
+      <PropertyRef Name="lang_Id" />
+    </Key>
+    <Property Name="lang_Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="lang_name_en" Type="varchar" MaxLength="50" />
+    <Property Name="lang_name_vi" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_Langlvl">
+    <Key>
+      <PropertyRef Name="langlvl_Id" />
+    </Key>
+    <Property Name="langlvl_Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="langlvl_name_en" Type="varchar" MaxLength="50" />
+    <Property Name="langlvl_name_vi" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_OrganizationType">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="typename_en" Type="varchar" MaxLength="100" />
+    <Property Name="typename_vi" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tbl_SaveCV">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Saver" Type="uniqueidentifier" />
+    <Property Name="cvUserId" Type="uniqueidentifier" />
+    <Property Name="createdDate" Type="datetime" />
+    <Property Name="favorite" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_SaveJob">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="candidate" Type="uniqueidentifier" />
+    <Property Name="jId" Type="int" />
+    <Property Name="savedate" Type="datetime" />
+    <Property Name="stt" Type="nvarchar" MaxLength="100" />
+    <Property Name="fullname" Type="nvarchar" MaxLength="100" />
+    <Property Name="readbefore" Type="bit" />
+    <Property Name="favorite" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_SaveJob2">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="candidate" Type="uniqueidentifier" />
+    <Property Name="jId" Type="int" />
+    <Property Name="savedate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_SlideshowImage">
+    <Key>
+      <PropertyRef Name="ss_id" />
+    </Key>
+    <Property Name="ss_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ss_img" Type="varchar" MaxLength="100" />
+    <Property Name="ss_description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="tbl_TeachingJob">
+    <Key>
+      <PropertyRef Name="jId" />
+    </Key>
+    <Property Name="jId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="jTitle_en" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="jDescription_en" Type="nvarchar(max)" />
+    <Property Name="jEmployer" Type="uniqueidentifier" />
+    <Property Name="jLocation_en" Type="nvarchar" MaxLength="100" />
+    <Property Name="jSalary_en" Type="decimal" />
+    <Property Name="jSalaryTo_en" Type="decimal" />
+    <Property Name="jSector_en" Type="nvarchar" MaxLength="100" />
+    <Property Name="jJobLevel_en" Type="nvarchar" MaxLength="100" />
+    <Property Name="jEmploymentType_en" Type="nvarchar" MaxLength="100" />
+    <Property Name="jCitizenship_en" Type="nvarchar" MaxLength="100" />
+    <Property Name="jEducationRequirement_en" Type="nvarchar(max)" />
+    <Property Name="jContact" Type="nvarchar" MaxLength="100" />
+    <Property Name="jClosingDate" Type="datetime" />
+    <Property Name="jUploadDate" Type="datetime" Nullable="false" />
+    <Property Name="jFeaturedJob" Type="bit" Nullable="false" />
+    <Property Name="jViewCount" Type="int" />
+    <Property Name="jSector_en2" Type="nvarchar" MaxLength="100" />
+    <Property Name="jSector_en3" Type="nvarchar" MaxLength="100" />
+    <Property Name="jLocation_en2" Type="nvarchar" MaxLength="100" />
+    <Property Name="jLocation_en3" Type="nvarchar" MaxLength="100" />
+    <Property Name="jSalaryType" Type="bit" />
+    <Property Name="jSalaryCurrency" Type="nvarchar" MaxLength="100" />
+    <Property Name="jSalaryPaymentType" Type="nvarchar" MaxLength="100" />
+    <Property Name="jEmailToApplication" Type="nvarchar" MaxLength="100" />
+    <Property Name="jExecutiveJob" Type="bit" />
+    <Property Name="jActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="Testimonial_Article">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" MaxLength="100" />
+    <Property Name="citizenship" Type="nvarchar" MaxLength="100" />
+    <Property Name="logo" Type="varchar" MaxLength="200" />
+    <Property Name="body" Type="nvarchar(max)" />
+    <Property Name="setAsSlider" Type="bit" />
+    <Property Name="active" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'TeachingJob.dbo.view_Membership' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="view_Membership">
+    <Key>
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="RoleName" />
+      <PropertyRef Name="LastActivityDate" />
+    </Key>
+    <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="RoleName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="LastActivityDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__aspnet_Me__Appli__681373AD">
+    <End Role="aspnet_Applications" Type="TeachingJobModel.Store.aspnet_Applications" Multiplicity="1" />
+    <End Role="aspnet_Membership" Type="TeachingJobModel.Store.aspnet_Membership" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Membership">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Me__UserI__690797E6">
+    <End Role="aspnet_Users" Type="TeachingJobModel.Store.aspnet_Users" Multiplicity="1" />
+    <End Role="aspnet_Membership" Type="TeachingJobModel.Store.aspnet_Membership" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_Membership">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pa__Appli__5E8A0973">
+    <End Role="aspnet_Applications" Type="TeachingJobModel.Store.aspnet_Applications" Multiplicity="1" />
+    <End Role="aspnet_Paths" Type="TeachingJobModel.Store.aspnet_Paths" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Paths">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pe__PathI__634EBE90">
+    <End Role="aspnet_Paths" Type="TeachingJobModel.Store.aspnet_Paths" Multiplicity="0..1" />
+    <End Role="aspnet_PersonalizationPerUser" Type="TeachingJobModel.Store.aspnet_PersonalizationPerUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Paths">
+        <PropertyRef Name="PathId" />
+      </Principal>
+      <Dependent Role="aspnet_PersonalizationPerUser">
+        <PropertyRef Name="PathId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pe__PathI__69FBBC1F">
+    <End Role="aspnet_Paths" Type="TeachingJobModel.Store.aspnet_Paths" Multiplicity="1" />
+    <End Role="aspnet_PersonalizationAllUsers" Type="TeachingJobModel.Store.aspnet_PersonalizationAllUsers" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Paths">
+        <PropertyRef Name="PathId" />
+      </Principal>
+      <Dependent Role="aspnet_PersonalizationAllUsers">
+        <PropertyRef Name="PathId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pe__UserI__6442E2C9">
+    <End Role="aspnet_Users" Type="TeachingJobModel.Store.aspnet_Users" Multiplicity="0..1" />
+    <End Role="aspnet_PersonalizationPerUser" Type="TeachingJobModel.Store.aspnet_PersonalizationPerUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_PersonalizationPerUser">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pr__UserI__671F4F74">
+    <End Role="aspnet_Users" Type="TeachingJobModel.Store.aspnet_Users" Multiplicity="1" />
+    <End Role="aspnet_Profile" Type="TeachingJobModel.Store.aspnet_Profile" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_Profile">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Ro__Appli__5F7E2DAC">
+    <End Role="aspnet_Applications" Type="TeachingJobModel.Store.aspnet_Applications" Multiplicity="1" />
+    <End Role="aspnet_Roles" Type="TeachingJobModel.Store.aspnet_Roles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Roles">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Us__Appli__607251E5">
+    <End Role="aspnet_Applications" Type="TeachingJobModel.Store.aspnet_Applications" Multiplicity="1" />
+    <End Role="aspnet_Users" Type="TeachingJobModel.Store.aspnet_Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Users">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Us__RoleI__65370702">
+    <End Role="aspnet_Roles" Type="TeachingJobModel.Store.aspnet_Roles" Multiplicity="1" />
+    <End Role="aspnet_UsersInRoles" Type="TeachingJobModel.Store.aspnet_UsersInRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Roles">
+        <PropertyRef Name="RoleId" />
+      </Principal>
+      <Dependent Role="aspnet_UsersInRoles">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Us__UserI__662B2B3B">
+    <End Role="aspnet_Users" Type="TeachingJobModel.Store.aspnet_Users" Multiplicity="1" />
+    <End Role="aspnet_UsersInRoles" Type="TeachingJobModel.Store.aspnet_UsersInRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_UsersInRoles">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Comment__tid__36470DEF">
+    <End Role="Testimonial_Article" Type="TeachingJobModel.Store.Testimonial_Article" Multiplicity="0..1" />
+    <End Role="tbl_Comment" Type="TeachingJobModel.Store.tbl_Comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Testimonial_Article">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_Comment">
+        <PropertyRef Name="tid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Comment__tid__57A801BA">
+    <End Role="tbl_HiringAdvice" Type="TeachingJobModel.Store.tbl_HiringAdvice" Multiplicity="0..1" />
+    <End Role="tbl_CommentHiring" Type="TeachingJobModel.Store.tbl_CommentHiring" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_HiringAdvice">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_CommentHiring">
+        <PropertyRef Name="tid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Hirin__cate___50FB042B">
+    <End Role="tbl_HiringAdvice_Category" Type="TeachingJobModel.Store.tbl_HiringAdvice_Category" Multiplicity="0..1" />
+    <End Role="tbl_HiringAdvice" Type="TeachingJobModel.Store.tbl_HiringAdvice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_HiringAdvice_Category">
+        <PropertyRef Name="cate_id" />
+      </Principal>
+      <Dependent Role="tbl_HiringAdvice">
+        <PropertyRef Name="cate_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_SaveJ__candi__6AEFE058">
+    <End Role="aspnet_Users" Type="TeachingJobModel.Store.aspnet_Users" Multiplicity="0..1" />
+    <End Role="tbl_SaveJob" Type="TeachingJobModel.Store.tbl_SaveJob" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="tbl_SaveJob">
+        <PropertyRef Name="candidate" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_SaveJ__candi__7C1A6C5A">
+    <End Role="aspnet_Users" Type="TeachingJobModel.Store.aspnet_Users" Multiplicity="0..1" />
+    <End Role="tbl_SaveJob2" Type="TeachingJobModel.Store.tbl_SaveJob2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="tbl_SaveJob2">
+        <PropertyRef Name="candidate" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_SaveJob__jId__6BE40491">
+    <End Role="tbl_TeachingJob" Type="TeachingJobModel.Store.tbl_TeachingJob" Multiplicity="0..1" />
+    <End Role="tbl_SaveJob" Type="TeachingJobModel.Store.tbl_SaveJob" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_TeachingJob">
+        <PropertyRef Name="jId" />
+      </Principal>
+      <Dependent Role="tbl_SaveJob">
+        <PropertyRef Name="jId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_SaveJob__jId__7D0E9093">
+    <End Role="tbl_TeachingJob" Type="TeachingJobModel.Store.tbl_TeachingJob" Multiplicity="0..1" />
+    <End Role="tbl_SaveJob2" Type="TeachingJobModel.Store.tbl_SaveJob2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_TeachingJob">
+        <PropertyRef Name="jId" />
+      </Principal>
+      <Dependent Role="tbl_SaveJob2">
+        <PropertyRef Name="jId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Teach__jEmpl__6166761E">
+    <End Role="aspnet_Users" Type="TeachingJobModel.Store.aspnet_Users" Multiplicity="0..1" />
+    <End Role="tbl_TeachingJob" Type="TeachingJobModel.Store.tbl_TeachingJob" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="tbl_TeachingJob">
+        <PropertyRef Name="jEmployer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
