@@ -149,7 +149,7 @@
                         <div class="logoArea marginLogo">
                             <asp:HyperLink ID="hplHome" NavigateUrl="~/" runat="server" ToolTip="<%$ Resources:Resource, backtohomepagetxt %>"
                                 EnableViewState="false">
-                                <asp:Image ID="Image3" runat="server" ImageUrl="~/images/logo.png" ImageAlign="Left" style="padding-top:6px"
+                                <asp:Image ID="Image3" runat="server" ImageUrl="~/images/teachinvietnam-chirstmas.png" ImageAlign="Left" style="padding-top:6px"
                                     EnableViewState="false" />
                             </asp:HyperLink>
                             <div class="recruiterSide">
@@ -530,12 +530,9 @@
                             <li><a class="google" href="https://plus.google.com/u/1/106899382166860652206/posts" target="social"><asp:Label ID="Label19" runat="server" CssClass="textlinkfooter" Text="Google"></asp:Label></a></li>
                         </ul>
                     </li>
-                    <%--<li>
-                        <span class="th">Share on</span> 
-                        <ul>
-                                <Master:Social4Master ID="socialRef" runat="server" />
-                        </ul>
-                    </li>--%>
+                    <li style="padding-left: 100px;">
+                        <img src="~/images/logo_footer_christmas.jpg" runat="server" />
+                    </li>
                 </ul>                
 
                 <div style="clear:both;"></div>
