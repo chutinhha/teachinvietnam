@@ -70,7 +70,8 @@
                             </ul>
                             <ul id="header-social" class="width:100px float-left">
                                 <li class="noborder"><a class="twitter" href="https://twitter.com/vietnamteachers" target="social"><asp:Image ID="Image1" runat="server" ImageUrl="~/images/footer/icon_f_twitter_light.png" /></a></li>
-                                <li class="noborder"><a class="facebook" href="http://facebook.com/teachinvietnam" target="social"><asp:Image ID="Image13" runat="server" ImageUrl="~/images/footer/icon_f_facebook_light.png" /></a></li>
+                                <li class="noborder"><a class="facebook" href="https://www.facebook.com/profile.php?id=100004073360342&ref=tn_tnmn"
+                                    target="social"><asp:Image ID="Image13" runat="server" ImageUrl="~/images/footer/icon_f_facebook_light.png" /></a></li>
                                 <li class="noborder"><a class="email" href="mailto:info@teachinvietnam.org"><asp:Image ID="Image4" runat="server" ImageUrl="~/images/footer/icon_f_mail_light.png" /></a></li>
                                 <li class="noborder"><a class="google" href="https://plus.google.com/u/1/106899382166860652206/posts" target="social"><asp:Image ID="Image5" runat="server" ImageUrl="~/images/footer/icon_f_google_light.png" /></a></li>
                                 <li class="noborder last"><a class="google" href="skype:toquyen1979?chat" target="social">
@@ -140,7 +141,7 @@
                         <div class="logoArea marginLogo">
                             <asp:HyperLink ID="hplHome" NavigateUrl="~/" runat="server" ToolTip="<%$ Resources:Resource, backtohomepagetxt %>"
                                 EnableViewState="false">
-                                <asp:Image ID="Image3" runat="server" ImageUrl="~/images/logo.png" ImageAlign="Left" style="padding-top:6px"
+                                <asp:Image ID="Image3" runat="server" ImageUrl="~/images/teachinvietnam-chirstmas.png" ImageAlign="Left" style="padding-top:6px"
                                     EnableViewState="false" />
                             </asp:HyperLink>
                         </div>
@@ -261,6 +262,9 @@
                             <li><a class="email" href="mailto:info@teachinvietnam.org"><asp:Label ID="Label18" runat="server" CssClass="textlinkfooter" Text="Email"></asp:Label></a></li>
                             <li><a class="google" href="https://plus.google.com/u/1/106899382166860652206/posts" target="social"><asp:Label ID="Label19" runat="server" CssClass="textlinkfooter" Text="Google"></asp:Label></a></li>
                         </ul>
+                    </li>
+                    <li style="padding-left: 100px;">
+                        <img src="~/images/logo_footer_christmas.jpg" runat="server" />
                     </li>
                 </ul>                
 
