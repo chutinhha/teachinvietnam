@@ -74,7 +74,7 @@
                                 <li class="noborder"><a class="twitter" href="https://twitter.com/vietnamteachers"
                                     target="social">
                                     <asp:Image ID="Image1" runat="server" ImageUrl="~/images/footer/icon_f_twitter_light.png" /></a></li>
-                                <li class="noborder"><a class="facebook" href="http://facebook.com/teachinvietnam"
+                                <li class="noborder"><a class="facebook" href="https://www.facebook.com/profile.php?id=100004073360342&ref=tn_tnmn"
                                     target="social">
                                     <asp:Image ID="Image2" runat="server" ImageUrl="~/images/footer/icon_f_facebook_light.png" /></a></li>
                                 <li class="noborder"><a class="email" href="mailto:info@teachinvietnam.org">
@@ -163,9 +163,9 @@
                         <div id="nav">
                             <ul>
                                 <li>
-                                    <asp:HyperLink ID="htlHomeMenu2" runat="server" NavigateUrl="~/" Text="<%$ Resources:Resource, JobSearch2 %>"
+                                    <asp:HyperLink ID="htlHomeMenu2" runat="server" NavigateUrl="~/Default.aspx" Text="<%$ Resources:Resource, JobSearch2 %>"
                                         EnableViewState="false"></asp:HyperLink>
-                                    <asp:HyperLink ID="hpl_CvSearch" runat="server" NavigateUrl="~/" Visible="false"
+                                    <asp:HyperLink ID="hpl_CvSearch" runat="server" NavigateUrl="~/publicArea/CV/SearchResultcv.aspx?kw=&cate=&location=&citizen=" Visible="false"
                                         EnableViewState="false" Text="<%$ Resources:Resource, CVSearch %>"></asp:HyperLink>
                                 </li>
                                 <li>
