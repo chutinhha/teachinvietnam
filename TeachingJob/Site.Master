@@ -149,7 +149,7 @@
                         <div class="logoArea marginLogo">
                             <asp:HyperLink ID="hplHome" NavigateUrl="~/" runat="server" ToolTip="<%$ Resources:Resource, backtohomepagetxt %>"
                                 EnableViewState="false">
-                                <asp:Image ID="Image3" runat="server" ImageUrl="~/images/teachinvietnam-chirstmas.png" ImageAlign="Left" style="padding-top:6px"
+                                <asp:Image ID="Image3" runat="server" ImageUrl="~/images/logo.png" ImageAlign="Left" style="padding-top:6px"
                                     EnableViewState="false" />
                             </asp:HyperLink>
                             <div class="recruiterSide">
