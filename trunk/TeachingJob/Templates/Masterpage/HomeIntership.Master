@@ -264,7 +264,7 @@
                         </ul>
                     </li>
                     <li style="padding-left: 100px;">
-                        <img src="~/images/logo_footer_christmas.jpg" runat="server" />
+                        <img src="~/images/logo_2line.png" runat="server" />
                     </li>
                 </ul>                
 
