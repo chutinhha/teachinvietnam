@@ -16,6 +16,8 @@ namespace TeachingJob.Templates.Pages
     public partial class SubmitYourInternship : System.Web.UI.Page
     {
         String myConn = System.Configuration.ConfigurationManager.ConnectionStrings["ApplicationServices"].ConnectionString;
+        string mapPath = General.APPLY_ONLINE_IMAGE_UPLOAD + DateTime.Now.ToString("yyyyMMddhhmmss") + "/";
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -73,31 +75,51 @@ namespace TeachingJob.Templates.Pages
             {
                 if (Page.IsValid && recaptcha.IsValid)
                 {
-                    try
-                    {
-                        StringBuilder emailMessage = new StringBuilder();
+                    //try
+                    //{
+                        //StringBuilder emailMessage = new StringBuilder();
 
-                        emailMessage.Append(String.Format("Dear {0} {1} {2},<br /><br />", ddlTitle.SelectedValue, txtFirstName.Text, txtLastName.Text));
-                        emailMessage.Append("There is new Candidate Internship Submission.<br />Here are the details:<br />");
-                        emailMessage.Append(String.Format("<table style='margin-left:25px;'><tr><td style='padding: 8px;background: #d0dafd; border-bottom: 1px solid #fff;color: #669;border-top: 1px solid transparent;'>Name:</td><td style='padding: 8px;background: #e8edff; border-bottom: 1px solid #fff;color: #669;border-top: 1px solid transparent;'>{0}</td></tr><tr><td style='padding: 8px;background: #d0dafd; border-bottom: 1px solid #fff;color: #669;border-top: 1px solid transparent;'>Email:</td><td style='padding: 8px;background: #e8edff; border-bottom: 1px solid #fff;color: #669;border-top: 1px solid transparent;'>{1}</td></tr><tr><td style='padding: 8px;background: #d0dafd; border-bottom: 1px solid #fff;color: #669;border-top: 1px solid transparent;'>Country:</td><td style='padding: 8px;background: #e8edff; border-bottom: 1px solid #fff;color: #669;border-top: 1px solid transparent;'>{2}</td></tr><tr><td style='padding: 8px;background: #d0dafd; border-bottom: 1px solid #fff;color: #669;border-top: 1px solid transparent;'>Phone Number:</td><td style='padding: 8px;background: #e8edff; border-bottom: 1px solid #fff;color: #669;border-top: 1px solid transparent;'>{3}</td></tr><tr><td style='padding: 8px;background: #d0dafd; border-bottom: 1px solid #fff;color: #669;border-top: 1px solid transparent;'>When should we call:</td><td style='padding: 8px;background: #e8edff; border-bottom: 1px solid #fff;color: #669;border-top: 1px solid transparent;'>{4}</td></tr></table><br />", ddlTitle.SelectedValue + " " + txtFirstName.Text.Trim() + " " + txtLastName.Text.Trim(), txtEmailAddress.Text.Trim(), ddlCountry.SelectedValue, txtPhoneNumber.Text.Trim(),ddlWhenShouldWeCall.SelectedItem.Text));
+                        //emailMessage.Append(String.Format("Dear {0} {1} {2},<br /><br />", ddlTitle.SelectedValue, txtFirstName.Text, txtLastName.Text));
+                        //emailMessage.Append("There is new Candidate Internship Submission.<br />Here are the details:<br />");
+                        //emailMessage.Append(String.Format("<table style='margin-left:25px;'><tr><td style='padding: 8px;background: #d0dafd; border-bottom: 1px solid #fff;color: #669;border-top: 1px solid transparent;'>Name:</td><td style='padding: 8px;background: #e8edff; border-bottom: 1px solid #fff;color: #669;border-top: 1px solid transparent;'>{0}</td></tr><tr><td style='padding: 8px;background: #d0dafd; border-bottom: 1px solid #fff;color: #669;border-top: 1px solid transparent;'>Email:</td><td style='padding: 8px;background: #e8edff; border-bottom: 1px solid #fff;color: #669;border-top: 1px solid transparent;'>{1}</td></tr><tr><td style='padding: 8px;background: #d0dafd; border-bottom: 1px solid #fff;color: #669;border-top: 1px solid transparent;'>Country:</td><td style='padding: 8px;background: #e8edff; border-bottom: 1px solid #fff;color: #669;border-top: 1px solid transparent;'>{2}</td></tr><tr><td style='padding: 8px;background: #d0dafd; border-bottom: 1px solid #fff;color: #669;border-top: 1px solid transparent;'>Phone Number:</td><td style='padding: 8px;background: #e8edff; border-bottom: 1px solid #fff;color: #669;border-top: 1px solid transparent;'>{3}</td></tr><tr><td style='padding: 8px;background: #d0dafd; border-bottom: 1px solid #fff;color: #669;border-top: 1px solid transparent;'>When should we call:</td><td style='padding: 8px;background: #e8edff; border-bottom: 1px solid #fff;color: #669;border-top: 1px solid transparent;'>{4}</td></tr></table><br />", ddlTitle.SelectedValue + " " + txtFirstName.Text.Trim() + " " + txtLastName.Text.Trim(), txtEmailAddress.Text.Trim(), ddlCountry.SelectedValue, txtPhoneNumber.Text.Trim(), ddlWhenShouldWeCall.SelectedItem.Text));
 
-                        StringBuilder strBuilder = new StringBuilder();
+                        //StringBuilder strBuilder = new StringBuilder();
 
-                        TeachingJob.Data.MailUtils mailUtils = new TeachingJob.Data.MailUtils(Request);
-                        strBuilder.Append(mailUtils.MailHeader());
-                        strBuilder.Append(mailUtils.Body(emailMessage.ToString(), null, false, null, null, "en-US"));
-                        strBuilder.Append(mailUtils.MailFooter());
+                        //TeachingJob.Data.MailUtils mailUtils = new TeachingJob.Data.MailUtils(Request);
+                        //strBuilder.Append(mailUtils.MailHeader());
+                        //strBuilder.Append(mailUtils.Body(emailMessage.ToString(), null, false, null, null, "en-US"));
+                        //strBuilder.Append(mailUtils.MailFooter());
 
-                        // Send the email
-                        TeachingJob.Data.Utils.SendMail(General.WEB_MAIL_INTERNSHIP, "Candidate Internship Submission.", strBuilder.ToString(), "smtp.gmail.com", true);
-                        BusinessLogic.Facade.Intership.InternshipUserSubmit.Insert(ddlTitle.SelectedValue, txtFirstName.Text.Trim(), txtLastName.Text.Trim(), txtEmailAddress.Text.Trim(), ddlCountry.SelectedValue, txtPhoneNumber.Text.Trim(), ddlWhenShouldWeCall.SelectedValue);
+                        //// Send the email
+                        //TeachingJob.Data.Utils.SendMail(General.WEB_MAIL_INTERNSHIP, "Candidate Internship Submission.", strBuilder.ToString(), "smtp.gmail.com", true);
+
+                        string fullPath = string.Empty;
+                        if (FileUpload1.HasFile)
+                        {
+                            string fileUploadDir_emp = Server.MapPath(mapPath);
+                            if (!System.IO.Directory.Exists(fileUploadDir_emp))
+                            {
+                                System.IO.Directory.CreateDirectory(fileUploadDir_emp);
+                            }
+                            try
+                            {
+                                fullPath = fileUploadName(FileUpload1);
+                                fullPath = fullPath.Replace("~", Request.Url.GetLeftPart(UriPartial.Authority));
+                            }
+                            catch (Exception)
+                            {
+
+                            }
+                        }
+
+                        BusinessLogic.Facade.Intership.InternshipUserSubmit.Insert(ddlTitle.SelectedValue, txtFirstName.Text.Trim(), txtLastName.Text.Trim(), txtEmailAddress.Text.Trim(), ddlCountry.SelectedValue, txtPhoneNumber.Text.Trim(), ddlWhenShouldWeCall.SelectedValue, fullPath);
 
                         Page.ClientScript.RegisterClientScriptBlock(GetType(), "", "<script>alert('Candidate Internship submits successfully.\\nWe will contact you soon.');</script>");
-                    }
-                    catch (Exception)
-                    {
-                        Page.ClientScript.RegisterClientScriptBlock(GetType(), "", "<script>alert('" + General.AlertErrorJS + "');</script>");
-                    }                    
+                    //}
+                    //catch (Exception)
+                    //{
+                    //    Page.ClientScript.RegisterClientScriptBlock(GetType(), "", "<script>alert('" + General.AlertErrorJS + "');</script>");
+                    //}
                 }
             }
             else
@@ -105,6 +127,41 @@ namespace TeachingJob.Templates.Pages
                 Assembly ass = Assembly.Load("App_GlobalResources");
                 ResourceManager rm = new ResourceManager("Resources.Resource", ass);
                 lbl_captStt.Text = rm.GetString("Pleaseentercorrectcaptcha");
+            }
+        }
+
+        protected String fileUploadName(FileUpload fileupload)
+        {
+            try
+            {
+                if (fileupload.HasFile)
+                {
+
+                    if (fileupload.PostedFile.ContentLength < General.IMAGE_SIZE)
+                    {
+                        string fileUploadDir = Server.MapPath(mapPath);
+                        if (!System.IO.Directory.Exists(fileUploadDir))
+                        {
+                            System.IO.Directory.CreateDirectory(fileUploadDir);
+                        }
+
+                        fileupload.SaveAs(Server.MapPath(Path.Combine(mapPath + fileupload.PostedFile.FileName)));
+
+                        return Path.Combine(mapPath + fileupload.PostedFile.FileName);
+                    }
+                    else
+                    {
+                        return "Upload error: File upload has to be less " + General.GetImageSize(General.IMAGE_SIZE) + " 5mb!";
+                    }
+                }
+                else
+                {
+                    return "Upload error: You have not specified a file!";
+                }
+            }
+            catch (Exception ex)
+            {
+                return "Upload error: " + ex.Message.ToString();
             }
         }
     }

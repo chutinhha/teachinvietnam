@@ -42,6 +42,20 @@ namespace TeachingJob
                     aHeaderLink.Text = articleName;
                     aHeaderLink.NavigateUrl = "~/Templates/Pages/Article.aspx?aId=" + DataBinder.Eval(e.Item.DataItem, "id").ToString();
                     aIntroduction.Text = articleIntroduction.Replace(Environment.NewLine, "<br />");
+
+                    bool enableFreeGuide = (bool)DataBinder.Eval(e.Item.DataItem, "enableFreeGuide");
+                    bool enableApplyOnline = (bool)DataBinder.Eval(e.Item.DataItem, "enableApplyOnline");
+                    if (enableFreeGuide)
+                    {
+                        HyperLink hplFreeGuide = (HyperLink)e.Item.FindControl("hplFreeGuide");
+                        hplFreeGuide.Visible = true;
+                    }
+
+                    if (enableApplyOnline)
+                    {
+                        HyperLink hplApplyOnline = (HyperLink)e.Item.FindControl("hplApplyOnline");
+                        hplApplyOnline.Visible = true;
+                    }
                 }
 
             }

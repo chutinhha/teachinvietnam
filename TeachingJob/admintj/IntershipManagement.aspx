@@ -95,6 +95,14 @@
                         <td><asp:CheckBox ID="cbActive" runat="server" Checked="true" /></td>
                     </tr>
                     <tr>
+                        <td><b>Enable Free Guide</b></td>
+                        <td><asp:CheckBox ID="cbEnableFreeGuide" runat="server" /></td>
+                    </tr>
+                    <tr>
+                        <td><b>Enable Apply Online</b></td>
+                        <td><asp:CheckBox ID="cbEnableApplyOnline" runat="server" /></td>
+                    </tr>
+                    <tr>
                         <td></td>
                         <td>
                             <asp:Button ID="btnPost" runat="server" Text="Post" OnClick="btnPost_Click" CssClass="standard-button orange small" ValidationGroup="intershipGroup" />

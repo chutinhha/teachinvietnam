@@ -17,6 +17,7 @@ namespace TeachingJob.Data
         public static String EMP_ARTICLE_LOGO = "~/UserData/Employer/article_logo/";
         public static String EMP_TESTIMONIAL_LOGO = "~/UserData/Employer/testimonial_logo/";
         public static String ADMIN_IMAGE_UPLOAD = "~/UserData/ImageUpload/";
+        public static String APPLY_ONLINE_IMAGE_UPLOAD = "~/UserData/Other/ApplyOnline/";
         public static int CLOSING_DATE_PERIOD = 60;
 
         public static int DEFAULT_JOB_SLIDE = 6;        //Max = 6

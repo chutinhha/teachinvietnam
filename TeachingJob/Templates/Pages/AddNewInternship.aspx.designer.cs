@@ -85,6 +85,24 @@ namespace TeachingJob.Templates.Pages {
         protected global::System.Web.UI.WebControls.CheckBox cbActive;
         
         /// <summary>
+        /// cbEnableFreeGuide control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox cbEnableFreeGuide;
+        
+        /// <summary>
+        /// cbEnableApplyOnline control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox cbEnableApplyOnline;
+        
+        /// <summary>
         /// ValidationSummary1 control.
         /// </summary>
         /// <remarks>

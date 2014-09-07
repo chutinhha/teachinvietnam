@@ -22,7 +22,7 @@
                 <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" OnRowCreated="gvIntershipCreated"
                     AllowPaging="True" AllowSorting="True" PageSize="20" CssClass="gridview"
                     DataKeyNames="id" DataSourceID="SqlDataSource1" CellPadding="4" 
-                    ForeColor="#333333" GridLines="None" >
+                    ForeColor="#333333" GridLines="None" Width="125%" >
                     <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                     <Columns>
                         <asp:BoundField DataField="id" HeaderText="id" InsertVisible="False" 
@@ -39,7 +39,14 @@
                         <asp:BoundField DataField="whenshouldwecall" HeaderText="whenshouldwecall" 
                             SortExpression="whenshouldwecall" />
                         <asp:BoundField DataField="created" HeaderText="created" 
-                            SortExpression="created" />
+                            SortExpression="created" DataFormatString="{0:dd MMM yyyy}" />
+                        <asp:TemplateField HeaderText="CV">
+                            <ItemTemplate>
+                                <a target="_blank" href='<%#Eval("cvPath") %>'>
+                                    <asp:Image ID="Image1" runat="server" ImageUrl="~/images/icons/CRUD/read.png" />
+                                </a>
+                            </ItemTemplate>
+                        </asp:TemplateField>
                     </Columns>
                     <EditRowStyle BackColor="#999999" />
                     <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -54,7 +61,7 @@
                 </asp:GridView>
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
                     ConnectionString="<%$ ConnectionStrings:ApplicationServices %>" 
-                    SelectCommand="SELECT * FROM [tbl_Internship_UserSubmit]"></asp:SqlDataSource>
+                    SelectCommand="SELECT * FROM [tbl_Internship_UserSubmit] ORDER BY created DESC"></asp:SqlDataSource>
                 <div class="clear">
                 </div>
                 <hr />

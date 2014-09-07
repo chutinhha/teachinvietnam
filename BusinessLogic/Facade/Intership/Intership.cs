@@ -13,6 +13,8 @@ namespace BusinessLogic.Facade.Intership
         private string articleContent;
         private bool active;
         private DateTime createdDate;
+        private bool enableFreeGuide;
+        private bool enableApplyOnline;
 
         private static TeachinVietnamDataContext dbContext;
 
@@ -35,6 +37,9 @@ namespace BusinessLogic.Facade.Intership
                 _intership.articleContent = i.articleContent.Replace(Environment.NewLine, "<br />");
                 _intership.active = (bool)i.active;
                 _intership.createdDate = (DateTime)i.createdDate;
+                _intership.enableFreeGuide = i.EnableFreeGuide != null ? (bool)i.EnableFreeGuide : false;
+                _intership.enableApplyOnline = i.EnableApplyOnline != null ? (bool)i.EnableApplyOnline : false;
+
                 ilist.Add(_intership);
             }
             return ilist;
@@ -52,10 +57,10 @@ namespace BusinessLogic.Facade.Intership
             }
         }
 
-        public static Intership getIntershipById(int id, bool selectAll=false)
+        public static Intership getIntershipById(int id, bool selectAll = false)
         {
             dbContext = new TeachinVietnamDataContext();
-            BusinessLogic.proc_getIntershipByIdResult i=null;
+            BusinessLogic.proc_getIntershipByIdResult i = null;
             if (selectAll == false)
             {
                 i = dbContext.proc_getIntershipById(id).Where(x => x.active == true).FirstOrDefault();
@@ -73,24 +78,27 @@ namespace BusinessLogic.Facade.Intership
                 _intership.articleContent = i.articleContent.Replace(Environment.NewLine, "<br />");
                 _intership.active = (bool)i.active;
                 _intership.createdDate = (DateTime)i.createdDate;
+                _intership.enableFreeGuide = i.EnableFreeGuide != null ? (bool)i.EnableFreeGuide : false;
+                _intership.enableApplyOnline = i.EnableApplyOnline != null ? (bool)i.EnableApplyOnline : false;
+
                 return _intership;
             }
             return null;
         }
 
-        public static void UpdateIntership(int id, string title, string intro, string body, bool active)
+        public static void UpdateIntership(int id, string title, string intro, string body, bool active, bool enableFreeGuide, bool enableApplyOnline)
         {
             dbContext = new TeachinVietnamDataContext();
-            var result = dbContext.proc_UpdateInternship(id, title, intro, body, active);
-            
+            var result = dbContext.proc_UpdateInternship(id, title, intro, body, active, enableFreeGuide, enableApplyOnline);
+
         }
 
-        public static void Insert(string title, string introduction, string body, bool isActive)
+        public static void Insert(string title, string introduction, string body, bool isActive, bool enableFreeGuide, bool enableApplyOnline)
         {
             try
             {
                 dbContext = new TeachinVietnamDataContext();
-                string insertCommand = string.Format("EXEC [dbo].[proc_insertIntership] N'{0}',N'{1}',N'{2}',{3}", title, introduction, body, isActive==true?"1":"0");
+                string insertCommand = string.Format("EXEC [dbo].[proc_insertIntership] N'{0}',N'{1}',N'{2}',{3},{4},{5}", title, introduction, body, isActive == true ? "1" : "0", enableFreeGuide == true ? "1" : "0", enableApplyOnline == true ? "1" : "0");
                 dbContext.ExecuteCommand(insertCommand);
             }
             catch (Exception e)
@@ -129,6 +137,17 @@ namespace BusinessLogic.Facade.Intership
         {
             get { return articleIntroduction; }
             set { articleIntroduction = value; }
+        }
+
+        public bool EnableFreeGuide
+        {
+            get { return enableFreeGuide; }
+            set { enableFreeGuide = value; }
+        }
+        public bool EnableApplyOnline
+        {
+            get { return enableApplyOnline; }
+            set { enableApplyOnline = value; }
         }
     }
 }
