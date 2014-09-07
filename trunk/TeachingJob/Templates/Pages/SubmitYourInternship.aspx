@@ -14,7 +14,7 @@
         <div id="home-heading">
             <div class="articleWrapper">
                 <div class="internshipartiletitle">
-                    <div class="header"><h4>Vietnam Internship</h4></div>
+                    <div class="header"><h4>Vietnam teaching job</h4></div>
                     <div class="sharelink">
                         <tj:SocialLink ID="SocialLink" runat="server" />
                     </div>
@@ -116,6 +116,14 @@
                             </td>
                         </tr>
                         <tr>
+                            <td class="td-width">
+                                Attach CV and Degree
+                            </td>
+                            <td>
+                                <asp:FileUpload ID="FileUpload1" runat="server" Width="200px" onchange="check_extension(this);" />
+                            </td>
+                        </tr>
+                        <tr>
                             <td></td>
                             <td>
                                 <recaptcha:RecaptchaControl ID="recaptcha" runat="server" Theme="white" PublicKey="6LfyvNUSAAAAAGNDbYxN3oERQ76zxbhcjeOetplH"
@@ -145,4 +153,32 @@
         <div class="clear-floats">
         </div>
     </div>
+    <script type="text/javascript">
+        $('#<%=FileUpload1.ClientID %>').bind('change', function () {
+            if (this.files[0].size > 5242880) {
+                var FileUpload = document.getElementById('<%=FileUpload1.ClientID %>');
+                FileUpload.value = '';
+                alert('File size can not exceed 5 MB');
+            }
+        });
+
+        var _validFileExtensions = [".pdf", ".doc", ".docx", ".xls", ".xlsx"];
+        function check_extension(filename) {
+            var sFileName = filename.value;
+            var blnValid = false;
+            for (var j = 0; j < _validFileExtensions.length; j++) {
+                var sCurExtension = _validFileExtensions[j];
+                if (sFileName.substr(sFileName.length - sCurExtension.length, sCurExtension.length).toLowerCase() == sCurExtension.toLowerCase()) {
+                    blnValid = true;
+                    break;
+                }
+            }
+            if (!blnValid) {
+                alert("Your file is invalid. Please select document file only.");
+                var FileUpload = document.getElementById('<%=FileUpload1.ClientID %>');
+                FileUpload.value = '';
+                return false;
+            }
+        }
+        </script>
 </asp:Content>

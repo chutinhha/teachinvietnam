@@ -43,9 +43,9 @@
                         </div>
                         <div class="createdDate">
                             <p style="margin: 5px 0 5px 0">
-                                <asp:HyperLink ID="HyperLink1" runat="server" CssClass="standard-button orange small apply-button"
-                                    NavigateUrl="~/Templates/Pages/InternshipGuide.aspx">Get free guide &raquo;</asp:HyperLink>
-                                <asp:HyperLink ID="HyperLink2" runat="server" CssClass="standard-button orange small apply-button"
+                                <asp:HyperLink ID="hplFreeGuide" runat="server" CssClass="standard-button orange small apply-button" Visible="false"
+                                    NavigateUrl="https://docs.google.com/forms/d/1KTpfHDBsWlUuyYW7o5cjtjOmajSB-1ME-hEyb10nbXQ/viewform?usp=send_form">Get free guide &raquo;</asp:HyperLink>
+                                <asp:HyperLink ID="hplApplyOnline" runat="server" CssClass="standard-button orange small apply-button" Visible="false"
                                     NavigateUrl="~/Templates/Pages/SubmitYourInternship.aspx">Apply Online &raquo;</asp:HyperLink>
                             </p>
                         </div>

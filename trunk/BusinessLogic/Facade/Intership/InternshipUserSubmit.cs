@@ -14,6 +14,7 @@ namespace BusinessLogic.Facade.Intership
         private string phone;
         private DateTime created;
         private string whenShouldWeCallYou;
+        private string cvPath;
 
         private TeachinVietnamDataContext dbContext;
 
@@ -21,10 +22,10 @@ namespace BusinessLogic.Facade.Intership
         {
             dbContext = new TeachinVietnamDataContext();
         }
-        public static void Insert(string title, string firstname, string lastname, string email, string country, string phone, string whenshouldwecall)
+        public static void Insert(string title, string firstname, string lastname, string email, string country, string phone, string whenshouldwecall,string fullPath)
         {
             TeachinVietnamDataContext dbContext = new TeachinVietnamDataContext();
-            dbContext.proc_Internship_UserSubmit_Insert(title, firstname, lastname, email, country, phone, whenshouldwecall);
+            dbContext.proc_Internship_UserSubmit_Insert(title, firstname, lastname, email, country, phone, whenshouldwecall, fullPath);
         }
 
         public int Id
@@ -61,6 +62,11 @@ namespace BusinessLogic.Facade.Intership
         {
             get { return whenShouldWeCallYou; }
             set { whenShouldWeCallYou = value; }
+        }
+        public string CvPath
+        {
+            get { return cvPath; }
+            set { cvPath = value; }
         }
     }
 }

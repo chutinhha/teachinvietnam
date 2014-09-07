@@ -270,6 +270,7 @@
 
                 <div style="clear:both;"></div>
                 <address>Copyright &copy; 2011-2012 TeachinVietnam</address>
+                <a onclick="return trackLink(this);" href="http://www.teachinvietnam.org/test.pdf" title="">&nbsp;</a>
             </footer>
         </div>
     </div>
@@ -304,6 +305,12 @@
         });
 
     });
-</script>
 
+    function trackLink(link) {
+        _gaq.push(['_trackEvent', 'File', 'Download', link.href])
+        if ("_blank" == link.target) return true;
+        setTimeout('document.location = "' + link.href + '"', 150);
+        return false;
+    }
+</script>
 </html>

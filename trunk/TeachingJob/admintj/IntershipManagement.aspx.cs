@@ -83,7 +83,7 @@ namespace TeachingJob.admintj
         {
             try
             {
-                BusinessLogic.Facade.Intership.Intership.Insert(txtTitle.Text.Trim(), Utils.RemoveBreakLine(txtIntroduction.Text.Trim()), Utils.RemoveBreakLine(txtContent.Text.Trim()), cbActive.Checked);
+                BusinessLogic.Facade.Intership.Intership.Insert(txtTitle.Text.Trim(), Utils.RemoveBreakLine(txtIntroduction.Text.Trim()), Utils.RemoveBreakLine(txtContent.Text.Trim()), cbActive.Checked,cbEnableFreeGuide.Checked,cbEnableApplyOnline.Checked);
                 Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "PopopScript", "<script>alert('Your article is posted successfully');window.location.href='" + Request.Url.AbsoluteUri + "'</script>");
             }
             catch (Exception ex)
@@ -100,6 +100,8 @@ namespace TeachingJob.admintj
                 txtIntroduction.Text = internship.ArticleIntroduction;
                 txtContent.Text = internship.ArticleContent;
                 cbActive.Checked = internship.Active;
+                cbEnableFreeGuide.Checked = internship.EnableFreeGuide != null ? (bool)internship.EnableFreeGuide : false;
+                cbEnableApplyOnline.Checked = internship.EnableApplyOnline != null ? (bool)internship.EnableApplyOnline : false;
 
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "PopopScript", "<script>document.getElementById('tblIntership').style.display = 'inline';</script>");
                 btnPost.Visible = false;
@@ -115,7 +117,7 @@ namespace TeachingJob.admintj
         }
         protected void btnUpdate_Click(object sender, EventArgs e)
         {
-            BusinessLogic.Facade.Intership.Intership.UpdateIntership(Convert.ToInt32(txtInternshipId.Text), txtTitle.Text.Trim(), Utils.RemoveBreakLine(txtIntroduction.Text.Trim()), Utils.RemoveBreakLine(txtContent.Text.Trim()), cbActive.Checked);
+            BusinessLogic.Facade.Intership.Intership.UpdateIntership(Convert.ToInt32(txtInternshipId.Text), txtTitle.Text.Trim(), Utils.RemoveBreakLine(txtIntroduction.Text.Trim()), Utils.RemoveBreakLine(txtContent.Text.Trim()), cbActive.Checked, cbEnableFreeGuide.Checked, cbEnableApplyOnline.Checked);
             Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "PopopScript", "<script>alert('Update success!');</script>");
             gv_Intership.DataBind();
         }

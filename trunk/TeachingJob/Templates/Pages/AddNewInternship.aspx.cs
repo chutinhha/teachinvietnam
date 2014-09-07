@@ -18,7 +18,7 @@ namespace TeachingJob.Templates.Pages
         {
             try
             {
-                BusinessLogic.Facade.Intership.Intership.Insert(txtTitle.Text.Trim(), Utils.RemoveBreakLine(txtIntroduction.Text.Trim()), Utils.RemoveBreakLine(txtContent.Text.Trim()), cbActive.Checked);
+                BusinessLogic.Facade.Intership.Intership.Insert(txtTitle.Text.Trim(), Utils.RemoveBreakLine(txtIntroduction.Text.Trim()), Utils.RemoveBreakLine(txtContent.Text.Trim()), cbActive.Checked, cbEnableFreeGuide.Checked, cbEnableApplyOnline.Checked);
                 Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "PopopScript", "<script>alert('Your article is posted successfully');window.location.href='/Intership.aspx'</script>");
             }
             catch (Exception ex)
