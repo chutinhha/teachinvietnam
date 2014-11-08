@@ -191,7 +191,7 @@
                                     <asp:Literal ID="Literal10" runat="server" Text="<%$Resources:Resource,CallusatNo %>"></asp:Literal>
                                     <br /><br />
                                     <b>Hotline: </b>
-                                    <br />+84 989 696 627
+                                    <br />+84 1633 120 339
                                     <br /><br />
                                     <b>
                                         <asp:Literal ID="Literal11" runat="server" Text="<%$Resources:Resource,Ormailusat %>"></asp:Literal></b>
