@@ -293,6 +293,13 @@ namespace BusinessLogic
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), title, firstname, lastname, email, country, phone, whenshouldwecall, cvPath);
 			return ((int)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.proc_insertIntership")]
+		public int proc_insertIntership([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(255)")] string articleName, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(MAX)")] string articleIntroduction, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(MAX)")] string articleContent, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> active, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> enableFreeGuide, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> enableApplyOnline)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), articleName, articleIntroduction, articleContent, active, enableFreeGuide, enableApplyOnline);
+			return ((int)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.tbl_TrainingLevel")]

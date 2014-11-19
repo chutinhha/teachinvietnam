@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TeachingJob" Class="TeachinVietnamDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=ThanhLuan\SQLEXPRESS2008R2;Initial Catalog=TeachingJob;Persist Security Info=True;User ID=sa" SettingsObjectName="BusinessLogic.Properties.Settings" SettingsPropertyName="TeachingJobConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=AsusG\SQLEXPRESS2008R2;Initial Catalog=TeachingJob;Persist Security Info=True;User ID=sa" SettingsObjectName="BusinessLogic.Properties.Settings" SettingsPropertyName="TeachingJobConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.tbl_TrainingLevel" Member="tbl_TrainingLevels">
     <Type Name="tbl_TrainingLevel">
       <Column Name="tlId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -292,6 +292,15 @@
     <Parameter Name="phone" Type="System.String" DbType="VarChar(255)" />
     <Parameter Name="whenshouldwecall" Type="System.String" DbType="NVarChar(255)" />
     <Parameter Name="cvPath" Type="System.String" DbType="NVarChar(MAX)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.proc_insertIntership" Method="proc_insertIntership">
+    <Parameter Name="articleName" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="articleIntroduction" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="articleContent" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="active" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="enableFreeGuide" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="enableApplyOnline" Type="System.Boolean" DbType="Bit" />
     <Return Type="System.Int32" />
   </Function>
 </Database>
