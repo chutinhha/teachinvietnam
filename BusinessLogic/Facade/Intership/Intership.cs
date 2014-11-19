@@ -97,9 +97,13 @@ namespace BusinessLogic.Facade.Intership
         {
             try
             {
+                //dbContext = new TeachinVietnamDataContext();
+                //string insertCommand = string.Format("EXEC [dbo].[proc_insertIntership] N'{0}',N'{1}',N'{2}',{3},{4},{5}", title, introduction, body, isActive == true ? "1" : "0", enableFreeGuide == true ? "1" : "0", enableApplyOnline == true ? "1" : "0");
+                //dbContext.ExecuteCommand(insertCommand);
+
                 dbContext = new TeachinVietnamDataContext();
-                string insertCommand = string.Format("EXEC [dbo].[proc_insertIntership] N'{0}',N'{1}',N'{2}',{3},{4},{5}", title, introduction, body, isActive == true ? "1" : "0", enableFreeGuide == true ? "1" : "0", enableApplyOnline == true ? "1" : "0");
-                dbContext.ExecuteCommand(insertCommand);
+                var result = dbContext.proc_insertIntership(title, introduction, body, isActive, enableFreeGuide, enableApplyOnline);
+
             }
             catch (Exception e)
             {
