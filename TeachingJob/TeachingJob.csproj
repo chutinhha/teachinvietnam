@@ -20,6 +20,10 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -791,6 +795,11 @@
     <Content Include="publicArea\terms-conditions.aspx" />
     <Content Include="publicArea\Training\CourseSearchResult.aspx" />
     <Content Include="publicArea\Training\TrainingCourse.aspx" />
+    <Content Include="Scripts\christmas_pack\christmaslights.css" />
+    <Content Include="Scripts\christmas_pack\christmaslights.js" />
+    <Content Include="Scripts\christmas_pack\snowstorm-min.js" />
+    <Content Include="Scripts\christmas_pack\snowstorm.js" />
+    <Content Include="Scripts\christmas_pack\soundmanager2-nodebug-jsmin.js" />
     <Content Include="Scripts\ckeditor\adapters\jquery.js" />
     <Content Include="Scripts\ckeditor\CHANGES.html" />
     <Content Include="Scripts\ckeditor\ckeditor.js" />
@@ -1501,8 +1510,11 @@
     <Content Include="Templates\Pages\AddNewInternship.aspx" />
     <Content Include="Templates\Pages\Article.aspx" />
     <Content Include="Templates\Pages\InternshipGuide.aspx" />
+    <Content Include="Templates\Pages\provide-work-permit-for-foreigner-laborers-working-in-vietnam.aspx" />
     <Content Include="Templates\Pages\SubmitYourInternship.aspx" />
+    <Content Include="Templates\Pages\translation-and-interpretation-service.aspx" />
     <Content Include="Templates\Pages\Vietnamese-training.aspx" />
+    <Content Include="Templates\Pages\visa-service.aspx" />
     <Content Include="Templates\UserControl\IntershipAds.ascx" />
     <Content Include="Templates\UserControl\Social4Master.ascx" />
     <Content Include="Templates\UserControl\SocialLinkArticle.ascx" />
@@ -1828,6 +1840,13 @@
     <Compile Include="Templates\Pages\InternshipGuide.aspx.designer.cs">
       <DependentUpon>InternshipGuide.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Templates\Pages\provide-work-permit-for-foreigner-laborers-working-in-vietnam.aspx.cs">
+      <DependentUpon>provide-work-permit-for-foreigner-laborers-working-in-vietnam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Templates\Pages\provide-work-permit-for-foreigner-laborers-working-in-vietnam.aspx.designer.cs">
+      <DependentUpon>provide-work-permit-for-foreigner-laborers-working-in-vietnam.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Templates\Pages\SubmitYourInternship.aspx.cs">
       <DependentUpon>SubmitYourInternship.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1835,12 +1854,26 @@
     <Compile Include="Templates\Pages\SubmitYourInternship.aspx.designer.cs">
       <DependentUpon>SubmitYourInternship.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Templates\Pages\translation-and-interpretation-service.aspx.cs">
+      <DependentUpon>translation-and-interpretation-service.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Templates\Pages\translation-and-interpretation-service.aspx.designer.cs">
+      <DependentUpon>translation-and-interpretation-service.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Templates\Pages\Vietnamese-training.aspx.cs">
       <DependentUpon>Vietnamese-training.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Templates\Pages\Vietnamese-training.aspx.designer.cs">
       <DependentUpon>Vietnamese-training.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\Pages\visa-service.aspx.cs">
+      <DependentUpon>visa-service.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Templates\Pages\visa-service.aspx.designer.cs">
+      <DependentUpon>visa-service.aspx</DependentUpon>
     </Compile>
     <Compile Include="Templates\UserControl\IntershipAds.ascx.cs">
       <DependentUpon>IntershipAds.ascx</DependentUpon>
