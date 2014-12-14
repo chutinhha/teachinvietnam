@@ -175,13 +175,13 @@ namespace TeachingJob.Templates.Masterpage {
         protected global::System.Web.UI.WebControls.HyperLink hplHome;
         
         /// <summary>
-        /// Image3 control.
+        /// Image9 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image3;
+        protected global::System.Web.UI.WebControls.Image Image9;
         
         /// <summary>
         /// htlHomeMenu2 control.
@@ -560,5 +560,14 @@ namespace TeachingJob.Templates.Masterpage {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label19;
+        
+        /// <summary>
+        /// Img1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlImage Img1;
     }
 }
