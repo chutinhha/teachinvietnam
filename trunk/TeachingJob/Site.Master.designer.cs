@@ -166,13 +166,13 @@ namespace TeachingJob {
         protected global::System.Web.UI.WebControls.HyperLink hplHome;
         
         /// <summary>
-        /// Image3 control.
+        /// Image9 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image3;
+        protected global::System.Web.UI.WebControls.Image Image9;
         
         /// <summary>
         /// btn_EmployerSite control.
