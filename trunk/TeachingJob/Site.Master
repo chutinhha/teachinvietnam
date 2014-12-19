@@ -168,20 +168,22 @@
                             <nav>
                             <ul>
                                 <li>
-                                    <asp:HyperLink ID="htlHomeMenu2" runat="server" NavigateUrl="~/Default.aspx" Text="<%$ Resources:Resource, JobSearch2 %>"
-                                        EnableViewState="false"></asp:HyperLink>
+                                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/" EnableViewState="false">
+                                        <asp:Label ID="Label2" runat="server" Text="<%$Resources:Resource, Home %>" EnableViewState="false"></asp:Label></asp:HyperLink>
                                     <asp:HyperLink ID="hpl_CvSearch" runat="server" NavigateUrl="~/publicArea/CV/SearchResultcv.aspx?kw=&cate=&location=&citizen=" Visible="false"
                                         EnableViewState="false" Text="<%$ Resources:Resource, CVSearch %>"></asp:HyperLink>
                                 </li>
                                 <li>
-                                    <asp:HyperLink ID="hpl_SchoolJob" runat="server" NavigateUrl="~/publicArea/JobSector.aspx"
-                                        Text="<%$ Resources:Resource, SchoolJobs %>"></asp:HyperLink>
+                                    <asp:HyperLink ID="htlHomeMenu2" runat="server" NavigateUrl="~/Default.aspx" Text="<%$ Resources:Resource, TeachingJobs %>"
+                                        EnableViewState="false"></asp:HyperLink>
                                     <asp:HyperLink ID="hpl_em_myAccount" runat="server" NavigateUrl="~/Employer/EmployerSite.aspx?r=e"
                                         Visible="false" Text="<%$ Resources:Resource, MyAccount %>"></asp:HyperLink>
                                 </li>
                                 <li>
-                                    <asp:HyperLink ID="hpl_ExecJob" runat="server" NavigateUrl="~/publicArea/ExecutiveJob.aspx"
-                                        Text="<%$ Resources:Resource, ExecutiveJobs %>"></asp:HyperLink>
+                                    <asp:HyperLink ID="hpl_SchoolJob" runat="server" NavigateUrl="~/publicArea/JobSector.aspx"
+                                        Text="<%$ Resources:Resource, SchoolJobs %>"></asp:HyperLink>
+                                    <%--<asp:HyperLink ID="hpl_ExecJob" runat="server" NavigateUrl="~/publicArea/ExecutiveJob.aspx"
+                                        Text="<%$ Resources:Resource, ExecutiveJobs %>"></asp:HyperLink>--%>
                                     <asp:HyperLink ID="HyperLink1" runat="server" Visible="false" NavigateUrl="~/Employer/HiringAdvice.aspx"
                                         Text="<%$ Resources:Resource, RecruitmentCenter %>" EnableViewState="false"></asp:HyperLink>
                                 </li>
@@ -193,7 +195,7 @@
                                 </li>
                                 <li id="li5">
                                     <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/publicArea/Preparation.aspx"
-                                        Text="<%$ Resources:Resource, Preparation %>" EnableViewState="false"></asp:HyperLink>
+                                        Text="<%$ Resources:Resource, TeacherServices %>" EnableViewState="false"></asp:HyperLink>
                                     <asp:HyperLink ID="HyperLink4" CssClass="noborder" runat="server" Visible="false"
                                         NavigateUrl="#" Text="&nbsp;" EnableViewState="false"></asp:HyperLink>
                                 </li>

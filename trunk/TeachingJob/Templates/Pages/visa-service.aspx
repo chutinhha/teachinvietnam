@@ -1,10 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Templates/Masterpage/HomeIntership.Master" AutoEventWireup="true" CodeBehind="Vietnamese-training.aspx.cs" Inherits="TeachingJob.Templates.Pages.Vietnamese_training" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Templates/Masterpage/HomeIntership.Master" AutoEventWireup="true" CodeBehind="visa-service.aspx.cs" Inherits="TeachingJob.Templates.Pages.visa_service" %>
 
 <%@ Register TagPrefix="tj" TagName="SocialLink" Src="~/Templates/UserControl/SocialLinkArticle.ascx" %>
 <%@ Register TagPrefix="tj" TagName="IntershipAds" Src="~/Templates/UserControl/IntershipAds.ascx" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="title" runat="server">
-<title>Vietnamese Training - Teachinvietnam</title>
+<title>Visa Service - Teachinvietnam</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="HeadContent" runat="server">
 <link type="text/css" href="/Styles/intership.css" rel="Stylesheet" media="screen" />
@@ -15,7 +15,7 @@
 <div id="intershipPage">
         <div id="home-heading">
             <div class="page-header">
-                <%--<h4>Vietnamese Training</h4>--%>
+                <%--<h4>Visa Service</h4>--%>
                 <div class="ddlYear" style="float: right">
                     <tj:SocialLink ID="SocialLink" runat="server" />
                 </div>

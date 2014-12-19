@@ -159,24 +159,27 @@
                                         EnableViewState="false"></asp:HyperLink>
                                 </li>--%>
                                 <li>
-                                    <asp:HyperLink ID="htlHomeMenu2" runat="server" NavigateUrl="~/Intership.aspx" Text="<%$ Resources:Resource, Intership %>"
+                                    <asp:HyperLink ID="htlHomeMenu2" runat="server" NavigateUrl="~/Intership.aspx" Text="<%$ Resources:Resource, Home %>"
                                         EnableViewState="false"></asp:HyperLink>
                                 </li>
                                 <li>
-                                    <asp:HyperLink ID="hpl_SchoolJob" runat="server" NavigateUrl="~/Default.aspx" Text="<%$ Resources:Resource, SchoolJobs %>"></asp:HyperLink>
+                                    <asp:HyperLink ID="hpl_SchoolJob" runat="server" NavigateUrl="~/Default.aspx" Text="<%$ Resources:Resource, TeachingJobs %>"></asp:HyperLink>
                                 </li>
                                 <li>
-                                    <asp:HyperLink ID="hpl_TeacherAdvice" runat="server" NavigateUrl="~/publicArea/Preparation.aspx" Text="Teacher Advice"></asp:HyperLink>
+                                    <a href="#"><asp:Literal ID="Literal1" runat="server" Text="<%$ Resources:Resource, TeacherServices %>"></asp:Literal></a>
+                                    <ul>
+                                        <li><asp:HyperLink ID="hpl_TeacherAdvice" runat="server" NavigateUrl="~/publicArea/Preparation.aspx" Text="<%$ Resources:Resource, Preparationtxt %>"></asp:HyperLink></li>
+						                <li><asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/Templates/Pages/Vietnamese-training.aspx" Text="Vietnamese Training"></asp:HyperLink></li>
+						                <li><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Templates/Pages/visa-service.aspx" Text="Visa Service"></asp:HyperLink></li>
+                                        <li><asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/Templates/Pages/provide-work-permit-for-foreigner-laborers-working-in-vietnam.aspx" Text="Provide Work Permit for Foreigner Laborers Working in Vietnam"></asp:HyperLink></li>
+					                </ul>
                                 </li>
                                 <li>
-                                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Templates/Pages/Vietnamese-training.aspx" Text="Vietnamese training"></asp:HyperLink>
-                                    <%--<a href="#">Our Services</a>
+                                    <%--<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Templates/Pages/Vietnamese-training.aspx" Text="Vietnamese training"></asp:HyperLink>--%>
+                                    <a href="#">Our Services</a>
                                     <ul>
 						                <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Templates/Pages/translation-and-interpretation-service.aspx" Text="Translation and Interpretation Service"></asp:HyperLink></li>
-						                <li><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Templates/Pages/visa-service.aspx" Text="Visa Service"></asp:HyperLink></li>
-                                        <li><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Templates/Pages/provide-work-permit-for-foreigner-laborers-working-in-vietnam.aspx" Text="Provide Work Permit for Foreigner Laborers Working in Vietnam"></asp:HyperLink></li>
-                                        <li><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Templates/Pages/Vietnamese-training.aspx" Text="Vietnamese Training"></asp:HyperLink></li>
-					                </ul>--%>
+					                </ul>
                                 </li>
                             </ul>
                                 </nav>

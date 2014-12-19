@@ -6,6 +6,7 @@ function extractPageName(hrefString) {
 
 function setActiveMenu(arr, crtPage) {
     for (var i = 0; i < arr.length; i++) {
+        //if (extractPageName(arr[i].href) == crtPage || extractPageName(arr[i].href).indexOf("intership.aspx")>0) {
         if (extractPageName(arr[i].href) == crtPage) {
             if (arr[i].parentNode.tagName != "DIV") {
                 arr[i].className = "selected";
@@ -16,10 +17,8 @@ function setActiveMenu(arr, crtPage) {
 }
 
 function setPage() {
-    hrefString = document.location.href ? document.location.href : document.location;
-
+    var hrefString = document.location.href ? document.location.href : document.location;
     if (document.getElementById("nav") != null) {
         setActiveMenu(document.getElementById("nav").getElementsByTagName("a"), extractPageName(hrefString));
     }
-        
 }

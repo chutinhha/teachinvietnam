@@ -200,7 +200,7 @@
     <value>School Jobs</value>
   </data>
   <data name="Preparation" xml:space="preserve">
-    <value>Teacher Advice</value>
+    <value>Teacher Services</value>
   </data>
   <data name="addtxt" xml:space="preserve">
     <value>Add</value>
@@ -1717,5 +1717,11 @@
   </data>
   <data name="FeaturedJobtxt" xml:space="preserve">
     <value>Featured Jobs</value>
+  </data>
+  <data name="TeacherServices" xml:space="preserve">
+    <value>Teacher Services</value>
+  </data>
+  <data name="TeachingJobs" xml:space="preserve">
+    <value>Teaching Jobs</value>
   </data>
 </root>

@@ -193,13 +193,22 @@ namespace TeachingJob {
         protected global::System.Web.UI.WebControls.LinkButton btn_CandidateSite;
         
         /// <summary>
-        /// htlHomeMenu2 control.
+        /// HyperLink5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink htlHomeMenu2;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink5;
+        
+        /// <summary>
+        /// Label2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
         /// hpl_CvSearch control.
@@ -211,13 +220,13 @@ namespace TeachingJob {
         protected global::System.Web.UI.WebControls.HyperLink hpl_CvSearch;
         
         /// <summary>
-        /// hpl_SchoolJob control.
+        /// htlHomeMenu2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hpl_SchoolJob;
+        protected global::System.Web.UI.WebControls.HyperLink htlHomeMenu2;
         
         /// <summary>
         /// hpl_em_myAccount control.
@@ -229,13 +238,13 @@ namespace TeachingJob {
         protected global::System.Web.UI.WebControls.HyperLink hpl_em_myAccount;
         
         /// <summary>
-        /// hpl_ExecJob control.
+        /// hpl_SchoolJob control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hpl_ExecJob;
+        protected global::System.Web.UI.WebControls.HyperLink hpl_SchoolJob;
         
         /// <summary>
         /// HyperLink1 control.
