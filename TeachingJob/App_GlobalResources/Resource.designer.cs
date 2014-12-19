@@ -3436,7 +3436,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Teacher Advice.
+        ///   Looks up a localized string similar to Teacher Services.
         /// </summary>
         internal static string Preparation {
             get {
@@ -4201,11 +4201,29 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Teacher Services.
+        /// </summary>
+        internal static string TeacherServices {
+            get {
+                return ResourceManager.GetString("TeacherServices", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Teachers from K - 12.
         /// </summary>
         internal static string TeachersfromK12txt {
             get {
                 return ResourceManager.GetString("TeachersfromK12txt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Teaching Jobs.
+        /// </summary>
+        internal static string TeachingJobs {
+            get {
+                return ResourceManager.GetString("TeachingJobs", resourceCulture);
             }
         }
         

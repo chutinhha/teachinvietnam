@@ -16,20 +16,78 @@
 <div class="main">
         <div class="grid-1">
             <div class="content-gird">
-                <h3 style="padding-bottom:5px">Vietnamese training text description</h3>
+                <h3 style="padding-bottom:5px">Our Services text description</h3>
                 <div class="clear">
                 </div>
                 <hr />
                 <table cellpadding="3" border="0" class="tablePadding" id="tblRightPanel">
                     <tr>
-                        <td colspan="2"><h4>Vietnamese training</h4><CKEditor:CKEditorControl ID="txtRightPanel" BasePath="~/Scripts/ckeditor" runat="server"></CKEditor:CKEditorControl>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtRightPanel" Display="Dynamic" ValidationGroup="rightPanelGroup" ErrorMessage="Please enter text" CssClass="validation"></asp:RequiredFieldValidator><br /></td>
+                        <td colspan="2">
+                            <h4>Translation and Interpretation Service</h4>
+                            <CKEditor:CKEditorControl ID="txtTranslationAndInterpretationService" BasePath="~/Scripts/ckeditor" runat="server"></CKEditor:CKEditorControl>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtTranslationAndInterpretationService" Display="Dynamic" ValidationGroup="group1" ErrorMessage="Please enter text" CssClass="validation"></asp:RequiredFieldValidator>
+                            <br />
+                        </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td>
-                            <asp:Button ID="btnSubmit" runat="server" Text="Save" OnClick="btnSubmit_Click" CssClass="standard-button orange small" ValidationGroup="rightPanelGroup" />
+                            <asp:Button ID="btnTranslationAndInterpretationServiceSubmit" runat="server" Text="Save" OnClick="btnTranslationAndInterpretationServiceSubmit_Click" CssClass="standard-button orange small" ValidationGroup="group1" />
                         </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <h4>Visa Service</h4>
+                            <CKEditor:CKEditorControl ID="txtVisaService" BasePath="~/Scripts/ckeditor" runat="server"></CKEditor:CKEditorControl>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtVisaService" Display="Dynamic" ValidationGroup="group2" ErrorMessage="Please enter text" CssClass="validation"></asp:RequiredFieldValidator>
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <asp:Button ID="btnVisaServiceSubmit" runat="server" Text="Save" OnClick="btnVisaServiceSubmit_Click" CssClass="standard-button orange small" ValidationGroup="rightPanelGroup" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <h4>Provide Work Permit for Foreigner Laborers Working in Vietnam</h4>
+                            <CKEditor:CKEditorControl ID="txtProvideWorkPermitForForeignerLaborersWorkingInVietnam" BasePath="~/Scripts/ckeditor" runat="server"></CKEditor:CKEditorControl>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtProvideWorkPermitForForeignerLaborersWorkingInVietnam" Display="Dynamic" ValidationGroup="group3" ErrorMessage="Please enter text" CssClass="validation"></asp:RequiredFieldValidator>
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <asp:Button ID="btnProvideWorkPermitForForeignerLaborersWorkingInVietnamSubmit" runat="server" Text="Save" OnClick="btnProvideWorkPermitForForeignerLaborersWorkingInVietnamSubmit_Click" CssClass="standard-button orange small" ValidationGroup="group3" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <h4>Vietnamese Training</h4>
+                            <CKEditor:CKEditorControl ID="txtVietnameseTraining" BasePath="~/Scripts/ckeditor" runat="server"></CKEditor:CKEditorControl>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtVietnameseTraining" Display="Dynamic" ValidationGroup="group4" ErrorMessage="Please enter text" CssClass="validation"></asp:RequiredFieldValidator>
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <asp:Button ID="btnVietnameseTrainingSubmit" runat="server" Text="Save" OnClick="btnVietnameseTrainingSubmit_Click" CssClass="standard-button orange small" ValidationGroup="group4" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">&nbsp;</td>
                     </tr>
                 </table>
                 <div class="clear">

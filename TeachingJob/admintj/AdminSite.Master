@@ -144,7 +144,7 @@
             	<li><a id="lnkServicesManagement" runat="server" href="~/admintj/IntershipManagement.aspx"><span class="typo icon">Internship</span></a></li>	
                 <li><a id="A3" runat="server" href="~/admintj/InternshipGuideManagement.aspx"><span class="typo icon">Internship Guide</span></a></li>	
                 <li><a id="A4" runat="server" href="~/admintj/InternshipUserSubmitManagement.aspx"><span class="typo icon">Internship User Submission</span></a></li>
-                <li><a id="A9" runat="server" href="~/admintj/module-vietnamese-training.aspx"><span class="typo icon">Vietnamese training</span></a></li>
+                <li><a id="A9" runat="server" href="~/admintj/module-vietnamese-training.aspx"><span class="typo icon">Our Services</span></a></li>
 			</ul>
 		</li>
         <li>
